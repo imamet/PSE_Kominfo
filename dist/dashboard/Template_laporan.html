@@ -16,7 +16,7 @@
   <link rel="shortcut icon" href="https://www.kominfo.go.id/favicon/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="https://www.kominfo.go.id/favicon/favicon.ico" />
 
-  <title>Management User | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
+  <title>Template Laporan | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
 
   <!-- Vendor CSS -->
   <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
@@ -51,7 +51,8 @@
             <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
           </li>
           <li class="nav-item">
-            <a href="Daftar_Kegiatan_Monev.html" class="nav-link"><i class="ri-briefcase-4-line"></i><span>Kegiatan Monev</span></a>
+            <a href="Daftar_Kegiatan_Monev.html" class="nav-link"><i class="ri-briefcase-4-line"></i><span>Kegiatan
+                Monev</span></a>
           </li>
           <li class="nav-item">
             <a href="Data_Hasil_Validasi.html" class="nav-link"><i class="ri-file-shield-2-line"></i><span>Data Hasil
@@ -63,11 +64,11 @@
         <a href="#" class="nav-label">PENGATURAN</a>
         <ul class="nav nav-sidebar">
           <li class="nav-item">
-            <a href="Management-user.html" class="nav-link active"><i class="ri-group-line"></i><span>Managemen
+            <a href="Management-user.html" class="nav-link"><i class="ri-group-line"></i><span>Managemen
                 User</span></a>
           </li>
           <li class="nav-item">
-            <a href="Template_laporan.html" class="nav-link"><i class="ri-file-text-line"></i><span>Template
+            <a href="Template_laporan.html" class="nav-link active"><i class="ri-file-text-line"></i><span>Template
                 Laporan</span></a>
           </li>
           <li class="nav-item">
@@ -161,106 +162,98 @@
     <div class="main-header">
       <div class="d-flex align-items-center justify-content-between">
         <div class="main-left">
-          <div class="main-title">Manajemen User</div>
+          <div class="main-title">Template Laporan</div>
         </div>
         <div class="main-right">
-          <div>
-            <div class="form-search me-auto">
-              <i class="ri-search-line"></i>
-              <input type="text" class="form-control" placeholder="Pencarian">
-            </div>
-          </div>
           <div class="btn-flex">
-            <a href="">
-              <button><i class="ri-add-line"></i>Undang User</button>
+            <a href="#modal1" data-bs-toggle="modal">
+              <button><i class="ri-add-line"></i>Tambah Kegiatan</button>
             </a>
           </div>
         </div>
       </div>
     </div>
     <!--  -->
-    <div class="main-contentuser">
-      <div class="table-responsive mb-4">
-        <table class="table table-two mb-0">
-          <thead>
-            <tr>
-              <th style="width: 200px;" class="center-table">Nama</th>
-              <th style="width: 200px;">Email</th>
-              <th style="width: 200px;" class="center-table">Peran</th>
-              <th style="width: 200px;" class="center-table">Terakhir Login</th>
-              <th style="width: 200px;" class="center-table">Aksi</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="photo-user"><img src="../assets/img/user.jpg"></span>Amal Burga</td>
-              <td>amalburga203@gmail.com</td>
-              <td class="center-table">
-                <select class="form-select select2">
-                  <option value="" selected>Admin</option>
-                  <option value="">Pengawas (Non ASN)</option>
-                  <option value="">Pengawas (ASN)</option>
-                </select>
-              </td>
-              <td class="center-table">04/06/2024 22:59:00</td>
-              <td class="center-table"><label class="user-delete"><i class="ri-delete-bin-line"></i></label></td>
-            </tr>
-            <tr>
-              <td><span class="photo-user"><img src="../assets/img/user1.jpg"></span>John Doe</td>
-              <td>johndoe654@gmail.com</td>
-              <td class="center-table">
-                <select class="form-select select2">
-                  <option value="">Admin</option>
-                  <option value="" selected>Pengawas (Non ASN)</option>
-                  <option value="">Pengawas (ASN)</option>
-                </select>
-              </td>
-              <td class="center-table">04/06/2024 22:59:00</td>
-              <td class="center-table"><label class="user-delete"><i class="ri-delete-bin-line"></i></label></td>
-            </tr>
-            <tr>
-              <td><span class="photo-user"><img src="../assets/img/user2.jpg"></span>Rafael Jarvis</td>
-              <td>rafaeljarvis2658@gmail.com</td>
-              <td class="center-table">
-                <select class="form-select select2">
-                  <option value="" >Admin</option>
-                  <option value="">Pengawas (Non ASN)</option>
-                  <option value="" selected>Pengawas (ASN)</option>
-                </select>
-              </td>
-              <td class="center-table">04/06/2024 22:59:00</td>
-              <td class="center-table"><label class="user-delete"><i class="ri-delete-bin-line"></i></label></td>
-            </tr>
-            <tr>
-              <td><span class="photo-user"><img src="../assets/img/user3.jpg"></span>Lili Slater</td>
-              <td>lilislaterrr@gmail.com</td>
-              <td class="center-table">
-                <select class="form-select select2">
-                  <option value="" >Admin</option>
-                  <option value="">Pengawas (Non ASN)</option>
-                  <option value="" selected>Pengawas (ASN)</option>
-                </select>
-              </td>
-              <td class="center-table">04/06/2024 22:59:00</td>
-              <td class="center-table"><label class="user-delete"><i class="ri-delete-bin-line"></i></label></td>
-            </tr>
-            <tr>
-              <td><span class="photo-user"><img src="../assets/img/user.jpg"></span>Gilbert Flores</td>
-              <td>gilbertflores@gmail.com</td>
-              <td class="center-table">
-                <select class="form-select select2">
-                  <option value="">Admin</option>
-                  <option value="">Pengawas (Non ASN)</option>
-                  <option value="" selected>Pengawas (ASN)</option>
-                </select>
-              </td>
-              <td class="center-table">04/06/2024 22:59:00</td>
-              <td  class="center-table"><label class="user-delete"><i class="ri-delete-bin-line"></i></label></td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="main-content">
+      <div class="d-flex justify-content-center">
+        <div class="card-laporan">
+          <div class="card-laporan_top">
+            <div class="dropdown">
+              <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-fill"></i></i></a>
+              <div class="dropdown-menu dropdown-menu-end">
+                <a href="" data-bs-toggle="" class="dropdown-item"></i>Riwayat/Log</a>
+                <a href="" data-bs-toggle="" class="dropdown-item"></i>Modifikasi</a>
+                <a href="" data-bs-toggle="modal" class="dropdown-item"></i>Hapus</a>
+              </div>
+            </div>
+            <a href="Template_laporan_editor.html">
+              <div class="card-laporan__logo">
+                <img src="../assets/img/kominfo.png" alt="">
+              </div>
+            </a>
+          </div>
+          <a href="Template_laporan_editor.html">
+            <div class="card-laporan_bottom">
+              <h1 class="card-laporan_title">Template 1</h1>
+              <div class="card-laporan_user">Dibuat oleh: <span class="c-b">Amal Burga</span> </div>
+              <div class="card-laporan_desc">template standar untuk laporan pelaksanaan tugas monev keberadaan fisik PSE
+                Lingkup Privat </div>
+            </div>
+          </a>
+        </div>
+        <!--  -->
+        <div class="card-laporan">
+          <div class="card-laporan_top">
+            <div class="dropdown">
+              <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-fill"></i></i></a>
+              <div class="dropdown-menu dropdown-menu-end">
+                <a href="" data-bs-toggle="" class="dropdown-item"></i>Riwayat/Log</a>
+                <a href="" data-bs-toggle="" class="dropdown-item"></i>Modifikasi</a>
+                <a href="" data-bs-toggle="modal" class="dropdown-item"></i>Hapus</a>
+              </div>
+            </div>
+            <a href="Template_laporan_editor.html">
+              <div class="card-laporan__logo">
+                <img src="../assets/img/kominfo.png" alt="">
+              </div>
+            </a>
+          </div>
+          <a href="Template_laporan_editor.html">
+            <div class="card-laporan_bottom">
+              <h1 class="card-laporan_title">Template 2</h1>
+              <div class="card-laporan_user">Dibuat oleh: <span class="c-b">Amal Burga</span> </div>
+              <div class="card-laporan_desc">template standar untuk laporan pelaksanaan tugas monev keberadaan fisik PSE
+                Lingkup Privat </div>
+            </div>
+          </a>
+        </div>
+        <!--  -->
+        <div class="card-laporan">
+          <div class="card-laporan_top">
+            <div class="dropdown">
+              <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-fill"></i></i></a>
+              <div class="dropdown-menu dropdown-menu-end">
+                <a href="" data-bs-toggle="" class="dropdown-item"></i>Riwayat/Log</a>
+                <a href="" data-bs-toggle="" class="dropdown-item"></i>Modifikasi</a>
+                <a href="" data-bs-toggle="modal" class="dropdown-item"></i>Hapus</a>
+              </div>
+            </div>
+            <a href="Template_laporan_editor.html">
+              <div class="card-laporan__logo">
+                <img src="../assets/img/kominfo.png" alt="">
+              </div>
+            </a>
+          </div>
+          <a href="Template_laporan_editor.html">
+            <div class="card-laporan_bottom">
+              <h1 class="card-laporan_title">Template 3</h1>
+              <div class="card-laporan_user">Dibuat oleh: <span class="c-b">Amal Burga</span> </div>
+              <div class="card-laporan_desc">template standar untuk laporan pelaksanaan tugas monev keberadaan fisik PSE
+                Lingkup Privat </div>
+            </div>
+          </a>
+        </div>
       </div>
-      
     </div>
   </div>
   <!-- main -->
@@ -276,7 +269,7 @@
         <div class="modal-box">
           <form>
             <div class="form-content">
-              <label for="exampleFormControlInput1" class="form-label">Nama  Kegiatan</label>
+              <label for="exampleFormControlInput1" class="form-label">Nama Kegiatan</label>
               <input type="text" class="form-control" id="namakegiatan" placeholder="Monev Region Jawa Timur I">
             </div>
             <div class="form-content">
@@ -287,14 +280,14 @@
               </select>
             </div>
             <div class="form-content">
-              <label for="exampleFormControlInput1" class="form-label">Lokasi  Kegiatan</label>
+              <label for="exampleFormControlInput1" class="form-label">Lokasi Kegiatan</label>
               <div class="form-search f-w">
                 <i class="ri-search-line"></i>
                 <input type="text" class="form-control" placeholder="Palmerah, Gelora, Kota Jakarta Pusat">
               </div>
             </div>
             <div class="form-content">
-              <label for="exampleFormControlInput1" class="form-label">Tanggal  Kegiatan</label>
+              <label for="exampleFormControlInput1" class="form-label">Tanggal Kegiatan</label>
               <input type="date" class="form-control" id="namakegiatan" placeholder="Monev Region Jawa Timur I">
             </div>
           </form>

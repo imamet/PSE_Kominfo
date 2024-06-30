@@ -15651,6 +15651,7 @@ line-height: normal;
 .card-one .card-body {
   padding: 15px 0px;
   position: relative;
+  background: #f8f8f8;
 }
 .card-one small, .card-one .small {
   color: #6e7985;
@@ -15723,6 +15724,63 @@ line-height: normal;
 .card-one .list-group-item {
   border-color: #f3f5f9;
 }
+.card-laporan {
+    width: 330px;
+    height: 240px;
+    border-radius: 10px;
+    border: 1px solid #DCDCDC;
+    background: #FFF;
+    margin: 0px 11px;
+}
+.card-laporan_top{
+  text-align: right;
+  background: #F0FAFF;
+  padding: 6px 9px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-laporan__logo{
+  text-align: center;
+  margin-top: -15px;
+  padding-bottom: 15px;
+}
+.card-laporan__Logo img {
+    width: 81.457px;
+}
+.card-laporan_bottom{
+  padding: 10px 15px;
+}
+.card-laporan_title {
+    color: #304E6B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.card-laporan_user {
+    color: #878787;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.card-laporan_desc {
+    color: #878787;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.sub-label {
+    color: #878787;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 10px;
+}
+
+
 
 .card-value {
   font-family: "Inter", sans-serif;
@@ -20852,6 +20910,7 @@ i.ri-add-line {
 }
 .photo-user{
   padding-right: 19px;
+  padding-left: 35px;
 }
 .photo-user img{
   width: 32px;
@@ -23392,11 +23451,22 @@ textarea.parsley-success:focus {
 .ql-container {
   font-size: 1rem;
 }
+.breadcrumb-item a {
+  color: #0093DD;
+}
+.laporan-nama {
+    color: #878787;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 .ql-editor {
   padding: 20px;
   background-color: #fff;
   color: #41505f;
+  height: 100vh;
 }
 .ql-editor.ql-blank::before {
   color: #9ea7b1;
