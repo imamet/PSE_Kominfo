@@ -5900,8 +5900,6 @@ i.ri-filter-line{
     box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
 }
 
-
-
 .btn-simpan button {
     width: 100%;
     padding: 10px 18px;
@@ -6139,7 +6137,7 @@ i.ri-filter-line{
 }
 
 .btn-batal {
-  width: 170px;
+    width: 170px;
     color: #344054;
     font-size: 16px;
     font-style: normal;
@@ -6154,9 +6152,9 @@ i.ri-filter-line{
     background: #FFF;
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
-.btn-simpan {
-    width: 170px;
-    color: #ffffff;
+.btn-simpan1 {
+  width: 170px;
+    color: #fff;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -6166,9 +6164,9 @@ i.ri-filter-line{
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    border: 1px solid #007AB8;
+    border: 1px solid #D0D5DD;
     background: #0093DD;
-    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 .btn-hapus {
   background: transparent;
