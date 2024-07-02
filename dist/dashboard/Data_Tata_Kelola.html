@@ -16,17 +16,17 @@
   <link rel="shortcut icon" href="https://www.kominfo.go.id/favicon/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="https://www.kominfo.go.id/favicon/favicon.ico" />
 
-  <title>Data Hasil Validasi | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
+  <title>Data PSE | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
 
   <!-- Vendor CSS -->
   <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <link rel="stylesheet" href="../lib/jqvmap/jqvmap.min.css">
   <link rel="stylesheet" href="../lib/apexcharts/apexcharts.css">
   <link rel="stylesheet" href="../lib/prismjs/themes/prism.min.css">
   <link rel="stylesheet" href="../lib/select2/css/select2.min.css">
 
   <!-- Template CSS -->
-  <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
@@ -46,7 +46,7 @@
             <a href="" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
           </li>
           <li class="nav-item">
-            <a href="Data_Tata_Kelola.html" class="nav-link"><i class="ri-server-line"></i><span>Data Tata Kelola</span></a>
+            <a href="Data_Tata_Kelola.html" class="nav-link active"><i class="ri-server-line"></i><span>Data Tata Kelola</span></a>
           </li>
           <li class="nav-item">
             <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
@@ -55,7 +55,7 @@
             <a href="Kegiatan_monev_list_offline.html" class="nav-link"><i class="ri-briefcase-4-line"></i><span>Kegiatan Monev</span></a>
           </li>
           <li class="nav-item">
-            <a href="Data_Hasil_Validasi.html" class="nav-link active"><i class="ri-file-shield-2-line"></i><span>Data Hasil Validasi</span></a>
+            <a href="Data_Hasil_Validasi.html" class="nav-link"><i class="ri-file-shield-2-line"></i><span>Data Hasil Validasi</span></a>
           </li>
         </ul>
       </div><!-- nav-group -->
@@ -160,7 +160,7 @@
     <div class="main-header">
       <div class="d-flex align-items-center justify-content-between">
         <div class="main-left">
-          <div class="main-title">Data Hasil Validasi</div>
+          <div class="main-title">Data Tata Kelola</div>
           <div class="btn-group">
             <button class="btn-left btn-active">PSE Domestik</button>
             <button class="btn-right">PSE Asing</button>
@@ -174,6 +174,7 @@
             </div>
           </div>
           <div class="btn-flex">
+            <button><i class="ri-login-box-line"></i> Impor Data</button>
             <div class="modif-table header-link" data-bs-toggle="tooltip" title="Modifikasi Tabel">
               <a href="#modal1" data-bs-toggle="modal"><img src="../assets/svg/modif-table.svg"></a>
             </div>
@@ -219,9 +220,8 @@
         </div>
       </div>
       <div class="filter-flex line-right">
-        <div class="filter-box"><span class="filter-label">Hasil Rekomendasi:</span> <span class="filter-isi">Suspend</span><span class="delete-filter"><a href=""><i class="ri-close-line"></i></span></a></div>
-        <div class="filter-box"><span class="filter-label">Status Email:</span> <span class="filter-isi">Bouncing dan Tidak Terkonfirmasi</span><span class="delete-filter"><a href=""><i class="ri-close-line"></i></span></a></div>
-        <div class="filter-box"><span class="filter-label">Status Alamat:</span> <span class="filter-isi">Mengkonfirmasi Tidak Aktif</span><span class="delete-filter"><a href=""><i class="ri-close-line"></i></span></a></div>
+        <div class="filter-box"><span class="filter-label">Sektor:</span> <span class="filter-isi">Sektor Keuangan</span><span class="delete-filter"><a href=""><i class="ri-close-line"></i></span></a></div>
+        <div class="filter-box"><span class="filter-label">Sektor:</span> <span class="filter-isi">Sektor Keuangan</span><span class="delete-filter"><a href=""><i class="ri-close-line"></i></span></a></div>
       </div>
       <div>
           <div class="hapus-filter">Hapus semua filter</div>
@@ -236,13 +236,19 @@
               <table class="table table-two mb-0">
                 <thead>
                   <tr>
-                    <th class="bs-checkbox "><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></th>
+                    <th style="width: 70px;" class="bs-checkbox "><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></th>
                     <th>Nama Perusahaan</th>
+                    <th>Badan Hukum</th>
                     <th>Sistem Elektronik</th>
                     <th>No. TDPSE</th>
-                    <th>Email</th>
-                    <th>Status Email</th>
-                    <th>Tanggal Monev</th>
+                    <th>Website</th>
+                    <th>Sektor</th>
+                    <th>IP Server</th>
+                    <th>Alamat</th>
+                    <th>Provinsi</th>
+                    <th>Kabupaten</th>
+                    <th>Kecamatan</th>
+                    <th>Kelurahan</th>
                     <th class="center-table">Rekomendasi</th>
                     <th></th>
                   </tr>
@@ -251,19 +257,26 @@
                   <tr>
                     <td class="bs-checkbox "><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></td>
                     <td>PT. Berkah Jaya</td>
+                    <td>Perusahaan Terbatas (PT)</td>
                     <td>Tokokami</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail btt">Bouncing dan Tidak Terkonfirmasi</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
+                    <td>009622.01/DJAI.PSE/02/2023</td>
+                    <td>shanchu.51qbiz.id</td>
+                    <td>Sektor Keuangan</td>
+                    <td>22.354.77.11</td>
+                    <td>PODOMORO CITY 4DH JALAN LETJEN S PARMAN</td>
+                    <td>DKI JAKARTA</td>
+                    <td>KOTA ADM. JAKARTA BARAT</td>
+                    <td>GROGOL PETAMBURAN</td>
+                    <td>TANJUNG DUREN SELATAN</td>
+                    <td class="center-table"><label class="c-tidaksuspend">Tidak Suspend</label></td>
                     <td>
                       <div class="dropdown">
                         <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
                         <div class="dropdown-menu dropdown-menu-end">
                           <a href="Log_Riwayat.html" class="dropdown-item">Riwayat/Log</a>
-                          <a href="" class="dropdown-item">Modifikasi</a>
-                          <a href="" class="dropdown-item">Hapus</a>
+                          <a href="" class="dropdown-item">Tambahkan Ke<br>
+                            Daftar Monev</a>
+                          <a href="#modal2" data-bs-toggle="modal" class="dropdown-item"></i> Cetak</a>
                         </div>
                       </div>
                     </td>
@@ -271,19 +284,26 @@
                   <tr>
                     <td class="bs-checkbox "><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></td>
                     <td>PT. Tech Info Media</td>
+                    <td>Perusahaan Terbatas (PT)</td>
                     <td>Beritaku</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail mtb">Menjawab dan Terkonfirmasi Benar</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
+                    <td>009622.01/DJAI.PSE/02/2023</td>
+                    <td>m-ccni.com</td>
+                    <td>Sektor Keuangan</td>
+                    <td>172.225.123.1</td>
+                    <td>CNI CREATIVE CENTER (C2) BUILDING JL.PURI INDAH BLOK.X2 NO.2-6</td>
+                    <td>DKI JAKARTA</td>
+                    <td>KOTA ADM. JAKARTA BARAT</td>
+                    <td>KEMBANGAN</td>
+                    <td>KEMBANGAN SELATAN</td>
+                    <td class="center-table"><label class="c-tunda">Tunda</label></td>
                     <td>
                       <div class="dropdown">
                         <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
                         <div class="dropdown-menu dropdown-menu-end">
                           <a href="Log_Riwayat.html" class="dropdown-item">Riwayat/Log</a>
-                          <a href="" class="dropdown-item">Modifikasi</a>
-                          <a href="" class="dropdown-item">Hapus</a>
+                          <a href="" class="dropdown-item">Tambahkan Ke<br>
+                            Daftar Monev</a>
+                            <a href="#modal2" data-bs-toggle="modal" class="dropdown-item"></i> Cetak</a>
                         </div>
                       </div>
                     </td>
@@ -291,19 +311,26 @@
                   <tr>
                     <td class="bs-checkbox "><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></td>
                     <td>PT. Keuangan Mandiri</td>
+                    <td>Perusahaan Terbatas (PT)</td>
                     <td>Cuan Kripto</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail tmtb">Tidak Menjawab namun Terkonfirmasi Benar</span></td>
-                    <td>22-23 Maret 2023</td>
+                    <td>009622.01/DJAI.PSE/02/2023</td>
+                    <td>reservancyz.com</td>
+                    <td>Sektor Keuangan</td>
+                    <td>101.523.55.11</td>
+                    <td>Jalan Pilar Bro Raya, Kavling C-W</td>
+                    <td>DKI JAKARTA</td>
+                    <td>KOTA ADM. JAKARTA BARAT</td>
+                    <td>KEBON JERUK</td>
+                    <td>KEDOYA SELATAN</td>
                     <td class="center-table"><label class="c-suspend">Suspend</label></td>
                     <td>
                       <div class="dropdown">
                         <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
                         <div class="dropdown-menu dropdown-menu-end">
                           <a href="Log_Riwayat.html" class="dropdown-item">Riwayat/Log</a>
-                          <a href="" class="dropdown-item">Modifikasi</a>
-                          <a href="" class="dropdown-item">Hapus</a>
+                          <a href="" class="dropdown-item">Tambahkan Ke<br>
+                            Daftar Monev</a>
+                            <a href="#modal2" data-bs-toggle="modal" class="dropdown-item"></i> Cetak</a>
                         </div>
                       </div>
                     </td>
@@ -311,19 +338,26 @@
                   <tr>
                     <td class="bs-checkbox "><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></td>
                     <td>PT. Trans Antar Ruang</td>
+                    <td>Perusahaan Terbatas (PT)</td>
                     <td>Speedo</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail tmmp">Tidak Menjawab namun Mengkonfirmasi Perubahan</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
+                    <td>009622.01/DJAI.PSE/02/2023</td>
+                    <td>cleveradsss.co.id/id/home.html</td>
+                    <td>Sektor Keuangan</td>
+                    <td>192.861.88.10</td>
+                    <td>NEO SOHO RESIDENCE LANTAI 21 UNIT 2156, JL. LETJEN S. PARMAN NO. KAV. 22</td>
+                    <td>DKI JAKARTA</td>
+                    <td>KOTA ADM. JAKARTA BARAT</td>
+                    <td>GROGOL PETAMBURAN</td>
+                    <td>TANJUNG DUREN SELATAN</td>
+                    <td class="center-table"><label class="c-tidaksuspend">Tidak Suspend</label></td>
                     <td>
                       <div class="dropdown">
                         <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
                         <div class="dropdown-menu dropdown-menu-end">
                           <a href="Log_Riwayat.html" class="dropdown-item">Riwayat/Log</a>
-                          <a href="" class="dropdown-item">Modifikasi</a>
-                          <a href="" class="dropdown-item">Hapus</a>
+                          <a href="" class="dropdown-item">Tambahkan Ke<br>
+                            Daftar Monev</a>
+                            <a href="#modal2" data-bs-toggle="modal" class="dropdown-item"></i> Cetak</a>
                         </div>
                       </div>
                     </td>
@@ -331,19 +365,26 @@
                   <tr>
                     <td class="bs-checkbox "><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></td>
                     <td>PT. Rapih Studio</td>
+                    <td>Perusahaan Terbatas (PT)</td>
                     <td>Rekasa</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail tmss">Tidak Menjawab Sama Sekali</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
+                    <td>009622.01/DJAI.PSE/02/2023</td>
+                    <td>medicazstore.com</td>
+                    <td>Sektor Pendidikan</td>
+                    <td>172.225.123.1</td>
+                    <td>JL. POS PENGUMBEN LAMA NO. 64, RT. 019, RW. 005, KEMBANGAN,</td>
+                    <td>DKI JAKARTA</td>
+                    <td>KOTA ADM. JAKARTA BARAT</td>
+                    <td>KEMBANGAN</td>
+                    <td>SRENGSENG</td>
+                    <td class="center-table"><label class="c-tidaksuspend">Tidak Suspend</label></td>
                     <td>
                       <div class="dropdown">
                         <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
                         <div class="dropdown-menu dropdown-menu-end">
                           <a href="Log_Riwayat.html" class="dropdown-item">Riwayat/Log</a>
-                          <a href="" class="dropdown-item">Modifikasi</a>
-                          <a href="" class="dropdown-item">Hapus</a>
+                          <a href="" class="dropdown-item">Tambahkan Ke<br>
+                            Daftar Monev</a>
+                            <a href="#modal2" data-bs-toggle="modal" class="dropdown-item"></i> Cetak</a>
                         </div>
                       </div>
                     </td>
@@ -351,19 +392,26 @@
                   <tr>
                     <td class="bs-checkbox "><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></td>
                     <td>PT. Berlian Digital</td>
+                    <td>Perusahaan Terbatas (PT)</td>
                     <td>Rekasa</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail bmp">Bouncing namun Mengkonfirmasi Perubahan</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
+                    <td>009622.01/DJAI.PSE/02/2023</td>
+                    <td>services.clipon.co.id</td>
+                    <td>Sektor Keuangan</td>
+                    <td>22.354.77.11</td>
+                    <td>Wisma Slipi Lantai 2, JL.Letjen S Parman Kav.11</td>
+                    <td>DKI JAKARTA</td>
+                    <td>KOTA ADM. JAKARTA BARAT</td>
+                    <td>PAL MERAH</td>
+                    <td>KEMANGGISAN</td>
+                    <td class="center-table"><label class="c-tidaksuspend">Tidak Suspend</label></td>
                     <td>
                       <div class="dropdown">
                         <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
                         <div class="dropdown-menu dropdown-menu-end">
                           <a href="Log_Riwayat.html" class="dropdown-item">Riwayat/Log</a>
-                          <a href="" class="dropdown-item">Modifikasi</a>
-                          <a href="" class="dropdown-item">Hapus</a>
+                          <a href="" class="dropdown-item">Tambahkan Ke<br>
+                            Daftar Monev</a>
+                            <a href="#modal2" data-bs-toggle="modal" class="dropdown-item"></i> Cetak</a>
                         </div>
                       </div>
                     </td>
@@ -371,19 +419,26 @@
                   <tr>
                     <td class="bs-checkbox "><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></td>
                     <td>PT. Indo Tekino</td>
+                    <td>Perusahaan Terbatas (PT)</td>
                     <td>Rekuno</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail mmsta">Menjawab dan Mengabarkan Sudah Tidak Aktif</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
+                    <td>009622.01/DJAI.PSE/02/2023</td>
+                    <td>hoosockster.com</td>
+                    <td>Sektor Keuangan</td>
+                    <td>101.523.55.11</td>
+                    <td>GOWORK, CENTRAL PARK MALL LEVEL LG UNIT 312, JL. LETJEN. S. PARMAN NO. 21</td>
+                    <td>DKI JAKARTA</td>
+                    <td>KOTA ADM. JAKARTA BARAT</td>
+                    <td>GROGOL PETAMBURAN</td>
+                    <td>TANJUNG DUREN SELATAN</td>
+                    <td class="center-table">-</td>
                     <td>
                       <div class="dropdown">
                         <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
                         <div class="dropdown-menu dropdown-menu-end">
                           <a href="Log_Riwayat.html" class="dropdown-item">Riwayat/Log</a>
-                          <a href="" class="dropdown-item">Modifikasi</a>
-                          <a href="" class="dropdown-item">Hapus</a>
+                          <a href="" class="dropdown-item">Tambahkan Ke<br>
+                            Daftar Monev</a>
+                            <a href="#modal2" data-bs-toggle="modal" class="dropdown-item"></i> Cetak</a>
                         </div>
                       </div>
                     </td>
@@ -391,39 +446,26 @@
                   <tr>
                     <td class="bs-checkbox"><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></td>
                     <td>PT. Digital Uang</td>
+                    <td>Perusahaan Terbatas (PT)</td>
                     <td>Exindo</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail tam">Tidak Ada Email</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
+                    <td>009622.01/DJAI.PSE/02/2023</td>
+                    <td>kreatif-kinetics.com</td>
+                    <td>Sektor Keuangan</td>
+                    <td>192.198.1.1</td>
+                    <td>APL Tower lantai 21 unit 14 Central Park, Jalan Letjen S Parman Kaveling 22</td>
+                    <td>DKI JAKARTA</td>
+                    <td>KOTA ADM. JAKARTA BARAT</td>
+                    <td>GROGOL PETAMBURAN</td>
+                    <td>TANJUNG DUREN SELATAN</td>
+                    <td class="center-table">-</td>
                     <td>
                       <div class="dropdown">
                         <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
                         <div class="dropdown-menu dropdown-menu-end">
                           <a href="Log_Riwayat.html" class="dropdown-item">Riwayat/Log</a>
-                          <a href="" class="dropdown-item">Modifikasi</a>
-                          <a href="" class="dropdown-item">Hapus</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 70px;" class="bs-checkbox"><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></td>
-                    <td>PT. Digital Uang</td>
-                    <td>Exindo</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail mmp">Menjawab dan Mengkonfirmasi Perubahan</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
-                    <td>
-                      <div class="dropdown">
-                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a href="Log_Riwayat.html" class="dropdown-item">Riwayat/Log</a>
-                          <a href="" class="dropdown-item">Modifikasi</a>
-                          <a href="" class="dropdown-item">Hapus</a>
+                          <a href="" class="dropdown-item">Tambahkan Ke<br>
+                            Daftar Monev</a>
+                            <a href="#modal2" data-bs-toggle="modal" class="dropdown-item"></i> Cetak</a>
                         </div>
                       </div>
                     </td>
@@ -431,49 +473,84 @@
                   <tr>
                     <td class="bs-checkbox"><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></td>
                     <td>PT. Digital Uang</td>
+                    <td>Perusahaan Terbatas (PT)</td>
                     <td>Exindo</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail btt">Bouncing dan Tidak Terkonfirmasi</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
+                    <td>009622.01/DJAI.PSE/02/2023</td>
+                    <td>Cobassstore.co.id</td>
+                    <td>Sektor Keuangan</td>
+                    <td>192.198.1.1</td>
+                    <td>Komplek Ketapang Indah Blok D Nomor 11, Jl. KH Zainul Arifin</td>
+                    <td>DKI JAKARTA</td>
+                    <td>KOTA ADM. JAKARTA BARAT</td>
+                    <td>TAMAN SARI</td>
+                    <td>Krukut</td>
+                    <td class="center-table">-</td>
                     <td>
                       <div class="dropdown">
                         <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
                         <div class="dropdown-menu dropdown-menu-end">
                           <a href="Log_Riwayat.html" class="dropdown-item">Riwayat/Log</a>
-                          <a href="" class="dropdown-item">Modifikasi</a>
-                          <a href="" class="dropdown-item">Hapus</a>
+                          <a href="" class="dropdown-item">Tambahkan Ke<br>
+                            Daftar Monev</a>
+                            <a href="#modal2" data-bs-toggle="modal" class="dropdown-item"></i> Cetak</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bs-checkbox"><input class="c-c" data-index="7" name="btSelectItem" type="checkbox"></td>
+                    <td>PT. Digital Uang</td>
+                    <td>Perusahaan Terbatas (PT)</td>
+                    <td>Exindo</td>
+                    <td>009622.01/DJAI.PSE/02/2023</td>
+                    <td>https://www.kotagkoin.com/</td>
+                    <td>Sektor Keuangan</td>
+                    <td>192.198.1.1</td>
+                    <td>Grand Slipi Tower Lantai 32 Unit F, Jl. S. Parman Kav. 42-62.</td>
+                    <td>DKI JAKARTA</td>
+                    <td>KOTA ADM. JAKARTA BARAT</td>
+                    <td>PALMERAH</td>
+                    <td>Palmerah</td>
+                    <td class="center-table">-</td>
+                    <td>
+                      <div class="dropdown">
+                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a href="Log_Riwayat.html" class="dropdown-item">Riwayat/Log</a>
+                          <a href="" class="dropdown-item">Tambahkan Ke<br>
+                            Daftar Monev</a>
+                            <a href="#modal2" data-bs-toggle="modal" class="dropdown-item"></i> Cetak</a>
                         </div>
                       </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <div class="table-pagination">
-                <div class="halaman-table mr-48">
-                  <span class="label-pagination">halaman :</span><div class="pagination-number">20</div><span class="label-pagination">dari 1586</span>
+            </div><!-- table-responsive -->
+            <div class="table-pagination">
+              <div class="halaman-table mr-48">
+                <span class="label-pagination">halaman :</span><div class="pagination-number">20</div><span class="label-pagination">dari 1586</span>
+              </div>
+              <div class="halaman-table mr-48">
+                <span class="label-pagination">data per halaman :</span>
+                <div class="pagination-page"> 
+                  <select class="form-select select2">
+                    <option value="10">10</option>
+                    <option value="50">50</option>
+                    <option value="200">200</option>
+                    <option value="250">250</option>
+                    <option value="500">500</option>
+
+                  </select>
                 </div>
-                <div class="halaman-table mr-48">
-                  <span class="label-pagination">data per halaman :</span>
-                  <div class="pagination-page"> 
-                    <select class="form-select select2">
-                      <option value="10">10</option>
-                      <option value="50">50</option>
-                      <option value="200">200</option>
-                      <option value="250">250</option>
-                      <option value="500">500</option>
-                    </select>
-                  </div>
-                  <div>
-                    <button class="btn-page"><i class="ri-skip-back-fill"></i></i></button>
-                    <button class="btn-page"><i class="ri-arrow-left-s-line"></i></button>
-                    <button class="btn-page"><i class="ri-arrow-right-s-line"></i></button>
-                    <button class="btn-page"><i class="ri-skip-forward-fill"></i></i></button>
-                  </div>
+                <div>
+                  <button class="btn-page"><i class="ri-skip-back-fill"></i></i></button>
+                  <button class="btn-page"><i class="ri-arrow-left-s-line"></i></button>
+                  <button class="btn-page"><i class="ri-arrow-right-s-line"></i></button>
+                  <button class="btn-page"><i class="ri-skip-forward-fill"></i></i></button>
                 </div>
               </div>
-            </div><!-- table-responsive -->
+            </div>
            
           </div><!-- card-body -->
         </div><!-- card -->
@@ -575,7 +652,7 @@
             <div class="modal-isi">084562158638</div>
           </div>
         </div>
-        <div class="btn-simpan"><button>Simpan</button></div>
+        <div class="btn-simpan"><button>Cetak</button></div>
       </div>
     </div>
   </div>

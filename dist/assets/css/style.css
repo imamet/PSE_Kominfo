@@ -6185,6 +6185,14 @@ i.ri-filter-line{
 .photo-profil{
   margin-right: 13px;
 }
+.modal-subtitle {
+    color: #878787;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .noted-profile {
     color: #667085;
     font-size: 8px;
@@ -6717,6 +6725,28 @@ i.ri-more-fill {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.label-email {
+    color: #B2B3B9;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.label-user {
+    color: #304E6B;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.modal-flex{
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.pl-0{
+  padding-left: 0px !important;
 }
 .w-f3{
   width: 700px;

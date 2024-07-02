@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="../lib/apexcharts/apexcharts.css">
   <link rel="stylesheet" href="../lib/prismjs/themes/prism.min.css">
   <link rel="stylesheet" href="../lib/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../lib/bootstrap-tagsinput/bootstrap-tagsinput.css">
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -45,13 +46,14 @@
             <a href="" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
           </li>
           <li class="nav-item">
-            <a href="Data_TDPSE.html" class="nav-link"><i class="ri-server-line"></i><span>Data Tata Kelola</span></a>
+            <a href="Data_Tata_Kelola.html" class="nav-link"><i class="ri-server-line"></i><span>Data Tata Kelola</span></a>
           </li>
           <li class="nav-item">
             <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
           </li>
           <li class="nav-item">
-            <a href="Daftar_Kegiatan_Monev.html" class="nav-link"><i class="ri-briefcase-4-line"></i><span>Kegiatan Monev</span></a>
+            <a href="Daftar_Kegiatan_Monev.html" class="nav-link"><i class="ri-briefcase-4-line"></i><span>Kegiatan
+                Monev</span></a>
           </li>
           <li class="nav-item">
             <a href="Data_Hasil_Validasi.html" class="nav-link"><i class="ri-file-shield-2-line"></i><span>Data Hasil
@@ -63,7 +65,7 @@
         <a href="#" class="nav-label">PENGATURAN</a>
         <ul class="nav nav-sidebar">
           <li class="nav-item">
-            <a href="Management-user.html" class="nav-link active"><i class="ri-group-line"></i><span>Managemen
+            <a href="Management-user.html" class="nav-link active"><i class="ri-group-line"></i><span>Manajemen
                 User</span></a>
           </li>
           <li class="nav-item">
@@ -171,7 +173,7 @@
             </div>
           </div>
           <div class="btn-flex">
-            <a href="">
+            <a href="#modal1" data-bs-toggle="modal">
               <button><i class="ri-add-line"></i>Undang User</button>
             </a>
           </div>
@@ -223,7 +225,7 @@
               <td>rafaeljarvis2658@gmail.com</td>
               <td class="center-table">
                 <select class="form-select select2">
-                  <option value="" >Admin</option>
+                  <option value="">Admin</option>
                   <option value="">Pengawas (Non ASN)</option>
                   <option value="" selected>Pengawas (ASN)</option>
                 </select>
@@ -236,7 +238,7 @@
               <td>lilislaterrr@gmail.com</td>
               <td class="center-table">
                 <select class="form-select select2">
-                  <option value="" >Admin</option>
+                  <option value="">Admin</option>
                   <option value="">Pengawas (Non ASN)</option>
                   <option value="" selected>Pengawas (ASN)</option>
                 </select>
@@ -255,12 +257,12 @@
                 </select>
               </td>
               <td class="center-table">04/06/2024 22:59:00</td>
-              <td  class="center-table"><label class="user-delete"><i class="ri-delete-bin-line"></i></label></td>
+              <td class="center-table"><label class="user-delete"><i class="ri-delete-bin-line"></i></label></td>
             </tr>
           </tbody>
         </table>
       </div>
-      
+
     </div>
   </div>
   <!-- main -->
@@ -270,96 +272,95 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-top">
-          <h5 class="modal-title">Tambah Kegiatan</h5>
+          <div>
+            <h5 class="modal-title">Undang User</h5>
+            <div class="modal-subtitle">Undang user by email</div>
+          </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="form-content mt-13">
+          <input type="text" class="form-control" value="johndoe@gmail.com" data-role="tagsinput">
+        </div>
         <div class="modal-box">
-          <form>
-            <div class="form-content">
-              <label for="exampleFormControlInput1" class="form-label">Nama  Kegiatan</label>
-              <input type="text" class="form-control" id="namakegiatan" placeholder="Monev Region Jawa Timur I">
-            </div>
-            <div class="form-content">
-              <label for="exampleFormControlInput1" class="form-label">Type</label>
-              <select class="form-select select2">
-                <option value="Offline">Offline</option>
-                <option value="Online">Online</option>
-              </select>
-            </div>
-            <div class="form-content">
-              <label for="exampleFormControlInput1" class="form-label">Lokasi  Kegiatan</label>
-              <div class="form-search f-w">
-                <i class="ri-search-line"></i>
-                <input type="text" class="form-control" placeholder="Palmerah, Gelora, Kota Jakarta Pusat">
+          <div class="modal-flex justify-content-between">
+            <div class="d-flex">
+              <span class="photo-user pl-0"><img src="../assets/img/user.jpg"></span>
+              <div>
+                <div class="label-user">Amal Burga</div>
+                <div class="label-email">amalburga203@gmail.com</div>
               </div>
             </div>
-            <div class="form-content">
-              <label for="exampleFormControlInput1" class="form-label">Tanggal  Kegiatan</label>
-              <input type="date" class="form-control" id="namakegiatan" placeholder="Monev Region Jawa Timur I">
+            <div>
+              <select class="form-select select2">
+                <option value="" selected>Admin</option>
+                <option value="">Pengawas (Non ASN)</option>
+                <option value="" >Pengawas (ASN)</option>
+              </select>
             </div>
-          </form>
-        </div>
-        <div class="btn-simpan"><button>Simpan</button></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- modal cetak -->
-  <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-top">
-          <div>
-            <h5 class="cetak-title">Tokokami</h5>
-            <span class="cetak-desc">PT. Berkah Jaya</span>
           </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-line"></div>
-        <div class="modal-box">
-          <div class="form-group1">
-            <div class="modal-label">No TDPSE</div>
-            <div class="modal-isi">009622.01/DJAI.PSE/02/2023</div>
+          <div class="modal-flex justify-content-between">
+            <div class="d-flex">
+              <span class="photo-user pl-0"><img src="../assets/img/user1.jpg"></span>
+              <div>
+                <div class="label-user">Rafael O</div>
+                <div class="label-email">rafaelolix@gmail.com</div>
+              </div>
+            </div>
+            <div>
+              <select class="form-select select2">
+                <option value="">Admin</option>
+                <option value="">Pengawas (Non ASN)</option>
+                <option value="" selected>Pengawas (ASN)</option>
+              </select>
+            </div>
           </div>
-          <div class="form-group1">
-            <div class="modal-label">IP Server</div>
-            <div class="modal-isi">11.253.11.556</div>
+          <div class="modal-flex justify-content-between">
+            <div class="d-flex">
+              <span class="photo-user pl-0"><img src="../assets/img/user2.jpg"></span>
+              <div>
+                <div class="label-user">Lili Slater</div>
+                <div class="label-email">lilislaterrr@gmail.com</div>
+              </div>
+            </div>
+            <div>
+              <select class="form-select select2">
+                <option value="">Admin</option>
+                <option value="">Pengawas (Non ASN)</option>
+                <option value="" selected>Pengawas (ASN)</option>
+              </select>
+            </div>
           </div>
-          <div class="form-group1">
-            <div class="modal-label">Nama Sistem Elektronik</div>
-            <div class="modal-isi">Tokokami</div>
+          <div class="modal-flex justify-content-between">
+            <div class="d-flex">
+              <span class="photo-user pl-0"><img src="../assets/img/user3.jpg"></span>
+              <div>
+                <div class="label-user">Gilbert Flores</div>
+                <div class="label-email">gilbertflores@gmail.com</div>
+              </div>
+            </div>
+            <div>
+              <select class="form-select select2">
+                <option value="">Admin</option>
+                <option value="">Pengawas (Non ASN)</option>
+                <option value="" selected>Pengawas (ASN)</option>
+              </select>
+            </div>
           </div>
-          <div class="form-group1">
-            <div class="modal-label">Nama Perusahaan</div>
-            <div class="modal-isi">PT. Berkah Jaya </div>
-          </div>
-          <div class="form-group1">
-            <div class="modal-label">Badan Hukum</div>
-            <div class="modal-isi">Perseroan Terbatas</div>
-          </div>
-          <div class="form-group1">
-            <div class="modal-label">Website</div>
-            <div class="modal-isi">www.tokokami.co.id</div>
-          </div>
-          <div class="form-group1">
-            <div class="modal-label">Sektor</div>
-            <div class="modal-isi">Sektor Kesehatan</div>
-          </div>
-          <div class="form-group1">
-            <div class="modal-label">Alamat Fisik</div>
-            <div class="modal-isi">Jl. Ruko Niaga, Tanjung Sawah Besar No 12</div>
-          </div>
-          <div class="form-group1">
-            <div class="modal-label">Penanggung Jawab</div>
-            <div class="modal-isi">Olivia Meriska</div>
-          </div>
-          <div class="form-group1">
-            <div class="modal-label">Email Penanggung Jawab</div>
-            <div class="modal-isi">olivia@tokokami.co.id</div>
-          </div>
-          <div class="form-group1">
-            <div class="modal-label">No Telepon Penanggung Jawab</div>
-            <div class="modal-isi">084562158638</div>
+          <div class="modal-flex justify-content-between">
+            <div class="d-flex">
+              <span class="photo-user pl-0"><img src="../assets/img/user.jpg"></span>
+              <div>
+                <div class="label-user">John Doe</div>
+                <div class="label-email">johndoe654@gmail.com</div>
+              </div>
+            </div>
+            <div>
+              <select class="form-select select2">
+                <option value="">Admin</option>
+                <option value="" selected>Pengawas (Non ASN)</option>
+                <option value="">Pengawas (ASN)</option>
+              </select>
+            </div>
           </div>
         </div>
         <div class="btn-simpan"><button>Simpan</button></div>
@@ -375,6 +376,7 @@
   <script src="../lib/prismjs/prism.js"></script>
   <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
   <script src="../lib/select2/js/select2.full.min.js"></script>
+  <script src="../lib/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
 
   <script src="../assets/js/script.js"></script>
   <script src="../assets/js/db.data.js"></script>
