@@ -235,3 +235,16 @@ $(document).ready(function(){
       });
   }).change();
 });
+
+// upload photo profile
+const imageUploader = document.querySelector("input");
+const imagePreview = document.querySelector(".showphoto");
+
+function showImage() {
+  let reader = new FileReader();
+ reader.readAsDataURL(imageUploader.files[0]);
+  reader.onload = function(e) {
+    imagePreview.classList.add("show");
+    imagePreview.src = e.target.result;
+  };
+}

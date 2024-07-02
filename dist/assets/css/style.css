@@ -6110,7 +6110,7 @@ i.ri-filter-line{
 }
 .alamat-akhir{
   width: 179px;
-  height: 220px !important;
+  height: auto !important;
   border-radius: 0px !important;
 }
 .absolute{
@@ -6136,6 +6136,79 @@ i.ri-filter-line{
     line-height: 18px;
     border-radius: 16px;
     background: #f0f1f5;
+}
+
+.btn-batal {
+  width: 170px;
+    color: #344054;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.btn-simpan {
+    width: 170px;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #007AB8;
+    background: #0093DD;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+.btn-hapus {
+  background: transparent;
+    cursor: pointer;
+    padding-bottom: 10;
+    margin-top: 21px;
+    border: none;
+    color: #EC4545;
+    font-size: 12px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.photo-profil{
+  margin-right: 13px;
+}
+.noted-profile {
+    color: #667085;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 4px;
+}
+.label-profile {
+    color: #304E6B;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 4px;
+}
+.card-profile {
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+    background: #fff;
+    padding: 10px 11px;
 }
 
 
