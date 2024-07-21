@@ -15981,6 +15981,10 @@ line-height: normal;
 .table-two tbody td:last-child {
   padding-right: 0;
 } */
+.bg-hasilmonev{
+  background: #FDFFA7;
+  padding: 15px;
+}
 .c-tunda {
     padding: 2px 8px;
     font-size: 12px;
@@ -26738,3 +26742,4 @@ textarea.parsley-success:focus {
       flex-direction: unset;
     }
 }
+

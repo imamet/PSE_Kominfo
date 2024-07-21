@@ -228,6 +228,10 @@ $(document).ready(function(){
               $(".box").not(".tidakada").hide();
               $(".tidakada").show();
           }
+          else if($(this).attr("value")=="tunda"){
+              $(".box").not(".tunda").hide();
+              $(".tunda").show();
+          }
           else{
               $(".box").hide();
               $(".ada").show();

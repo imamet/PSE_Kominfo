@@ -47,11 +47,11 @@
             <a href="Data_Tata_Kelola.html" class="nav-link"><i class="ri-server-line"></i><span>Data Tata Kelola</span></a>
           </li>
           <li class="nav-item">
-            <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
-          </li>
-          <li class="nav-item">
             <a href="Daftar_Kegiatan_Monev.html" class="nav-link active"><i
                 class="ri-briefcase-4-line"></i><span>Kegiatan Monev</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
           </li>
           <li class="nav-item">
             <a href="Data_Hasil_Validasi.html" class="nav-link"><i class="ri-file-shield-2-line"></i><span>Data Hasil
@@ -212,6 +212,10 @@
                   </div>
                 </div>
               </div>
+              <div class="form-content">
+                <label for="exampleFormControlInput1" class="form-label">Tanggal Validasi Awal</label>
+                <input type="date" class="form-control" id="namakegiatan" placeholder="22 April 2024">
+              </div>
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <div class="accordion-header" id="headingOne">
@@ -240,11 +244,11 @@
                         <input type="text" class="form-control" id="namakegiatan" placeholder="0847714491844">
                       </div>
                       <div class="form-content">
-                        <label for="exampleFormControlInput1" class="form-label">Tanggal SMS Terkirim</label>
+                        <label for="exampleFormControlInput1" class="form-label">Tanggal SMS/WA Terkirim</label>
                         <input type="date" class="form-control" id="namakegiatan" placeholder="22 April 2024">
                       </div>
                       <div class="form-content">
-                        <label for="exampleFormControlInput1" class="form-label">Jam SMS Terkirim</label>
+                        <label for="exampleFormControlInput1" class="form-label">Jam SMS/WA Terkirim</label>
                         <input type="time" class="form-control" id="namakegiatan" placeholder="10:46:25 WIB">
                       </div>
                       <div class="form-content">
@@ -1352,6 +1356,7 @@
                       <textarea class="form-control h-10" id="exampleFormControlTextarea1" rows="3"
                         placeholder=" Alamat Fisik Sistem Elektronik Tokokami ditemukan sesuai dengan informasi pendaftaran TDPSE, tetapi data pendaftaran tidak dapat dikonfirmasi karena alamat kosong dan penanggung jawab tidak ada di tempat "></textarea>
                     </div>
+                    <div class="bg-hasilmonev">
                     <div class="label-title mt-36">Hasil Monev</div>
                     <div class="form-content">
                       <label for="exampleFormControlInput1" class="form-label">Status Tindak Lanjut</label>
@@ -1364,6 +1369,7 @@
                       <label for="exampleFormControlInput1" class="form-label">Keterangan</label>
                       <textarea class="form-control h-10" id="exampleFormControlTextarea1" rows="3"
                         placeholder=" - Alamat Fisik Sistem Elektronik Tokokami ditemukan sesuai dengan informasi pendaftaran TDPSE, tetapi data pendaftaran tidak dapat dikonfirmasi karena alamat kosong dan penanggung jawab tidak ada di tempat. "></textarea>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -2261,7 +2267,7 @@
             </div>
             <div class="d-flex justify-content-between mt-36">
               <div class="ttd-pengawas">
-                <div class="kegiatan-label">Pengawas</div>
+                <div class="kegiatan-label">Validator Akhir</div>
                 <div class="add-ttd"><span><i class="ri-add-line"></i></span>Tambah Tanda Tangan</div>
                 <div class="ttd-isi">Amal Burga</div>
                 <div class="ttd-isi">NIP 2024.2157639</div>
