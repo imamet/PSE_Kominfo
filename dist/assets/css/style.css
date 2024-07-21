@@ -4908,7 +4908,10 @@ ul#select2-select2F-results {
   padding-left: 0;
   list-style: none;
 }
-
+.w-tb{
+  width: 100%;
+  white-space: wrap !important;
+}
 .page-link {
   position: relative;
   display: block;
@@ -16064,7 +16067,7 @@ line-height: normal;
   background: #d6eebe;
 }
 
-i.ri-add-line {
+i.ri-add-line, i.ri-printer-line {
   font-size: 20px;
   padding-right: 5px;
 }
