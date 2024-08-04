@@ -5967,6 +5967,14 @@ i.ri-filter-line{
     justify-content: center;
     align-items: center;
 }
+/*  */
+.highlight{
+  background: #ddd;
+}
+table tr td{
+  border: solid thin #ccc;
+}
+/*  */
 .s-se{
   margin-left: 0px !important;
   width: 100% !important;

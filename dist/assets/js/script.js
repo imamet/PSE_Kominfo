@@ -200,6 +200,13 @@ $('.filter-footer').on('click',function () {
 //   $('body').toggleClass('sidebar-show');
 // });
 
+// change background check box table
+$(function() {
+  $('td:first-child input').change(function() {
+    $(this).closest('tr').toggleClass("highlight", this.checked);
+  });
+});
+
 
 $('#wizard3').steps({
   headerTag: 'h3',
@@ -252,3 +259,4 @@ function showImage() {
     imagePreview.src = e.target.result;
   };
 }
+
