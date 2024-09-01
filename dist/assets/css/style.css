@@ -6609,6 +6609,13 @@ i.ri-focus-3-line {
   width: 349px;
   margin-right: 48px;
 }
+.validasi-akhir{
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+  height: 370px;
+}
 .mb-29{
   margin-bottom: 29px;
 }
@@ -6828,6 +6835,12 @@ td a{
     border: 1px solid #007AB8;
     background: #0093DD;
     box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+.loader-modal{
+  height: 70px;
+}
+.icon-loadermodal img{
+  width: 50px !important;
 }
 
 .bootstrap-tagsinput input {
