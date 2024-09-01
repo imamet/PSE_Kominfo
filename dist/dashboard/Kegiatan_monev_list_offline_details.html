@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
   <link rel="stylesheet" href="../lib/jqvmap/jqvmap.min.css">
   <link rel="stylesheet" href="../lib/apexcharts/apexcharts.css">
+  <link rel="stylesheet" href="../lib/bootstrap-tagsinput/bootstrap-tagsinput.css">
   <link rel="stylesheet" href="../lib/prismjs/themes/prism.min.css">
   <link rel="stylesheet" href="../lib/select2/css/select2.min.css">
 
@@ -228,7 +229,8 @@
                     <div class="accordion-body">
                       <div class="form-content">
                         <label for="exampleFormControlInput1" class="form-label">Email Responden</label>
-                        <input type="email" class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com">
+                        <input type="email" class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com, olivia@untitledui.com, olivia@untitledui.com">
+                        <label class="label-addemail">Gunakan tanda titik koma (,) sebagai pemisah jika lebih dari 1 alamat email</label>
                       </div>
                       <div class="form-content">
                         <label for="exampleFormControlInput1" class="form-label">Tanggal Email Terkirim</label>
@@ -281,7 +283,8 @@
                     <div class="accordion-body">
                       <div class="form-content">
                         <label for="exampleFormControlInput1" class="form-label">Email Responden</label>
-                        <input type="email" class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com">
+                        <input type="email" class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com, olivia@untitledui.com, olivia@untitledui.com">
+                        <label class="label-addemail">Gunakan tanda titik koma (,) sebagai pemisah jika lebih dari 1 alamat email</label>
                       </div>
                       <div class="form-content">
                         <label for="exampleFormControlInput1" class="form-label">Tanggal Email Terkirim</label>
@@ -334,7 +337,8 @@
                     <div class="accordion-body">
                       <div class="form-content">
                         <label for="exampleFormControlInput1" class="form-label">Email Responden</label>
-                        <input type="email" class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com">
+                        <input type="email" class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com, olivia@untitledui.com, olivia@untitledui.com">
+                        <label class="label-addemail">Gunakan tanda titik koma (,) sebagai pemisah jika lebih dari 1 alamat email</label>
                       </div>
                       <div class="form-content">
                         <label for="exampleFormControlInput1" class="form-label">Tanggal Email Terkirim</label>
@@ -387,7 +391,8 @@
                     <div class="accordion-body">
                       <div class="form-content">
                         <label for="exampleFormControlInput1" class="form-label">Email Responden</label>
-                        <input type="email" class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com">
+                        <input type="email" class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com, olivia@untitledui.com, olivia@untitledui.com">
+                        <label class="label-addemail">Gunakan tanda titik koma (,) sebagai pemisah jika lebih dari 1 alamat email</label>
                       </div>
                       <div class="form-content">
                         <label for="exampleFormControlInput1" class="form-label">Tanggal Email Terkirim</label>
@@ -440,7 +445,8 @@
                     <div class="accordion-body">
                       <div class="form-content">
                         <label for="exampleFormControlInput1" class="form-label">Email Responden</label>
-                        <input type="email" class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com">
+                        <input type="email" class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com, olivia@untitledui.com, olivia@untitledui.com">
+                        <label class="label-addemail">Gunakan tanda titik koma (,) sebagai pemisah jika lebih dari 1 alamat email</label>
                       </div>
                       <div class="form-content">
                         <label for="exampleFormControlInput1" class="form-label">Tanggal Email Terkirim</label>
@@ -1016,6 +1022,17 @@
                   </div>
                 </div>
               </div>
+              <div class="form-content">
+                <label for="exampleFormControlInput1" class="form-label">Dokumen Pendukung</label>
+                <div id="sortableImgThumbnailPreview">
+                </div>
+              </div>
+              <div class="form-content pb-10">
+                <div class="d-flex">
+                  <div class="upload-btn"><i class="ri-upload-2-line"></i> Unggah Gambar <input id="files"
+                      type="file" multiple title="" /></div>
+                </div>
+              </div>
               <div class="tidakada box">
                 <div class="label-title">Verifikasi</div>
                 <div class="kegiatan-group">
@@ -1046,6 +1063,16 @@
                 class="c-b">PT. Berkah Jaya</span></div>
             <div class="w-f3">
               <div class="label-title">Data Induk Perusahaan</div>
+              <div class="form-content">
+                <label for="exampleFormControlInput1" class="form-label">Salin dari data SE</label>
+                <select class="form-select select2">
+                  <option value="tokokami" selected>1. Tokokami</option>
+                  <option value="beritaku">2. Beritaku</option>
+                  <option value="cuan kripto">3. Cuan Kripto</option>
+                  <option value="speedo">4. Speedo</option>
+                  <option value="rekasa">5. Rekasa</option>
+                </select>
+              </div>
               <div class="form-content">
                 <label for="exampleFormControlInput1" class="form-label">Nama Perusahaan</label>
                 <input type="text" class="form-control" id="namakegiatan" placeholder="PT. Berkah Jaya">
@@ -1741,7 +1768,7 @@
                   <p class="font-akhir">HRD</p>
                 </div>
               </div>
-              <div class="validasi-akhir">
+              <!-- <div class="validasi-akhir">
                 <div class="kegiatan-group">
                   <div class="kegiatan-label">Pengawas 1</div>
                   <p class="font-akhir">Amal Burga</p>
@@ -1754,7 +1781,7 @@
                   <div class="kegiatan-label">Pengawas 3</div>
                   <p class="font-akhir">-</p>
                 </div>
-              </div>
+              </div> -->
             </div>
             <!--  -->
             <div class="label-title mb-11 mb-29">Pencocokan Data PSE</div>
@@ -3316,9 +3343,23 @@
               </div>
             </div>
             <!--  -->
-
+            <div class="label-title mb-29">Pengawas</div>
+             <div class="validasi-akhir">
+                <div class="kegiatan-group">
+                  <div class="kegiatan-label">Pengawas 1</div>
+                  <p class="font-akhir">Amal Burga</p>
+                </div>
+                <div class="kegiatan-group">
+                  <div class="kegiatan-label">Pengawas 2</div>
+                  <p class="font-akhir">Refisca</p>
+                </div>
+                <div class="kegiatan-group">
+                  <div class="kegiatan-label">Pengawas 3</div>
+                  <p class="font-akhir">Afif</p>
+                </div>
+              </div>
             <!--  -->
-            <div class="label-title">Verifikasi</div>
+            <div class="label-title mt-36">Verifikasi</div>
             <div class="kegiatan-group">
               <p class="font-akhir">Dengan ini kami menyatakan bahwa data-data diatas dibuat dengan sebenar-benarnya dan
                 telah diverifikasi hari ini pada tanggal 22 Juni 2024.</p>
@@ -3336,6 +3377,9 @@
                 <div class="ttd-isi">Amal Burga</div>
                 <div class="ttd-isi">NIP 2024.2157639</div>
               </div>
+            </div>
+            <div class="kirim-btno">
+              <a href="#modal22" data-bs-toggle="modal"><button class="btn-h">x</button></a>
             </div>
           </div>
         </div>
@@ -3733,12 +3777,72 @@
     </div>
   </div>
 
+  <!-- modal cetak surat -->
+  <div class="modal fade" id="modal22" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-top">
+          <div>
+            <h5 class="perusahaan-nama">Konfirmasi Hasil Rekomendasi</h5>
+            <span class="perusahaan-desc">Berikut ini adalah hasil rekomendasi  <span class="c-b">10</span> TDPSE yang dikelola <span
+                class="c-b">PT. Berkah Jaya</span>.</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-box laporan-box">
+          <div class="laporan-group">
+            <div class="d-flex justify-content-between">
+              <label>1. Tokokami</label>
+              <div class="d-flex align-items-center"><div class="c-tidaksuspend">Tidak Suspend</div><a href=""><div class="modif-table header-link" data-bs-toggle="tooltip" title="" data-bs-original-title="Cetak Surat Penjatuhan Sanksi"><i class="ri-printer-line"></i></div></a></div>
+            </div>
+          </div>
+          <div class="laporan-group">
+            <div class="d-flex justify-content-between">
+              <label>2. Beritaku</label>
+              <div class="d-flex align-items-center"><div class="c-suspend">Suspend</div><a href=""><div class="modif-table header-link" data-bs-toggle="tooltip" title="" data-bs-original-title="Cetak Surat Penjatuhan Sanksi"><i class="ri-printer-line"></i></div></a></div>
+            </div>
+          </div>
+          <div class="laporan-group">
+            <div class="d-flex justify-content-between">
+              <label>3. Cuan Kripto</label>
+              <div class="d-flex align-items-center"><div class="c-suspend">Suspend</div><a href=""><div class="modif-table header-link" data-bs-toggle="tooltip" title="" data-bs-original-title="Cetak Surat Penjatuhan Sanksi"><i class="ri-printer-line"></i></div></a></div>
+            </div>
+          </div>
+          <div class="laporan-group">
+            <div class="d-flex justify-content-between">
+              <label>4. Speedo</label>
+              <div class="d-flex align-items-center"><div class="c-tidaksuspend">Tidak Suspend</div><a href=""><div class="modif-table header-link" data-bs-toggle="tooltip" title="" data-bs-original-title="Cetak Surat Penjatuhan Sanksi"><i class="ri-printer-line"></i></div></a></div>
+            </div>
+          </div>
+          <div class="laporan-group">
+            <div class="d-flex justify-content-between">
+              <label>5. Rekasa</label>
+              <div class="d-flex align-items-center"><div class="c-tidaksuspend">Tidak Suspend</div><a href=""><div class="modif-table header-link" data-bs-toggle="tooltip" title="" data-bs-original-title="Cetak Surat Penjatuhan Sanksi"><i class="ri-printer-line"></i></div></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="laporan-text mb-29">
+          Apakah Anda yakin ingin mengirim hasil rekomendasi ini?
+        </div>
+        <div class="d-flex justify-content-between">
+          <a href="">
+            <div class="batal-btn">Batal</div>
+          </a>
+          <a href="">
+            <div class="kirim-btn">Kirim</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../lib/jquery/jquery.min.js"></script>
   <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
   <script src="../lib/jqvmap/jquery.vmap.min.js"></script>
   <script src="../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
   <script src="../lib/prismjs/prism.js"></script>
+  <script src="../lib/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
   <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
   <script src="../lib/select2/js/select2.full.min.js"></script>
   <script src="../lib/parsleyjs/parsley.min.js"></script>

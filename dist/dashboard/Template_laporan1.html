@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Meta -->
+  <meta name="description" content="">
+  <meta name="author" content="Themepixels">
+
+  <!-- Favicon -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png"> -->
+  <link rel="shortcut icon" href="https://www.kominfo.go.id/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="https://www.kominfo.go.id/favicon/favicon.ico" />
+
+  <title>Template Laporan | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="stylesheet" href="../lib/jqvmap/jqvmap.min.css">
+  <link rel="stylesheet" href="../lib/apexcharts/apexcharts.css">
+  <link rel="stylesheet" href="../lib/prismjs/themes/prism.min.css">
+  <link rel="stylesheet" href="../lib/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../lib/quill/quill.core.css">
+  <link rel="stylesheet" href="../lib/quill/quill.snow.css">
+  <link rel="stylesheet" href="../lib/quill/quill.bubble.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <a href="./" class="sidebar-logo">
+        <img src="../assets/svg/logo.svg">
+      </a>
+    </div><!-- sidebar-header -->
+    <div id="sidebarMenu" class="sidebar-body">
+      <div class="nav-group show">
+        <a href="#" class="nav-label">MENU UTAMA</a>
+        <ul class="nav nav-sidebar">
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Data_Tata_Kelola.html" class="nav-link"><i class="ri-server-line"></i><span>Data Tata
+                Kelola</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Daftar_Kegiatan_Monev.html" class="nav-link active"><i
+                class="ri-briefcase-4-line"></i><span>Kegiatan Monev</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Data_Hasil_Validasi.html" class="nav-link"><i class="ri-file-shield-2-line"></i><span>Data Hasil
+                Validasi</span></a>
+          </li>
+        </ul>
+      </div><!-- nav-group -->
+      <div class="nav-group show">
+        <a href="#" class="nav-label">PENGATURAN</a>
+        <ul class="nav nav-sidebar">
+          <li class="nav-item">
+            <a href="Management-user.html" class="nav-link"><i class="ri-group-line"></i><span>Manajemen
+                User</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Template_laporan.html" class="nav-link"><i class="ri-file-text-line"></i><span>Template
+                Laporan</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Login.html" class="nav-link"><i class="ri-logout-box-r-line"></i><span>Log
+                out</span></a>
+          </li>
+        </ul>
+      </div><!-- nav-group -->
+
+    </div><!-- sidebar-body -->
+
+  </div><!-- sidebar -->
+
+  <div class="header-main">
+    <a id="menuSidebar" href="#" class="menu-link me-3 me-lg-4"><i class="ri-menu-2-fill"></i></a>
+    <div class="me-auto">
+    </div>
+    <div class="dropdown dropdown-notification ms-3 ms-xl-4">
+      <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside"><small>3</small><i
+          class="ri-notification-3-line"></i></a>
+      <div class="dropdown-menu dropdown-menu-end mt-10-f me--10-f">
+        <div class="dropdown-menu-header">
+          <h6 class="dropdown-menu-title">Notifications</h6>
+        </div><!-- dropdown-menu-header -->
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="avatar online"><img src="../assets/img/img10.jpg" alt=""></div>
+            <div class="list-group-body">
+              <p><strong>Dominador Manuel</strong> and <strong>100 other people</strong> reacted to your comment "Tell
+                your partner that...</p>
+              <span>Aug 20 08:55am</span>
+            </div><!-- list-group-body -->
+          </li>
+          <li class="list-group-item">
+            <div class="avatar online"><img src="../assets/img/img11.jpg" alt=""></div>
+            <div class="list-group-body">
+              <p><strong>Angela Ighot</strong> tagged you and <strong>9 others</strong> in a post.</p>
+              <span>Aug 18 10:30am</span>
+            </div><!-- list-group-body -->
+          </li>
+          <li class="list-group-item">
+            <div class="avatar"><span class="avatar-initial bg-primary">a</span></div>
+            <div class="list-group-body">
+              <p>New listings were added that match your search alert <strong>house for rent</strong></p>
+              <span>Aug 15 08:10pm</span>
+            </div><!-- list-group-body -->
+          </li>
+          <li class="list-group-item">
+            <div class="avatar online"><img src="../assets/img/img14.jpg" alt=""></div>
+            <div class="list-group-body">
+              <p>Reminder: <strong>Jerry Cuares</strong> invited you to like <strong>Cuares Surveying Services</strong>.
+                <br><a href="">Accept</a> or <a href="">Decline</a></p>
+              <span>Aug 14 11:50pm</span>
+            </div><!-- list-group-body -->
+          </li>
+          <li class="list-group-item">
+            <div class="avatar online"><img src="../assets/img/img15.jpg" alt=""></div>
+            <div class="list-group-body">
+              <p><strong>Dyanne Aceron</strong> reacted to your post <strong>King of the Bed</strong>.</p>
+              <span>Aug 10 05:30am</span>
+            </div><!-- list-group-body -->
+          </li>
+        </ul>
+        <div class="dropdown-menu-footer"><a href="">Show all Notifications</a></div>
+      </div><!-- dropdown-menu -->
+    </div><!-- dropdown -->
+    <div class="dropdown dropdown-profile ms-3 ms-xl-4">
+      <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+        <div class="avatar online"><img src="../assets/img/user.jpg" alt=""></div>
+      </a>
+      <div class="dropdown-menu dropdown-menu-end mt-10-f">
+        <div class="dropdown-menu-body">
+          <div class="avatar avatar-xl online mb-3"><img src="../assets/img/user.jpg" alt=""></div>
+          <h5 class="mb-1 text-dark fw-semibold">Amal Burga</h5>
+          <p class="fs-sm text-secondary">Pengawas (ASN)</p>
+
+          <nav class="nav">
+            <a href="Edit_user.html"><i class="ri-edit-2-line"></i> Edit Profile</a>
+          </nav>
+          <hr>
+          <nav class="nav">
+            <a href=""><i class="ri-logout-box-r-line"></i> Log Out</a>
+          </nav>
+        </div><!-- dropdown-menu-body -->
+      </div><!-- dropdown-menu -->
+    </div><!-- dropdown -->
+  </div><!-- header-main -->
+
+  <div class="main main-app">
+    <div class="breadcrumb-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Template Laporan</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Template Laporan 1</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="main-header">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="main-left">
+          <div class="main-title">Template Laporan 1</div>
+        </div>
+        <div class="main-right">
+          <div class="laporan-nama">Dibuat oleh: <span class="c-b">Amal Burga</span> </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="surat-laporan">
+          <div class="header-laporan">
+            <img src="../assets/img/laporan/header.jpg" alt="">
+          </div>
+          <div class="judul-laporan">
+            LAPORAN PELAKSANAAN TUGAS MONITORING DAN EVALUASI KEBERADAAN<br> FISIK PSE LINGKUP PRIVAT TERDAFTAR
+            TERKAIT KEBENARAN INFORMASI<br> PENDAFTARAN PSE<br>
+            <span>Kota Padang, 15-17 Mei 2024</span>
+          </div>
+          <div class="kontent-laporan">
+            <div class="table-laporan"> 
+              <ol id="l1">
+                <li data-list-text="1.">
+                  <h1 style="padding-left: 54pt;text-indent: -14pt;line-height: 114%;text-align: left;">Landasan
+                    Pelaksanaan </h1>
+                  <ul id="l3">
+                    <li data-list-text="o">
+                      <h1 style="padding-left: 68pt;text-indent: -14pt;text-align: left;">Umum</h1>
+                      <p style="padding-left: 68pt;text-indent: 0pt;text-align: left;">Kami :</p>
+                      <ol id="l2">
+                        <li data-list-text="1)">
+                          <p style="padding-top: 1pt;padding-left: 89pt;text-indent: -18pt;text-align: left;">Helmi
+                            Yudhasetia
+                          </p>
+                        </li>
+                        <li data-list-text="2)">
+                          <p style="padding-top: 6pt;padding-left: 89pt;text-indent: -18pt;text-align: left;">Afif Nur
+                            Rakhman
+                          </p>
+                        </li>
+                        <li data-list-text="3)">
+                          <p style="padding-top: 6pt;padding-left: 89pt;text-indent: -18pt;text-align: left;">Maria
+                            Asteria
+                            Bekti Rahayu</p>
+                        </li>
+                        <li data-list-text="4)">
+                          <p style="padding-top: 6pt;padding-left: 89pt;text-indent: -18pt;text-align: left;">Triatmaji
+                            Dewantoro</p>
+                        </li>
+                        <li data-list-text="5)">
+                          <p style="padding-top: 6pt;padding-left: 89pt;text-indent: -18pt;text-align: left;">Aditya
+                            Rafi
+                            Dyatmika</p>
+                        </li>
+                        <li data-list-text="6)">
+                          <p style="padding-top: 6pt;padding-left: 89pt;text-indent: -18pt;text-align: left;">Amal Burga
+                            Muhammad</p>
+                        </li>
+                        <li data-list-text="7)">
+                          <p style="padding-top: 6pt;padding-left: 89pt;text-indent: -18pt;text-align: left;">Bery
+                            Azhari
+                          </p>
+                        </li>
+                        <li data-list-text="8)">
+                          <p style="padding-top: 6pt;padding-left: 89pt;text-indent: -18pt;text-align: left;">Octaviani
+                            Triandieny</p>
+                        </li>
+                        <li data-list-text="9)">
+                          <p style="padding-top: 6pt;padding-left: 89pt;text-indent: -18pt;text-align: left;">Refisca
+                            Anggia
+                            Sisvari</p>
+                        </li>
+                        <li data-list-text="10)">
+                          <p style="padding-top: 6pt;padding-left: 89pt;text-indent: -18pt;text-align: left;">Riska
+                            Amalia
+                            Yusuf</p>
+                          <p style="text-indent: 0pt;text-align: left;"><br></p>
+                          <p
+                            style="padding-top: 7pt;padding-left: 71pt;text-indent: 0pt;line-height: 114%;text-align: justify;">
+                            Telah melaksanakan pemantauan pada Penyelenggara Sistem Elektronik (PSE) Lingkup Privat
+                            terdaftar dalam rangka kegiatan Monitoring dan Evaluasi Keberadaan Fisik PSE Lingkup Privat
+                            Terdaftar terkait Kebenaran Informasi Pendaftaran PSE di wilayah Kota Padang, Sumatera Barat
+                            pada hari Rabu-Jumat, 15-17 Mei 2024.</p>
+                          <p style="text-indent: 0pt;text-align: left;"><br></p>
+                          <ul id="l3">
+                            <li data-list-text="o">
+                              <h1 style="padding-left: 68pt;text-indent: -14pt;text-align: left;">Maksud dan Tujuan</h1>
+                              <ol id="l4">
+                                <li data-list-text="1)">
+                                  <p style="padding-top: 1pt;padding-left: 89pt;text-indent: -14pt;text-align: left;">
+                                    Melaksanakan kegiatan pengawasan PSE.</p>
+                                </li>
+                                <li data-list-text="2)">
+                                  <p
+                                    style="padding-top: 1pt;padding-left: 89pt;text-indent: -14pt;line-height: 114%;text-align: left;">
+                                    Melaksanakan monitoring keberadaan Fisik PSE Lingkup Privat Terdaftar terkait
+                                    Kebenaran Informasi Pendaftaran PSE.</p>
+                                </li>
+                                <li data-list-text="3)">
+                                  <p style="padding-left: 89pt;text-indent: -14pt;line-height: 114%;text-align: left;">
+                                    Melaporkan hasil pelaksanaan pemantauan pada Penyelenggara Sistem Elektronik
+                                    (PSE) Lingkup Privat di wilayah Kota Padang, Sumatera Barat.</p>
+                                  <p style="text-indent: 0pt;text-align: left;"><br></p>
+                                </li>
+                              </ol>
+                            </li>
+                            <li data-list-text="o">
+                              <h1 style="padding-left: 68pt;text-indent: -14pt;text-align: left;">Ruang Lingkup</h1>
+                              <ol id="l4">
+                                <li data-list-text="1)">
+                                  <p style="padding-top: 1pt;padding-left: 89pt;text-indent: -14pt;text-align: left;">
+                                    Pelaksanaan kegiatan pengawasan PSE.</p>
+                                </li>
+                                <li data-list-text="2)">
+                                  <p
+                                    style="padding-top: 1pt;padding-left: 89pt;text-indent: -14pt;line-height: 114%;text-align: left;">
+                                    Pelaksanaan monitoring keberadaan Fisik PSE Lingkup Privat Terdaftar terkait
+                                    Kebenaran Informasi Pendaftaran PSE.</p>
+                                </li>
+                                <li data-list-text="3)">
+                                  <p style="padding-left: 89pt;text-indent: -14pt;line-height: 114%;text-align: left;">
+                                    Pelaporan hasil pelaksanaan pemantauan pada Penyelenggara Sistem Elektronik
+                                    (PSE) Lingkup Privat di wilayah Kota Padang, Sumatera Barat.</p>
+                                </li>
+                              </ol>
+                            </li>
+                            <li data-list-text="o">
+                              <h1 style="padding-top: 4pt;padding-left: 68pt;text-indent: -14pt;text-align: justify;">
+                                Dasar</h1>
+                              <ol id="l4">
+                                <li data-list-text="1)">
+                                  <p
+                                    style="padding-top: 1pt;padding-left: 89pt;text-indent: -14pt;line-height: 114%;text-align: justify;">
+                                    Undang-undang Nomor 11 Tahun 2008 Tentang Informasi dan Transaksi Elektronik
+                                    (Lembar Negara Republik Indonesia Tahun 2008 Nomor 58, Tambahan Lembaran Negara
+                                    Republik Indonesia Nomor 4843).</p>
+                                </li>
+                                <li data-list-text="2)">
+                                  <p
+                                    style="padding-left: 89pt;text-indent: -14pt;line-height: 114%;text-align: justify;">
+                                    Undang-undang Nomor 19 Tahun 2016 Tentang Perubahan Undang-Undang Nomor 11 Tahun
+                                    2008 tentang Informasi dan Transaksi Elektronik (Undang-Undang ITE).</p>
+                                </li>
+                                <li data-list-text="3)">
+                                  <p
+                                    style="padding-left: 89pt;text-indent: -14pt;line-height: 114%;text-align: justify;">
+                                    Peraturan Pemerintah (PP) Nomor 71 Tahun 2019 tentang Penyelenggaraan Sistem dan
+                                    Transaksi Elektronik.</p>
+                                </li>
+                                <li data-list-text="4)">
+                                  <p
+                                    style="padding-left: 89pt;text-indent: -14pt;line-height: 114%;text-align: justify;">
+                                    Peraturan Menteri Komunikasi dan Informatika Nomor 5 Tahun 2020 tentang
+                                    Penyelenggara Sistem Elektronik Lingkup Privat.</p>
+                                </li>
+                                <li data-list-text="5)">
+                                  <p
+                                    style="padding-left: 89pt;text-indent: -14pt;line-height: 114%;text-align: justify;">
+                                    Peraturan Menteri Komunikasi dan Informatika Nomor 10 Tahun 2021 tentang
+                                    Perubahan atas Peraturan Menteri Komunikasi dan Informatika Nomor 5 Tahun 2020
+                                    tentang Penyelenggara Sistem Elektronik Lingkup Privat.</p>
+                                </li>
+                                <li data-list-text="6)">
+                                  <p
+                                    style="padding-left: 89pt;text-indent: -14pt;line-height: 114%;text-align: justify;">
+                                    Peraturan Presiden RI Nomor 54 Tahun 2015 Tentang Kementerian Komunikasi dan
+                                    Informatika.</p>
+                                </li>
+                                <li data-list-text="7)">
+                                  <p
+                                    style="padding-left: 89pt;text-indent: -14pt;line-height: 114%;text-align: justify;">
+                                    Peraturan Menteri Komunikasi dan Informatika Nomor 12 Tahun 2021 tentang
+                                    Organisasi dan Tata Kerja Kementerian Komunikasi dan Informatika.</p>
+                                </li>
+                                <li data-list-text="8)">
+                                  <p style="padding-left: 89pt;text-indent: -14pt;text-align: justify;">Surat Tugas
+                                    Nomor: 585/DJAI.6/KP.01.06/05/2024</p>
+                                </li>
+                              </ol>
+                            </li>
+                          </ul>
+                          <p style="text-indent: 0pt;text-align: left;"><br></p>
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </li>
+                <li data-list-text="2.">
+                  <h1 style="padding-left: 54pt;text-indent: -14pt;text-align: left;">Kegiatan Yang Dilaksanakan</h1>
+                  <p style="padding-top: 1pt;padding-left: 54pt;text-indent: 0pt;text-align: left;">Rangkaian Kegiatan
+                    Monitoring dapat kami jelaskan sebagai berikut:</p>
+                  <ol id="l7">
+                    <li data-list-text="a.">
+                      <p
+                        style="padding-top: 1pt;padding-left: 76pt;text-indent: -18pt;line-height: 114%;text-align: left;">
+                        Menetapkan target sampel PSE Lingkup Privat yang telah terdaftar sesuai dengan target lokasi
+                        berdasarkan metode <i>random sampling</i>;</p>
+                    </li>
+                    <li data-list-text="b.">
+                      <p style="padding-left: 76pt;text-indent: -18pt;line-height: 114%;text-align: left;">Mengirimkan
+                        surat elektronik (email) kepada PSE Lingkup Privat terpilih untuk melakukan konfirmasi kebenaran
+                        informasi pendaftaran;</p>
+                    </li>
+                    <li data-list-text="c.">
+                      <p style="padding-left: 76pt;text-indent: -18pt;text-align: left;">Melakukan kunjungan fisik ke
+                        alamat tujuan PSE Lingkup Privat;</p>
+                    </li>
+                    <li data-list-text="d.">
+                      <p
+                        style="padding-top: 1pt;padding-left: 76pt;text-indent: -18pt;line-height: 114%;text-align: left;">
+                        Melakukan kegiatan wawancara terkait kebenaran informasi yang terdaftar di database PSE;</p>
+                    </li>
+                    <li data-list-text="e.">
+                      <p style="padding-left: 76pt;text-indent: -18pt;line-height: 114%;text-align: left;">Melakukan
+                        survei terkait fungsi TDPSE dan kewajiban pemutakhiran data di TDPSE;</p>
+                    </li>
+                    <li data-list-text="f.">
+                      <p style="padding-left: 76pt;text-indent: -18pt;line-height: 114%;text-align: justify;">Pemberian
+                        Informasi terkait Kepatuhan Pendaftaran PSE Lingkup Privat yang meliputi fungsi TDPSE, kewajiban
+                        pendaftaran, kewajiban pemutakhiran data, tata cara suspend mandiri, tata cara pemutakhiran
+                        data;</p>
+                    </li>
+                    <li data-list-text="g.">
+                      <p style="padding-left: 76pt;text-indent: -18pt;line-height: 114%;text-align: justify;">Membuat
+                        laporan Monitoring dan Evaluasi Keberadaan Fisik PSE Lingkup Privat Terdaftar terkait Kebenaran
+                        Informasi Pendaftaran PSE.</p>
+                    </li>
+                  </ol>
+                  <p style="text-indent: 0pt;text-align: left;"><br></p>
+                </li>
+                <li data-list-text="3.">
+                  <h1 style="padding-left: 54pt;text-indent: -14pt;text-align: justify;">Hasil Yang Dicapai</h1>
+                </li>
+              </ol>
+              <ol id="l7">
+                <li data-list-text="a.">
+                  <p
+                    style="padding-top: 1pt;padding-left: 71pt;text-indent: -18pt;line-height: 114%;text-align: justify;">
+                    Telah dilakukan rangkaian monitoring dan evaluasi keberadaan fisik PSE Lingkup Privat terdaftar
+                    terkait
+                    kebenaran informasi pendaftaran PSE di wilayah Kota Padang, Sumatera Barat.</p>
+                </li>
+                <li data-list-text="b.">
+                  <p style="padding-left: 71pt;text-indent: -18pt;text-align: justify;">Metode monitoring dan evaluasi
+                    yang
+                    kami lakukan adalah sebagai berikut:</p>
+                  <ul id="l9">
+                    <li data-list-text="●">
+                      <p
+                        style="padding-top: 1pt;padding-left: 82pt;text-indent: -14pt;line-height: 114%;text-align: justify;">
+                        Melakukan kunjungan fisik ke alamat tujuan PSE Lingkup Privat untuk memastikan kesesuaian
+                        informasi keberadaan badan hukumnya sesuai/tidak dengan yang telah didaftarkan, dengan kondisi;
+                      </p>
+                      <ul id="l10">
+                        <li data-list-text="o">
+                          <p
+                            style="padding-top: 3pt;padding-left: 98pt;text-indent: -13pt;line-height: 114%;text-align: justify;">
+                            Jika lokasi yang dituju sesuai dengan informasi pendaftarannya, maka akan dilakukan
+                            dokumentasi dan wawancara dengan penanggung jawab PSE Lingkup Privat untuk memastikan
+                            kesesuaian kebenaran informasi pendaftaran seperti;</p>
+                          <ul id="l11">
+                            <li data-list-text="▪">
+                              <p style="padding-left: 116pt;text-indent: -13pt;text-align: left;">Alamat fisik PSE
+                                Lingkup Privat</p>
+                            </li>
+                            <li data-list-text="▪">
+                              <p style="padding-top: 1pt;padding-left: 116pt;text-indent: -13pt;text-align: left;">
+                                Alamat surat elektronik (email)</p>
+                            </li>
+                            <li data-list-text="▪">
+                              <p style="padding-top: 1pt;padding-left: 116pt;text-indent: -13pt;text-align: left;">
+                                Nomor telepon</p>
+                            </li>
+                            <li data-list-text="▪">
+                              <p style="padding-top: 1pt;padding-left: 116pt;text-indent: -13pt;text-align: left;">
+                                Alamat website/layanan</p>
+                            </li>
+                            <li data-list-text="▪">
+                              <p style="padding-top: 1pt;padding-left: 116pt;text-indent: -13pt;text-align: left;">
+                                Sektor</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-list-text="o">
+                          <p
+                            style="padding-top: 1pt;padding-left: 98pt;text-indent: -13pt;line-height: 114%;text-align: justify;">
+                            Jika lokasi yang dituju tidak sesuai dengan informasi pendaftarannya (PSE Lingkup Privat
+                            tidak ditemukan), maka akan dilakukan dokumentasi dan dicatat dalam laporan.</p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-list-text="●">
+                      <p
+                        style="padding-top: 10pt;padding-left: 82pt;text-indent: -14pt;line-height: 114%;text-align: justify;">
+                        Melakukan peninjauan (survei) terkait pemahaman PSE Lingkup Privat tentang pendaftaran TDPSE
+                        dengan memberikan beberapa pertanyaan seperti;</p>
+                      <ul id="l10">
+                        <li data-list-text="o">
+                          <p style="padding-left: 98pt;text-indent: -13pt;text-align: justify;">Apakah mengetahui
+                            bahwa Pendaftaran TDPSE bukan izin operasional?</p>
+                        </li>
+                        <li data-list-text="o">
+                          <p style="padding-top: 1pt;padding-left: 98pt;text-indent: -13pt;text-align: justify;">
+                            Apakah TDPSE pernah disalahgunakan oleh orang yang tidak berhak?</p>
+                        </li>
+                        <li data-list-text="o">
+                          <p
+                            style="padding-top: 1pt;padding-left: 98pt;text-indent: -13pt;line-height: 114%;text-align: justify;">
+                            Apakah mengetahui kewajiban untuk melakukan pemutakhiran informasi beserta sanksinya?
+                          </p>
+                        </li>
+                        <li data-list-text="o">
+                          <p style="padding-left: 98pt;text-indent: -13pt;line-height: 114%;text-align: justify;">
+                            Apakah pernah mengalami kesulitan dalam pemutakhiran informasi terkait TDPSE?</p>
+                        </li>
+                        <li data-list-text="o">
+                          <p style="padding-left: 98pt;text-indent: -13pt;line-height: 114%;text-align: justify;">
+                            Berdasarkan pemahaman, jika PSE Lingkup Privat dikenakan sanksi administratif berupa
+                            pembekuan/suspend TDPSE dan/atau pemutusan akses (blokir), apakah tahu apa yang harus
+                            dilakukan?</p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-list-text="●">
+                      <p
+                        style="padding-top: 10pt;padding-left: 82pt;text-indent: -14pt;line-height: 114%;text-align: left;">
+                        Memberikan himbauan kepada PSE Lingkup Privat mengenai beberapa informasi seperti;</p>
+                      <ul id="l10">
+                        <li data-list-text="o">
+                          <p style="padding-left: 98pt;text-indent: -13pt;text-align: left;">Kewajiban melakukan
+                            pemutakhiran informasi pendaftaran;</p>
+                        </li>
+                        <li data-list-text="o">
+                          <p style="padding-top: 1pt;padding-left: 98pt;text-indent: -13pt;text-align: left;">Panduan
+                            Pendaftaran PSE Domestik;</p>
+                        </li>
+                        <li data-list-text="o">
+                          <p style="padding-top: 1pt;padding-left: 98pt;text-indent: -13pt;text-align: left;">Panduan
+                            Pendaftaran PSE Domestik Sektor Keuangan;</p>
+                        </li>
+                        <li data-list-text="o">
+                          <p style="padding-top: 1pt;padding-left: 98pt;text-indent: -13pt;text-align: left;">Panduan
+                            Kategorisasi Sistem Elektronik (BSSN);</p>
+                        </li>
+                        <li data-list-text="o">
+                          <p style="padding-top: 1pt;padding-left: 98pt;text-indent: -13pt;text-align: left;">Panduan
+                            Tools Asesmen Perlindungan Data Pribadi (PDP);</p>
+                        </li>
+                        <li data-list-text="o">
+                          <p style="padding-top: 1pt;padding-left: 98pt;text-indent: -13pt;text-align: left;">Panduan
+                            Perubahan Data TDPSE Lingkup Privat;</p>
+                        </li>
+                        <li data-list-text="o">
+                          <p
+                            style="padding-top: 1pt;padding-left: 98pt;text-indent: -13pt;line-height: 114%;text-align: left;">
+                            Peraturan Menteri Kominfo No. 5 Tahun 2020 Tentang Penyelenggara Sistem Elektronik (PSE)
+                            Lingkup Privat.</p>
+                          <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li data-list-text="c.">
+                  <p style="padding-left: 71pt;text-indent: -18pt;line-height: 114%;text-align: justify;">Dalam kegiatan
+                    monitoring tersebut di atas, ditemukan beberapa ketidaksesuaian informasi pendaftaran pada beberapa
+                    PSE
+                    Lingkup Privat seperti;</p>
+                  <ul id="l10">
+                    <li data-list-text="o">
+                      <p style="padding-left: 98pt;text-indent: -18pt;line-height: 114%;text-align: justify;">Alamat
+                        fisik
+                        PSE Lingkup Privat yang dikunjungi tidak ditemukan seperti yang tercantum pada laman informasi
+                        pendaftarannya, maka akan dilakukan <b>suspend TDPSE;</b></p>
+                    </li>
+                    <li data-list-text="o">
+                      <p style="padding-left: 98pt;text-indent: -18pt;line-height: 114%;text-align: justify;">Alamat
+                        fisik
+                        PSE Lingkup Privat yang dikunjungi ditemukan, namun tidak akurat seperti yang tercantum pada
+                        laman informasi pendaftarannya, maka dilakukan himbauan untuk dapat segera melakukan
+                        pemutakhiran data alamat agar tidak dikenakan sanksi administratif;</p>
+                    </li>
+                    <li data-list-text="o">
+                      <p style="padding-left: 98pt;text-indent: -18pt;line-height: 114%;text-align: justify;">Alamat
+                        surat
+                        elektronik (email), nomor telepon, alamat website/layanan, dan sektor PSE Lingkup Privat yang
+                        dikunjungi tidak akurat seperti yang tercantum pada laman informasi pendaftarannya, maka
+                        dilakukan</p>
+                    </li>
+                  </ul>
+                  <p style="padding-top: 3pt;padding-left: 98pt;text-indent: 0pt;line-height: 114%;text-align: left;">
+                    himbauan
+                    untuk dapat segera melakukan pemutakhiran data agar tidak dikenakan sanksi administratif.</p>
+                </li>
+                <li data-list-text="d.">
+                  <p
+                    style="padding-top: 10pt;padding-left: 71pt;text-indent: -18pt;line-height: 114%;text-align: justify;">
+                    Kegiatan dilaksanakan oleh 4 tim. Berikut adalah daftar PSE Lingkup Privat yang telah dilakukan
+                    pencocokan kesesuaian informasi pendaftaran saat kunjungan kegiatan monitoring dan evaluasi:</p>
+                </li>
+              </ol>
+              <h1 style="padding-left: 76pt;text-indent: 0pt;text-align: left;">TIM A</h1>
+              <p style="padding-top: 1pt;padding-left: 76pt;text-indent: 0pt;text-align: left;">Pelaksana :</p>
+              <ol id="l15">
+                <li data-list-text="1.">
+                  <p style="padding-top: 1pt;padding-left: 112pt;text-indent: -18pt;text-align: left;">Maria Asteria
+                    Bekti
+                    Rahayu</p>
+                </li>
+                <li data-list-text="2.">
+                  <p style="padding-top: 1pt;padding-left: 112pt;text-indent: -18pt;text-align: left;">Triatmaji
+                    Dewantoro</p>
+                </li>
+              </ol>
+              <table cellspacing="0">
+                <thead>
+                  <td>
+                    <p>No</p>
+                  </td>
+                  <td>
+                    <p class="s2">Data</p>
+                  </td>
+                  <td>
+                    <p>
+                      Keterangan
+                    </p>
+                  </td>
+                </thead>
+                <tr>
+                  <td>
+                    <p>1</p>
+                  </td>
+                  <td>
+                    <p>TDPSE
+                    </p>
+                  </td>
+                  <td>
+                    <p>002730.01/DJAI.PSE/05/2022</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Nama PSE</p>
+                  </td>
+                  <td>
+                    <p>Dedy Maryadi(Perorangan)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Nama SE</p>
+                  </td>
+                  <td>
+                    <p>TIADADUA
+                      COMPOSITE</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Hasil Konfirmasi via Email</p>
+                  </td>
+                  <td>
+                    <ol id="l15">
+                      <li data-list-text="1.">
+                        <p class="s4">
+                          Email terdaftar tidak membalas permintaan konfirmasi informasi yang dibutuhkan</p>
+                      </li>
+                      <li data-list-text="2.">
+                        <p>Website tidak aktif</p>
+                      </li>
+                      <li data-list-text="3.">
+                        <p>
+                          Terdapat kemungkinan alamat terdaftar berbeda atau berubah karena PSE yang sama memiliki SE
+                          yang berbeda dimana alamat yang tertera di website berbeda dengan alamat yang terdaftar di
+                          data pendaftaran.</p>
+                      </li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Hasil MonevFisik</p>
+                  </td>
+                  <td>
+                    <ol id="l15">
+                      <li data-list-text="1.">
+                        <p>
+                          Alamat fisik sistem elektronik ditemukan, namun tidak ada pihak yang bisa ditemui untuk
+                          dilakukan konfirmasi informasi yang dibutuhkan.</p>
+                      </li>
+                      <li data-list-text="2.">
+                        <p>
+                          Penanggung jawab menyatakan layanan sudah tidak aktif dan yang bersangkutan tidak bisa
+                          ditemui untuk melakukan konfirmasi</p>
+                      </li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Hasil Survey
+                    </p>
+                  </td>
+                  <td>
+                    <p>Tidak dapat dilaksanakan</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>
+                      Rekomendasi
+                    </p>
+                  </td>
+                  <td>
+                    <p>Suspend</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Foto</p>
+                  </td>
+                  <td>
+                    <p></p>
+                    <p><span><img alt="image" src="../assets/img/se1.jpg" /></span></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>2</p>
+                  </td>
+                  <td>
+                    <p>TDPSE</p>
+                  </td>
+                  <td>
+                    <p>002730.02/DJAI.PSE/12/2022</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Nama PSE</p>
+                  </td>
+                  <td>
+                    <p>Dedy Maryadi (Perorangan)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Nama SE</p>
+                  </td>
+                  <td>
+                    <p>RIPER ID</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Hasil Konfirmasi via Email</p>
+                  </td>
+                  <td>
+                    <ol id="l15">
+                      <li data-list-text="1.">
+                        <p>Email terdaftar tidak membalas permintaan konfirmasi informasi yang dibutuhkan</p>
+                      </li>
+                      <li data-list-text="2.">
+                        <p>Alamat website berbeda dengan yang ada di data pendaftaran</p>
+                      </li>
+                      <li data-list-text="3.">
+                        <p>Terdapat kemungkinan alamat terdaftar berbeda atau berubah karena alamat yang tertera di
+                          website berbeda dengan alamat yang terdaftar di data pendaftaran.</p>
+                      </li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Hasil Monev Fisik</p>
+                  </td>
+                  <td>
+                    <ol id="l15">
+                      <li data-list-text="1.">
+                        <p>Alamat fisik sistem elektronik ditemukan, namun tidak ada pihak yang bisa ditemui untuk
+                          dilakukan konfirmasi informasi yang dibutuhkan.</p>
+                      </li>
+                      <li data-list-text="2.">
+                        <p>Penanggung jawab menyatakan layanan sudah tidak aktif dan yang bersangkutan tidak bisa
+                          ditemui untuk melakukan konfirmasi</p>
+                      </li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Hasil Survey</p>
+                  </td>
+                  <td>
+                    <p>Tidak dapat dilaksanakan</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Rekomendasi</p>
+                  </td>
+                  <td>
+                    <p>Suspend</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Foto</p>
+                  </td>
+                  <td>
+                    <p></p>
+                    <p><span><img alt="image" src="../assets/img/se1.jpg" /></span></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>3</p>
+                  </td>
+                  <td>
+                    <p>TDPSE</p>
+                  </td>
+                  <td>
+                    <p>005301.01/DJAI.PSE/07/2022</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Nama PSE</p>
+                  </td>
+                  <td>
+                    <p>PT. MILLIONAIRE DIGITAL INDONESIA</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Nama SE</p>
+                  </td>
+                  <td>
+                    <p>MILLIONAIRE DIGITAL INDONESIA</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Hasil Konfirmasi via Email</p>
+                  </td>
+                  <td>
+                    <ol id="l15">
+                      <li data-list-text="1.">
+                        <p>
+                          <a href="mailto:millionairedigitalindonesia@yahoo.com" class="s5" target="_blank">Email
+                            terdaftar bouncing dengan alamat millionairedigitalindonesia@yahoo.com</a></p>
+                      </li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Hasil Monev Fisik</p>
+                  </td>
+                  <td>
+                    <ol id="l15">
+                      <li data-list-text="1.">
+                        <p>
+                          Alamat fisik sistem elektronik ditemukan, namun tidak ada pihak yang bisa ditemui untuk
+                          dilakukan konfirmasi informasi yang dibutuhkan.</p>
+                      </li>
+                      <li data-list-text="2.">
+                        <p>Telah dicoba dilakukan komunikasi via wa ke penanggungjawab, lalu dilakukan pertemuan secara
+                          daring melalui zoom meeting dikarenakan ybs sedang bekerja dan tidak dapat ditemui saat itu.
+                        </p>
+                      </li>
+                      <li data-list-text="3.">
+                        <p>
+                          Informasi yang disampaikan pada saat zoom meeting:</p>
+                        <ol id="l7">
+                          <li data-list-text="a.">
+                            <p>
+                              Proses bisnis masih berjalan, namun website sudah tidak aktif karena tidak
+                              diperpanjang.</p>
+                          </li>
+                          <li data-list-text="b.">
+                            <p>
+                              Telah disampaikan edukasi terkait adanya kewajiban untuk melakukan pemutakhiran data
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p></p>
+                  </td>
+                  <td>
+                    <p>Hasil Survey
+                    </p>
+                  </td>
+                  <td>
+                    <ol id="l15">
+                      <li data-list-text="1.">
+                        <p>
+                          Fungsi TDPSE : tidak tahu</p>
+                      </li>
+                      <li data-list-text="2.">
+                        <p>Penyalahgunaan
+                          TDPSE : tidak pernah</p>
+                      </li>
+                      <li data-list-text="3.">
+                        <p>Kewajiban
+                          pemutakhiran data : tidak tahu</p>
+                      </li>
+                      <li data-list-text="4.">
+                        <p>Kesulitan
+                          pemutakhiran data : belum pernah</p>
+                      </li>
+                      <li data-list-text="5.">
+                        <p>Informasi sanksi
+                          administratif : tidak tahu</p>
+                      </li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                  </td>
+                  <td
+                    style="width:81pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s3" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                      Rekomendasi
+                    </p>
+                  </td>
+                  <td
+                    style="width:342pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s4"
+                      style="padding-top: 5pt;padding-left: 5pt;padding-right: 4pt;text-indent: 0pt;text-align: justify;">
+                      Melakukan perpanjangan domain SE atau melakukan pemutakhiran data jika terdapat perubahan atau
+                      melakukan permohonan pencabutan TDPSE mandiri</p>
+                  </td>
+                </tr>
+                <tr style="height:342pt">
+                  <td
+                    style="width:27pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                  </td>
+                  <td
+                    style="width:81pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s3" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Foto</p>
+                  </td>
+                  <td>
+                    <p></p>
+                    <p><span><img alt="image" src="../assets/img/se3.jpg" /></span></p>
+                    <p ><span><img alt="image" src="../assets/img/se3-2.jpg" /></span></p>
+                  </td>
+                </tr>
+                <tr style="height:23pt">
+                  <td
+                    style="width:27pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s3" style="padding-top: 5pt;padding-left: 4pt;text-indent: 0pt;text-align: left;">4</p>
+                  </td>
+                  <td
+                    style="width:81pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s3" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">TDPSE
+                    </p>
+                  </td>
+                  <td
+                    style="width:342pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s4" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                      010041.01/DJAI.PSE/05/2023</p>
+                  </td>
+                </tr>
+                <tr style="height:23pt">
+                  <td
+                    style="width:27pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                  </td>
+                  <td
+                    style="width:81pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s3" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Nama PSE
+                    </p>
+                  </td>
+                  <td
+                    style="width:342pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s4" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">AHMAD
+                      JUNAIDI (Perorangan)</p>
+                  </td>
+                </tr>
+                <tr style="height:23pt">
+                  <td
+                    style="width:27pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                  </td>
+                  <td
+                    style="width:81pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s3" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Nama SE
+                    </p>
+                  </td>
+                  <td
+                    style="width:342pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s4" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">PANDEKA
+                      SMART SYSTEM</p>
+                  </td>
+                </tr>
+                <tr style="height:79pt">
+                  <td
+                    style="width:27pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                  </td>
+                  <td
+                    style="width:81pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s3" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Hasil
+                      Konfirmasi via Email</p>
+                  </td>
+                  <td
+                    style="width:342pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <ol id="l15">
+                      <li data-list-text="1.">
+                        <p class="s4"
+                          style="padding-top: 5pt;padding-left: 18pt;padding-right: 4pt;text-indent: -13pt;text-align: left;">
+                          Email terdaftar tidak membalas permintaan konfirmasi informasi yang dibutuhkan</p>
+                      </li>
+                      <li data-list-text="2.">
+                        <p class="s4" style="padding-left: 18pt;text-indent: -13pt;text-align: left;">Alamat website
+                          sudah tidak aktif</p>
+                      </li>
+                      <li data-list-text="3.">
+                        <p class="s4" style="padding-left: 18pt;text-indent: -13pt;text-align: left;">Tidak mencantumkan
+                          nomor telepon di data pendaftaran</p>
+                      </li>
+                      <li data-list-text="4.">
+                        <p class="s4" style="padding-left: 18pt;text-indent: -13pt;text-align: left;">informasi alamat
+                          fisik tidak lengkap</p>
+                      </li>
+                    </ol>
+                  </td>
+                </tr>
+                
+                <tr style="height:35pt">
+                  <td
+                    style="width:27pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                  </td>
+                  <td
+                    style="width:81pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s3" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Hasil
+                      Monev
+                      Fisik</p>
+                  </td>
+                  <td
+                    style="width:342pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s4" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">1.
+                      Alamat
+                      fisik sistem elektronik tidak ditemukan.</p>
+                  </td>
+                </tr>
+                <tr style="height:23pt">
+                  <td
+                    style="width:27pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                  </td>
+                  <td
+                    style="width:81pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s3" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Hasil
+                      Survey
+                    </p>
+                  </td>
+                  <td
+                    style="width:342pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s4" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Tidak
+                      dapat
+                      dilakukan</p>
+                  </td>
+                </tr>
+                <tr style="height:23pt">
+                  <td
+                    style="width:27pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                  </td>
+                  <td
+                    style="width:81pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s3" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                      Rekomendasi
+                    </p>
+                  </td>
+                  <td
+                    style="width:342pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s4" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Suspend
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height:419pt">
+                  <td
+                    style="width:27pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                  </td>
+                  <td
+                    style="width:81pt;border-top-style:solid;border-top-width:2pt;border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-right-style:solid;border-right-width:2pt">
+                    <p class="s3" style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Foto</p>
+                  </td>
+                  <td>
+                    <p></p>
+                    <p><span><img alt="image" src="../assets/img/se4.jpg" /></span></p>
+                    <p ><span><img alt="image" src="../assets/img/se4-2.jpg" /></span></p>
+                  </td>
+                </tr>
+              </table>
+              <h1 style="padding-top: 30pt;padding-left: 40pt;text-indent: 0pt;text-align: left;">TIM B</h1>
+              <p style="padding-top: 1pt;padding-left: 40pt;text-indent: 0pt;text-align: left;">Pelaksana :</p>
+              <ol id="l15">
+                <li data-list-text="1.">
+                  <p style="padding-top: 1pt;padding-left: 76pt;">Aditya Rafi
+                    Dyatmika</p>
+                </li>
+                <li data-list-text="2.">
+                  <p style="padding-top: 6pt;padding-left: 76pt;">Bery Azhari</p>
+                </li>
+                <li data-list-text="3.">
+                  <p style="padding-top: 6pt;padding-left: 76pt;">Octaviani
+                    Triandieny</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div><!-- col -->
+    </div><!-- row -->
+  </div><!-- main -->
+
+  <!-- modal modifikasi table-->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-top">
+          <h5 class="modal-title">Modifikasi Tabel</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-box">
+          <div class="form-group">
+            <div>
+              <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+                data-parsley-multiple="browser" id="cc2"><label>Nama Perusahaan</label>
+            </div>
+            <div><i class="ri-equal-fill"></i></div>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Sistem Elektronik</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>No. TDPSE</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Sektor</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>IP Server</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Rekomendasi</label>
+          </div>
+        </div>
+        <div class="btn-simpan"><button>Simpan</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal-->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-top">
+          <div>
+            <h5 class="perusahaan-nama">PT. Berkah Jaya (10)</h5>
+            <span class="perusahaan-desc">Terdapat <span class="c-b">10</span> TDPSE yang dikelola oleh <span
+                class="c-b">PT. Berkah Jaya</span>. Pilih TDPSE untuk melanjutkan proses Monev:</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-box">
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Beritaku</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Cuan Kripto</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Speedo</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Rekasa</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+        </div>
+        <div class="btn-simpan mb-11"><a href="Kegiatan_monev_list_offline_details.html"><button>Pilih (4)</button></a>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="pilih-semua">Pilih Semua</div>
+          <div class="hapus-semua">Hapus Semua</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal SE-->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-top">
+          <h5 class="modal-title">Daftar Sistem Elektronik</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-info">Daftar Kegiatan Monev yang akan datang</div>
+        <div class="modal-box">
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" id="demo1" checked="">
+            <div class="card1 card-body">
+              <div class="content_head">Tokokami</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Beritaku</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Cuan Kripto</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Exindo</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Rekuno</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Berlianku</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Rekasa</div>
+            </div>
+          </label>
+        </div>
+        <div class="btn-simpan"><a href="#modal4" data-bs-toggle="modal"><button>Simpan</button></a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal SE -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-top">
+          <div>
+            <h5 class="perusahaan-nama">PT. Berkah Jaya (10)</h5>
+            <span class="perusahaan-desc">Terdapat <span class="c-b">10</span> TDPSE yang dikelola oleh <span
+                class="c-b">PT. Berkah Jaya</span>. Pilih TDPSE untuk melanjutkan proses Monev:</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-box">
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Beritaku</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Cuan Kripto</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Speedo</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Rekasa</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+        </div>
+        <div class="btn-simpan mb-11"><button>Pilih (4)</button></div>
+        <div class="d-flex justify-content-between">
+          <div class="pilih-semua">Pilih Semua</div>
+          <div class="hapus-semua">Hapus Semua</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../lib/jqvmap/jquery.vmap.min.js"></script>
+  <script src="../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <script src="../lib/prismjs/prism.js"></script>
+  <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../lib/select2/js/select2.full.min.js"></script>
+  <script src="../lib/quill/quill.min.js"></script>
+
+  <script src="../assets/js/db.data.js"></script>
+  <script src="../assets/js/script.js"></script>
+
+  <script>
+    'use strict'
+    var quill = new Quill('#editor-container', {
+      modules: {
+        toolbar: '#toolbar-container'
+      },
+      placeholder: 'lorem ipsum dollor...',
+      theme: 'snow'
+    });
+  </script>
+</body>
+
+</html>
