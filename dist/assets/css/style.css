@@ -13601,7 +13601,7 @@ i.ri-login-box-line {
   border-radius: inherit;
   display: block;
 }
-.avatar.online::after, .avatar.offline::after {
+/* .avatar.online::after, .avatar.offline::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -13616,7 +13616,7 @@ i.ri-login-box-line {
 }
 .avatar.offline::after {
   background-color: #ccd2da;
-}
+} */
 
 .avatar-rounded {
   border-radius: 8px;
