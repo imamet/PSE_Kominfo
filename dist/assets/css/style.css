@@ -1,22 +1,10 @@
 @charset "UTF-8";
-/*!
-Template Name: Dashbyte - Premium Admin & Dashboard Template
-Author: Themepixels
-Version: 1.0.2
-Website: http://themepixels.me/demo/dashbyte
-Contact: themepixels@gmail.com
-*/
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap");
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -2581,7 +2569,6 @@ textarea.form-control-lg {
   filter: none;
   opacity: 0.65;
 }
-
 .form-range {
   width: 100%;
   height: 1.5rem;
@@ -5578,13 +5565,16 @@ ul#select2-select2F-results {
 	background-color: #F5F5F5;
 }
 
+.w
 .modal-box::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #0093DD;
 }
-
+.bg-versi{
+  background: #F8F8F8 !important;
+}
 .form-content{
   margin-bottom: 15px;
 }
@@ -5594,6 +5584,9 @@ ul#select2-select2F-results {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+.modal-box_log{
+  height: 320px;
 }
 
 .pagination-page{
@@ -27195,7 +27188,62 @@ li {
   padding-top: 20px;
 }
 /* template laporan */
+.c-flex{
+  display: flex;
+  justify-content: end;
+  padding-right: 40px;
+}
+a.disable-link{
+  color: #C7C7C7 !important;
+  pointer-events: none;
+  cursor: default;
+}
+.menu-actionitem{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px;
+  align-items: center;
+}
+.btn-action{
+  background: none;
+  border: none;
+  color: #fff;
+}
+.btn-action:hover{
+  opacity: 0.9;
+  scale: 0.99;
+}
+.btn-action i.ri-close-line {
+  font-size: 25px;
+}
+.menu-action{
+  background: #00458e;
+  display: none;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.checklis-show{
+  display: block;
 
+}
+.b-r{
+  border: 1px solid #fff;
+  margin: 0px 10px;
+}
+.btn-cetak a{
+    color: #0093DD;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0px 10px;
+}
+.inactive a{
+  color: #C7C7C7;
+}
 @media (max-width: 500px) {
     .main-filter {
         padding: 10px 20px 8px 36px;

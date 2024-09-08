@@ -208,6 +208,18 @@ $(function() {
 });
 
 
+// show menu action checklist
+$('.checkmenu').change(function(){
+  if($(this).is(":checked")) {
+      $('.menu-action').addClass('checklis-show');
+  } else {
+      $('.menu-action').removeClass('checklis-show');
+  }
+});
+$('.close-menuaction').on('click',function () {
+  $('.menu-action.checklis-show').removeClass('checklis-show');   
+});
+
 $('#wizard3').steps({
   headerTag: 'h3',
   bodyTag: 'div',
@@ -259,4 +271,3 @@ function showImage() {
     imagePreview.src = e.target.result;
   };
 }
-
