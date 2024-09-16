@@ -3612,6 +3612,11 @@ ul#select2-select2F-results {
   text-align: right;
   padding-right: 20px;
 }
+.profil-view{
+  width: 80px;
+  border-radius: 5px;
+  padding-bottom: 30px;
+}
 
 @media (min-width: 576px) {
   .dropdown-menu-sm-start {
@@ -5634,7 +5639,33 @@ button.btn-page {
   text-decoration: none;
   opacity: 0.75;
 }
+.btn-close2{
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: #304E6B;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  border: 0;
+  border-radius: 0.25rem;
+  opacity: 0.5;
+  position: absolute !important;
+  right: 15px !important
+}
+.mr-20{
+  margin-right: 20px;
+}
+.btn-close2:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: 0.75;
+}
 .btn-close:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(80, 111, 217, 0.25);
+  opacity: 1;
+}
+.btn-close2:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(80, 111, 217, 0.25);
   opacity: 1;
@@ -5648,7 +5679,87 @@ button.btn-page {
 .btn-close-white {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
+.icon-sukses{
+  width: 48px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.center{
+  text-align: center !important;
+  justify-content: center !important;
+}
+.text-desc {
+    color: #878787;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0px 20px;
+}
+.se-list label {
+    color: #878787 !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 30px;
+    padding-bottom: 5px;
+}
 
+.se-list{
+  padding-left: 17px;
+}
+.hal-surat{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 12pt;
+  margin: 0;
+}
+.hal-surat__left{
+  display: flex;
+}
+.label-surat{
+  width: 100px;
+}
+.isi-surat{
+  width: 60%;
+}
+.pl-5{
+  padding-right: 5px;
+}
+.surat-yth{
+  padding-top: 50px;
+}
+.surat-isi{
+  padding-top: 30px;
+  text-align: justify;
+}
+.pd-surat{
+  padding: 10px 110px !important;
+}
+.surat-ttd{
+  text-align: center;
+  padding-top: 50px;
+}
+.mt-100{
+  margin-top: 100px;
+}
+.nama-ttd{
+  padding-top: 100px;
+}
+.table-bukti table tr td img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.table-bukti table tr td{
+  border: none;
+}
 .toast {
   --bs-toast-zindex: 1090;
   --bs-toast-padding-x: 0.75rem;
@@ -6177,6 +6288,56 @@ table tr td{
     background: #0093DD;
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
+.btn-hapus1 {
+    width: 170px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #D92D20;
+    background: #EC4545;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+.c-link{
+  color: #0093DD !important;
+}
+/* .modal-box table{
+  width: 100% !important;
+}
+.modal-box table td{
+  width: 50% !important;
+} */
+.btn-simpan1 {
+    width: 170px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #007AB8;
+    background: #0093DD;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+.c-hapus2 {
+    border: 1px solid #007AB8;
+    background: #0093DD;
+}
+.m-0{
+  margin: 0px !important;
+}
+
+
 .btn-hapus {
   background: transparent;
     cursor: pointer;
@@ -13617,7 +13778,9 @@ i.ri-login-box-line {
 .avatar.offline::after {
   background-color: #ccd2da;
 } */
-
+ .pr-28{
+  padding-right: 28px;
+ }
 .avatar-rounded {
   border-radius: 8px;
 }

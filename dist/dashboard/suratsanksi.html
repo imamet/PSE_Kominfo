@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Meta -->
+  <meta name="description" content="">
+  <meta name="author" content="Themepixels">
+
+  <!-- Favicon -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png"> -->
+  <link rel="shortcut icon" href="https://www.kominfo.go.id/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="https://www.kominfo.go.id/favicon/favicon.ico" />
+
+  <title>Template Surat Sanksi | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="stylesheet" href="../lib/jqvmap/jqvmap.min.css">
+  <link rel="stylesheet" href="../lib/apexcharts/apexcharts.css">
+  <link rel="stylesheet" href="../lib/prismjs/themes/prism.min.css">
+  <link rel="stylesheet" href="../lib/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../lib/quill/quill.core.css">
+  <link rel="stylesheet" href="../lib/quill/quill.snow.css">
+  <link rel="stylesheet" href="../lib/quill/quill.bubble.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <a href="./" class="sidebar-logo">
+        <img src="../assets/svg/logo.svg">
+      </a>
+    </div><!-- sidebar-header -->
+    <div id="sidebarMenu" class="sidebar-body">
+      <div class="nav-group show">
+        <a href="#" class="nav-label">MENU UTAMA</a>
+        <ul class="nav nav-sidebar">
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Data_Tata_Kelola.html" class="nav-link"><i class="ri-server-line"></i><span>Data Tata
+                Kelola</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Daftar_Kegiatan_Monev.html" class="nav-link active"><i
+                class="ri-briefcase-4-line"></i><span>Kegiatan Monev Domestik</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Data_Hasil_Validasi.html" class="nav-link"><i class="ri-file-shield-2-line"></i><span>Data Hasil
+                Validasi</span></a>
+          </li>
+        </ul>
+      </div><!-- nav-group -->
+      <div class="nav-group show">
+        <a href="#" class="nav-label">PENGATURAN</a>
+        <ul class="nav nav-sidebar">
+          <li class="nav-item">
+            <a href="Management-user.html" class="nav-link"><i class="ri-group-line"></i><span>Manajemen
+                User</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a href="Login.html" class="nav-link"><i class="ri-logout-box-r-line"></i><span>Log
+                out</span></a>
+          </li>
+        </ul>
+      </div><!-- nav-group -->
+
+    </div><!-- sidebar-body -->
+
+  </div><!-- sidebar -->
+
+  <div class="header-main">
+    <a id="menuSidebar" href="#" class="menu-link me-3 me-lg-4"><i class="ri-menu-2-fill"></i></a>
+    <div class="me-auto">
+    </div>
+
+    <div class="dropdown dropdown-profile ms-3 ms-xl-4">
+      <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+        <div class="avatar online"><img src="../assets/img/user.jpg" alt=""></div>
+      </a>
+      <div class="dropdown-menu dropdown-menu-end mt-10-f">
+        <div class="dropdown-menu-body">
+          <div class="avatar avatar-xl online mb-3"><img src="../assets/img/user.jpg" alt=""></div>
+          <h5 class="mb-1 text-dark fw-semibold">Amal Burga</h5>
+          <p class="fs-sm text-secondary">Pengawas (ASN)</p>
+
+          <nav class="nav">
+            <a href="Edit_user.html"><i class="ri-edit-2-line"></i> Edit Profile</a>
+          </nav>
+          <hr>
+          <nav class="nav">
+            <a href=""><i class="ri-logout-box-r-line"></i> Log Out</a>
+          </nav>
+        </div><!-- dropdown-menu-body -->
+      </div><!-- dropdown-menu -->
+    </div><!-- dropdown -->
+  </div><!-- header-main -->
+
+  <div class="main main-app">
+    <div class="breadcrumb-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">surat</a></li>
+          <li class="breadcrumb-item active" aria-current="page">surat sanksi</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="main-header">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="main-left">
+          <div class="main-title">Surat Pemberitahuan Penjatuhan Sanksi</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="surat-laporan">
+          <div class="header-laporan">
+            <img src="../assets/img/laporan/header.jpg" alt="">
+          </div>
+          <div class="hal-surat mt-10-f">
+            <div class="hal-surat__left">
+              <div class="label-surat">Nomor</div>
+              <div class="pl-5">:</div>
+              <div>B-xxxx/DJAI.6/AI.05.02/xx/xxxx</div>
+            </div>
+            <div>
+              <p>Jakarta, 3 Oktober 2023</p>
+            </div>
+          </div>
+          <div class="hal-surat">
+            <div class="hal-surat__left">
+              <div class="label-surat">Sifat</div>
+              <div class="pl-5">:</div>
+              <div>Biasa</div>
+            </div>
+          </div>
+          <div class="hal-surat">
+            <div class="hal-surat__left">
+              <div class="label-surat">Lampiran</div>
+              <div class="pl-5">:</div>
+              <div>1</div>
+            </div>
+          </div>
+          <div class="hal-surat">
+            <div class="hal-surat__left">
+              <div class="label-surat">Hal</div>
+              <div class="pl-5">:</div>
+              <div class="isi-surat">Surat Pemberitahuan Penjatuhan Sanksi Administratif berupa Penghentian 
+                Sementara (<i>Suspend</i> TDPSE) kepada Sistem Elektronik Lingkup Privat Nama Penyelenggara Sistem Elektronik
+            </div>
+            </div>
+          </div>
+          <div class="kontent-laporan pd-surat">
+            <div class="surat-yth">
+              <p>Kepada Yth.</p>
+              <p>Penyelenggara Sistem Elektronik Lingkup Privat</p>
+              <p>Nama Penyelenggara Sistem Elektronik</p>
+              <p>di Tempat</p>
+            </div>
+            <div class="surat-isi"> 
+              <p>
+                Sebagai rangkaian tindak lanjut dari hasil Monitoring dan Evaluasi kebenaran informasi Tanda Daftar Penyelenggara Sistem Elektronik (TDPSE) milik Saudara, ditemukan fakta bahwa terdapat ketidaksesuaian dalam informasi yang didaftarkan (keterangan terlampir).
+              </p>
+              <p>
+                Berdasarkan Standar Operasional dan Prosedur (SOP) yang berlaku di Direktorat Pengendalian Aplikasi Informatika, maka Tanda Daftar Penyelenggara Sistem Elektronik milik Saudara akan dilakukan penghentian sementara (suspend) terhitung sejak surat ini dikirimkan.
+	Penghentian sementara ini berdasarkan PM Kominfo No.5/2020 Pasal 7 Ayat (1) poin b dan Pasal 7 Ayat (3) poin b yang menyebutkan bahwa PSE Lingkup Privat telah mempunyai tanda daftar tetapi tidak melaporkan perubahan terhadap informasi pendaftaran akan diberikan sanksi administratif berupa penghentian sementara terhadap Tanda Daftar Penyelenggara Sistem Elektronik.
+              </p>
+              <p>
+                Untuk informasi lebih lanjut terkait perubahan data PSE Lingkup Privat dan permohonan normalisasi Tanda Daftar Penyelenggara Sistem Elektronik (TDPSE), dapat mengunduh panduan Perubahan Data pada tautan <a href="https://s.id/pendaftaranpseprivat" target="_blank"><u>https://s.id/pendaftaranpseprivat</u></a> atau menghubungi layanan helpdesk selama jam operasional 08.00 – 16.00 WIB di hari Senin s.d Jumat (kecuali libur nasional) melalui tautan <a href="https://pse.kominfo.go.id/hubungi-kami" target="_blank"><u>https://pse.kominfo.go.id/hubungi-kami</u></a>
+              </p>
+              <p class="mt-10-f">Demikian disampaikan, untuk menjadi perhatian.</p>
+            </div>
+            <div class="surat-ttd">
+              <p>Direktur Pengendalian Aplikasi Informatika</p>
+              <p class="nama-ttd">Teguh Arifiyadi</p>
+            </div>
+          </div>
+          <div class="table-laporan mt-100">
+            <h1 style="text-indent: 0pt;text-align: left;">Lampiran </h1>
+            <p style="padding-top: 1pt;text-indent: 0pt;text-align: left;">Tembusan:</p>
+            <ol>
+              <li data-list-text="1.">
+                <p style="padding-top: 1;text-indent: -18pt;text-align: left;">
+                  1. Sekretaris Direktorat Jenderal Aplikasi Informatika</p>
+              </li>
+              <li data-list-text="2.">
+                <p style="padding-top: 1pt;text-indent: -18pt;text-align: left;">
+                  2. Direktur Tata Kelola Aplikasi Informatika</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- col -->
+    </div><!-- row -->
+  </div><!-- main -->
+
+  <!-- modal modifikasi table-->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-top">
+          <h5 class="modal-title">Modifikasi Tabel</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-box">
+          <div class="form-group">
+            <div>
+              <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+                data-parsley-multiple="browser" id="cc2"><label>Nama Perusahaan</label>
+            </div>
+            <div><i class="ri-equal-fill"></i></div>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Sistem Elektronik</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>No. TDPSE</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Sektor</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>IP Server</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Rekomendasi</label>
+          </div>
+        </div>
+        <div class="btn-simpan"><button>Simpan</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal-->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-top">
+          <div>
+            <h5 class="perusahaan-nama">PT. Berkah Jaya (10)</h5>
+            <span class="perusahaan-desc">Terdapat <span class="c-b">10</span> TDPSE yang dikelola oleh <span
+                class="c-b">PT. Berkah Jaya</span>. Pilih TDPSE untuk melanjutkan proses Monev:</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-box">
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Beritaku</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Cuan Kripto</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Speedo</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Rekasa</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+        </div>
+        <div class="btn-simpan mb-11"><a href="Kegiatan_monev_list_offline_details.html"><button>Pilih (4)</button></a>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="pilih-semua">Pilih Semua</div>
+          <div class="hapus-semua">Hapus Semua</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal SE-->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-top">
+          <h5 class="modal-title">Daftar Sistem Elektronik</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-info">Daftar Kegiatan Monev yang akan datang</div>
+        <div class="modal-box">
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" id="demo1" checked="">
+            <div class="card1 card-body">
+              <div class="content_head">Tokokami</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Beritaku</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Cuan Kripto</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Exindo</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Rekuno</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Berlianku</div>
+            </div>
+          </label>
+          <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Rekasa</div>
+            </div>
+          </label>
+        </div>
+        <div class="btn-simpan"><a href="#modal4" data-bs-toggle="modal"><button>Simpan</button></a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal SE -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-top">
+          <div>
+            <h5 class="perusahaan-nama">PT. Berkah Jaya (10)</h5>
+            <span class="perusahaan-desc">Terdapat <span class="c-b">10</span> TDPSE yang dikelola oleh <span
+                class="c-b">PT. Berkah Jaya</span>. Pilih TDPSE untuk melanjutkan proses Monev:</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-box">
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Beritaku</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Cuan Kripto</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Speedo</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Rekasa</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+              data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+          </div>
+        </div>
+        <div class="btn-simpan mb-11"><button>Pilih (4)</button></div>
+        <div class="d-flex justify-content-between">
+          <div class="pilih-semua">Pilih Semua</div>
+          <div class="hapus-semua">Hapus Semua</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../lib/jqvmap/jquery.vmap.min.js"></script>
+  <script src="../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <script src="../lib/prismjs/prism.js"></script>
+  <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../lib/select2/js/select2.full.min.js"></script>
+  <script src="../lib/quill/quill.min.js"></script>
+
+  <script src="../assets/js/db.data.js"></script>
+  <script src="../assets/js/script.js"></script>
+
+  <script>
+    'use strict'
+    var quill = new Quill('#editor-container', {
+      modules: {
+        toolbar: '#toolbar-container'
+      },
+      placeholder: 'lorem ipsum dollor...',
+      theme: 'snow'
+    });
+  </script>
+</body>
+
+</html>

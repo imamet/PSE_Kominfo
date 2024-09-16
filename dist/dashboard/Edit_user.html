@@ -45,10 +45,12 @@
             <a href="" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
           </li>
           <li class="nav-item">
-            <a href="Data_Tata_Kelola.html" class="nav-link"><i class="ri-server-line"></i><span>Data Tata Kelola</span></a>
+            <a href="Data_Tata_Kelola.html" class="nav-link"><i class="ri-server-line"></i><span>Data Tata
+                Kelola</span></a>
           </li>
           <li class="nav-item">
-            <a href="Daftar_Kegiatan_Monev.html" class="nav-link active"><i class="ri-briefcase-4-line"></i><span>Kegiatan Monev Domestik</span></a>
+            <a href="Daftar_Kegiatan_Monev.html" class="nav-link"><i class="ri-briefcase-4-line"></i><span>Kegiatan
+                Monev Domestik</span></a>
           </li>
           <li class="nav-item">
             <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
@@ -63,7 +65,7 @@
         <a href="#" class="nav-label">PENGATURAN</a>
         <ul class="nav nav-sidebar">
           <li class="nav-item">
-            <a href="Management-user.html" class="nav-link"><i class="ri-group-line"></i><span>Manajemen
+            <a href="Management-user.html" class="nav-link active"><i class="ri-group-line"></i><span>Manajemen
                 User</span></a>
           </li>
           <li class="nav-item">
@@ -81,7 +83,7 @@
     <a id="menuSidebar" href="#" class="menu-link me-3 me-lg-4"><i class="ri-menu-2-fill"></i></a>
     <div class="me-auto">
     </div>
-    
+
     <div class="dropdown dropdown-profile ms-3 ms-xl-4">
       <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">
         <div class="avatar online"><img src="../assets/img/user.jpg" alt=""></div>
@@ -110,19 +112,6 @@
       <div class="d-flex align-items-center justify-content-between">
         <div class="main-left">
           <div class="main-title">Edit Profil</div>
-        </div>
-        <div class="main-right">
-          <div>
-            <div class="form-search me-auto">
-              <i class="ri-search-line"></i>
-              <input type="text" class="form-control" placeholder="Pencarian">
-            </div>
-          </div>
-          <div class="btn-flex">
-            <a href="#modal1" data-bs-toggle="modal">
-              <button><i class="ri-add-line"></i>Tambah Kegiatan</button>
-            </a>
-          </div>
         </div>
       </div>
     </div>
@@ -178,7 +167,9 @@
           <button class="btn-batal mr-31">Batal</button>
           <button class="btn-simpan1">Simpan</button>
         </div>
-        <button class="btn-hapus">Hapus Akun</button>
+        <a href="#modal10" data-bs-toggle="modal">
+          <button class="btn-hapus">Hapus Akun</button>
+        </a>
       </div>
     </div>
   </div>
@@ -195,7 +186,7 @@
         <div class="modal-box">
           <form>
             <div class="form-content">
-              <label for="exampleFormControlInput1" class="form-label">Nama  Kegiatan</label>
+              <label for="exampleFormControlInput1" class="form-label">Nama Kegiatan</label>
               <input type="text" class="form-control" id="namakegiatan" placeholder="Monev Region Jawa Timur I">
             </div>
             <div class="form-content">
@@ -206,14 +197,14 @@
               </select>
             </div>
             <div class="form-content">
-              <label for="exampleFormControlInput1" class="form-label">Lokasi  Kegiatan</label>
+              <label for="exampleFormControlInput1" class="form-label">Lokasi Kegiatan</label>
               <div class="form-search f-w">
                 <i class="ri-search-line"></i>
                 <input type="text" class="form-control" placeholder="Palmerah, Gelora, Kota Jakarta Pusat">
               </div>
             </div>
             <div class="form-content">
-              <label for="exampleFormControlInput1" class="form-label">Tanggal  Kegiatan</label>
+              <label for="exampleFormControlInput1" class="form-label">Tanggal Kegiatan</label>
               <input type="date" class="form-control" id="namakegiatan" placeholder="Monev Region Jawa Timur I">
             </div>
           </form>
@@ -284,6 +275,30 @@
         <div class="btn-simpan"><button>Simpan</button></div>
       </div>
     </div>
+  </div>
+
+  <!-- alert hapus -->
+  <div class="modal fade" id="modal10" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-box m-0">
+          <div class="modal-top center">
+            <div>
+              <img class="icon-sukses" src="../assets/img/Featured icon.png">
+              <h5 class="perusahaan-nama">Hapus Akun</h5>
+              <div class="text-desc">Apakah Anda yakin mau menghapus akun anda secara permanen?</div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="">
+            <button class="btn-batal mr-31">Batal</button>
+          </a>
+          <button class="btn-hapus1">hapus</button>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
   <script src="../lib/jquery/jquery.min.js"></script>
