@@ -39,8 +39,7 @@
     </div><!-- sidebar-header -->
     <div id="sidebarMenu" class="sidebar-body">
       <div class="nav-group show">
-        <a href="#" class="nav-label">MENU UTAMA</a>
-        <ul class="nav nav-sidebar">
+        <ul class="nav nav-sidebar mt-20">
           <li class="nav-item">
             <a href="" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
           </li>
@@ -60,20 +59,7 @@
                 Validasi</span></a>
           </li>
         </ul>
-      </div><!-- nav-group -->
-      <div class="nav-group show">
-        <a href="#" class="nav-label">PENGATURAN</a>
-        <ul class="nav nav-sidebar">
-          <li class="nav-item">
-            <a href="Management-user.html" class="nav-link"><i class="ri-group-line"></i><span>Manajemen
-                User</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="Login.html" class="nav-link"><i class="ri-logout-box-r-line"></i><span>Log
-                out</span></a>
-          </li>
-        </ul>
-      </div><!-- nav-group -->
+      </div>
     </div><!-- sidebar-body -->
   </div><!-- sidebar -->
 
@@ -91,9 +77,9 @@
           <div class="avatar avatar-xl online mb-3"><img src="../assets/img/user.jpg" alt=""></div>
           <h5 class="mb-1 text-dark fw-semibold">Amal Burga</h5>
           <p class="fs-sm text-secondary">Pengawas (ASN)</p>
-
           <nav class="nav">
             <a href="Edit_user.html"><i class="ri-edit-2-line"></i> Edit Profile</a>
+            <a href="Management-user.html"><i class="ri-group-line"></i> Management User</a>
           </nav>
           <hr>
           <nav class="nav">
@@ -3829,7 +3815,7 @@
     </div>
   </div>
 
-  <!-- modal cetak surat -->
+  <!-- modal kirim -->
   <div class="modal fade" id="modal22" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -3842,66 +3828,36 @@
         </div>
         <div class="modal-box laporan-box">
           <div class="laporan-group">
-            <label>1. PT Berkah Jaya</label>
-            <div class="se-list">
-              <div class="d-flex justify-content-between">
-                <label>1. Tokokami</label>
-                <div class="d-flex align-items-center">
-                  <div class="c-tidaksuspend">Tidak Suspend</div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between">
-                <label>2. Beritaku</label>
-                <div class="d-flex align-items-center">
-                  <div class="c-suspend">Suspend</div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between">
-                <label>3. Cuan Kripto</label>
-                <div class="d-flex align-items-center">
-                  <div class="c-suspend">Suspend</div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between">
-                <label>4. Speedo</label>
-                <div class="d-flex align-items-center">
-                  <div class="c-tidaksuspend">Tidak Suspend</div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between">
-                <label>5. Rekasa</label>
-                <div class="d-flex align-items-center">
-                  <div class="c-tidaksuspend">Tidak Suspend</div>
-                </div>
-              </div>
+            <div class="d-flex justify-content-between">
+              <label>1. Tokokami</label>
+              <div class="c-tidaksuspend">Tidak Suspend</div>
             </div>
           </div>
           <div class="laporan-group">
-            <label>2. PT Digital Uang</label>
-            <div class="se-list">
-              <div class="d-flex justify-content-between">
-                <label>1. Exindo</label>
-                <div class="d-flex align-items-center">
-                  <div class="c-tidaksuspend">Tidak Suspend</div>
-                </div>
-              </div>
+            <div class="d-flex justify-content-between">
+              <label>2. Beritaku</label>
+              <div class="c-suspend">Suspend</div>
             </div>
           </div>
           <div class="laporan-group">
-            <label>3. PT Indo Tekino</label>
-            <div class="se-list">
-              <div class="d-flex justify-content-between">
-                <label>1. Rekuno</label>
-                <div class="d-flex align-items-center">
-                  <div class="c-tidaksuspend">Tidak Suspend</div>
-                </div>
-              </div>
+            <div class="d-flex justify-content-between">
+              <label>3. Cuan Kripto</label>
+              <div class="c-suspend">Suspend</div>
+            </div>
+          </div>
+          <div class="laporan-group">
+            <div class="d-flex justify-content-between">
+              <label>4. Speedo</label>
+              <div class="c-tidaksuspend">Tidak Suspend</div>
+            </div>
+          </div>
+          <div class="laporan-group">
+            <div class="d-flex justify-content-between">
+              <label>5. Rekasa</label>
+              <div class="c-tidaksuspend">Tidak Suspend</div>
             </div>
           </div>
         </div>
-        <!-- <div class="laporan-text mb-29">
-          Apakah Anda yakin ingin mengirim hasil rekomendasi ini?
-        </div> -->
         <div class="d-flex justify-content-between">
           <a href="">
             <div class="batal-btn">Batal</div>
@@ -3913,6 +3869,7 @@
       </div>
     </div>
   </div>
+
 
   <script src="../lib/jquery/jquery.min.js"></script>
   <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -5591,7 +5591,7 @@ ul#select2-select2F-results {
     line-height: normal;
 }
 .modal-box_log{
-  height: 320px;
+  height: 50vh;
 }
 
 .pagination-page{
@@ -6768,7 +6768,7 @@ i.ri-focus-3-line {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-  height: 370px;
+  /* height: 370px; */
 }
 .mb-29{
   margin-bottom: 29px;
@@ -15413,6 +15413,9 @@ i.ri-login-box-line {
   background-color: #6e7985;
   width: 2px;
   left: 0;
+}
+.mt-20{
+  margin-top: 20px;
 }
 
 .sidebar-footer {
@@ -27396,6 +27399,26 @@ a.disable-link{
   border: 1px solid #fff;
   margin: 0px 10px;
 }
+
+.btn-cetak1 {
+    margin-left: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 8px;
+    border: 1px solid #0093DD;
+    background: #0093DD;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+
+
 .btn-cetak a{
     color: #0093DD;
     font-size: 14px;

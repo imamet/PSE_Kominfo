@@ -40,8 +40,7 @@
     </div><!-- sidebar-header -->
     <div id="sidebarMenu" class="sidebar-body">
       <div class="nav-group show">
-        <a href="#" class="nav-label">MENU UTAMA</a>
-        <ul class="nav nav-sidebar">
+        <ul class="nav nav-sidebar mt-20">
           <li class="nav-item">
             <a href="" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
           </li>
@@ -61,21 +60,7 @@
                 Hasil Validasi</span></a>
           </li>
         </ul>
-      </div><!-- nav-group -->
-      <div class="nav-group show">
-        <a href="#" class="nav-label">PENGATURAN</a>
-        <ul class="nav nav-sidebar">
-          <li class="nav-item">
-            <a href="Management-user.html" class="nav-link"><i class="ri-group-line"></i><span>Manajemen
-                User</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="Login.html" class="nav-link"><i class="ri-logout-box-r-line"></i><span>Log
-                out</span></a>
-          </li>
-        </ul>
-      </div><!-- nav-group -->
-
+      </div>
     </div><!-- sidebar-body -->
 
   </div><!-- sidebar -->
@@ -93,9 +78,9 @@
           <div class="avatar avatar-xl online mb-3"><img src="../assets/img/user.jpg" alt=""></div>
           <h5 class="mb-1 text-dark fw-semibold">Amal Burga</h5>
           <p class="fs-sm text-secondary">Pengawas (ASN)</p>
-
           <nav class="nav">
             <a href="Edit_user.html"><i class="ri-edit-2-line"></i> Edit Profile</a>
+            <a href="Management-user.html"><i class="ri-group-line"></i> Management User</a>
           </nav>
           <hr>
           <nav class="nav">
@@ -208,6 +193,7 @@
               <table class="table table-two mb-0">
                 <thead>
                   <tr>
+                    <th>No</th>
                     <th>Nama Perusahaan</th>
                     <th>Sistem Elektronik</th>
                     <th>No. TDPSE</th>
@@ -215,198 +201,119 @@
                     <th>Status Email</th>
                     <th>Tanggal Monev</th>
                     <th class="center-table">Rekomendasi</th>
-                    <th></th>
+                   
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>PT. Berkah Jaya</td>
-                    <td>Tokokami</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail btt">Bouncing dan Tidak Terkonfirmasi</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
-                    <td>
-                      <div class="dropdown">
-                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a href="#modal6" data-bs-toggle="modal" class="dropdown-item">Preview</a>
-                          <a href="" class="dropdown-item">Cetak</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                   
-                    <td>PT. Tech Info Media</td>
-                    <td>Beritaku</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail mtb">Menjawab dan Terkonfirmasi Benar</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
-                    <td>
-                      <div class="dropdown">
-                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a href="#modal6" data-bs-toggle="modal" class="dropdown-item">Preview</a>
-                          <a href="" class="dropdown-item">Cetak</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                   
-                    <td>PT. Keuangan Mandiri</td>
-                    <td>Cuan Kripto</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail tmtb">Tidak Menjawab namun Terkonfirmasi Benar</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
-                    <td>
-                      <div class="dropdown">
-                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a href="#modal6" data-bs-toggle="modal" class="dropdown-item">Preview</a>
-                          <a href="" class="dropdown-item">Cetak</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                   
-                    <td>PT. Trans Antar Ruang</td>
-                    <td>Speedo</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail tmmp">Tidak Menjawab namun Mengkonfirmasi Perubahan</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
-                    <td>
-                      <div class="dropdown">
-                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a href="#modal6" data-bs-toggle="modal" class="dropdown-item">Preview</a>
-                          <a href="" class="dropdown-item">Cetak</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
+                    <td><a href="#modal6" data-bs-toggle="modal">1.</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">PT. Berkah Jaya</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">Tokokami</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xxx xxx xxx</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xx@xxx.com</a>/td>
+                    <td><a href="#modal6" data-bs-toggle="modal"><span class="statusemail btt">Bouncing dan Tidak Terkonfirmasi</span></a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">22-23 Maret 2023</a></td>
+                    <td class="center-table"><a href="#modal6" data-bs-toggle="modal"><label class="c-suspend">Suspend</label></a></td>
                     
-                    <td>PT. Rapih Studio</td>
-                    <td>Rekasa</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail tmss">Tidak Menjawab Sama Sekali</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
-                    <td>
-                      <div class="dropdown">
-                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a href="#modal6" data-bs-toggle="modal" class="dropdown-item">Preview</a>
-                          <a href="" class="dropdown-item">Cetak</a>
-                        </div>
-                      </div>
-                    </td>
                   </tr>
                   <tr>
-                   
-                    <td>PT. Berlian Digital</td>
-                    <td>Rekasa</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail bmp">Bouncing namun Mengkonfirmasi Perubahan</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
-                    <td>
-                      <div class="dropdown">
-                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a href="#modal6" data-bs-toggle="modal" class="dropdown-item">Preview</a>
-                          <a href="" class="dropdown-item">Cetak</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                   
-                    <td>PT. Indo Tekino</td>
-                    <td>Rekuno</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail mmsta">Menjawab dan Mengabarkan Sudah Tidak Aktif</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
-                    <td>
-                      <div class="dropdown">
-                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a href="#modal6" data-bs-toggle="modal" class="dropdown-item">Preview</a>
-                          <a href="" class="dropdown-item">Cetak</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
+                    <td><a href="#modal6" data-bs-toggle="modal">2.</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">PT. Tech Info Media</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">Beritaku</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xxx xxx xxx</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xx@xxx.com</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal"><span class="statusemail mtb">Menjawab dan Terkonfirmasi Benar</span></a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">22-23 Maret 2023</a></td>
+                    <td class="center-table"><a href="#modal6" data-bs-toggle="modal"><label class="c-suspend">Suspend</label></a></td>
                     
-                    <td>PT. Digital Uang</td>
-                    <td>Exindo</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail tam">Tidak Ada Email</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
-                    <td>
-                      <div class="dropdown">
-                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a href="#modal6" data-bs-toggle="modal" class="dropdown-item">Preview</a>
-                          <a href="" class="dropdown-item">Cetak</a>
-                        </div>
-                      </div>
-                    </td>
                   </tr>
                   <tr>
-                   
-                    <td>PT. Digital Uang</td>
-                    <td>Exindo</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail mmp">Menjawab dan Mengkonfirmasi Perubahan</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
-                    <td>
-                      <div class="dropdown">
-                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a href="#modal6" data-bs-toggle="modal" class="dropdown-item">Preview</a>
-                          <a href="" class="dropdown-item">Cetak</a>
-                        </div>
-                      </div>
-                    </td>
+                    <td><a href="#modal6" data-bs-toggle="modal">3.</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">PT. Keuangan Mandiri</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">Cuan Kripto</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xxx xxx xxx</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xx@xxx.com</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal"><span class="statusemail tmtb">Tidak Menjawab namun Terkonfirmasi Benar</span></a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">22-23 Maret 2023</a></td>
+                    <td class="center-table"><a href="#modal6" data-bs-toggle="modal"><label class="c-suspend">Suspend</label></a></td>
+                    
                   </tr>
                   <tr>
-                   
-                    <td>PT. Digital Uang</td>
-                    <td>Exindo</td>
-                    <td>xxx xxx xxx</td>
-                    <td>xx@xxx.com</td>
-                    <td><span class="statusemail btt">Bouncing dan Tidak Terkonfirmasi</span></td>
-                    <td>22-23 Maret 2023</td>
-                    <td class="center-table"><label class="c-suspend">Suspend</label></td>
-                    <td>
-                      <div class="dropdown">
-                        <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a href="#modal6" data-bs-toggle="modal" class="dropdown-item">Preview</a>
-                          <a href="" class="dropdown-item">Cetak</a>
-                        </div>
-                      </div>
-                    </td>
+                    <td><a href="#modal6" data-bs-toggle="modal">4.</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">PT. Trans Antar Ruang</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">Speedo</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xxx xxx xxx</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xx@xxx.com</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal"><span class="statusemail tmmp">Tidak Menjawab namun Mengkonfirmasi Perubahan</span></a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">22-23 Maret 2023</a></td>
+                    <td class="center-table"><a href="#modal6" data-bs-toggle="modal"><label class="c-suspend">Suspend</label></a></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><a href="#modal6" data-bs-toggle="modal">5.</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">PT. Rapih Studio</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">Rekasa</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xxx xxx xxx</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xx@xxx.com</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal"><span class="statusemail tmss">Tidak Menjawab Sama Sekali</span></a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">22-23 Maret 2023</a></td>
+                    <td class="center-table"><a href="#modal6" data-bs-toggle="modal"><label class="c-suspend">Suspend</label></a></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><a href="#modal6" data-bs-toggle="modal">6.</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">PT. Berlian Digital</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">Rekasa</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xxx xxx xxx</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xx@xxx.com</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal"><span class="statusemail bmp">Bouncing namun Mengkonfirmasi Perubahan</span></a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">22-23 Maret 2023</a></td>
+                    <td class="center-table"><a href="#modal6" data-bs-toggle="modal"><label class="c-suspend">Suspend</label></a></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><a href="#modal6" data-bs-toggle="modal">7.</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">PT. Indo Tekino</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">Rekuno</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xxx xxx xxx</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xx@xxx.com</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal"><span class="statusemail mmsta">Menjawab dan Mengabarkan Sudah Tidak Aktif</span></a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">22-23 Maret 2023</td>
+                    <td class="center-table"><a href="#modal6" data-bs-toggle="modal"><label class="c-suspend">Suspend</label></a></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><a href="#modal6" data-bs-toggle="modal">8.</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">PT. Digital Uang</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">Exindo</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xxx xxx xxx</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xx@xxx.com</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal"><span class="statusemail tam">Tidak Ada Email</span></a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">22-23 Maret 2023</a></td>
+                    <td class="center-table"><a href="#modal6" data-bs-toggle="modal"><label class="c-suspend">Suspend</label></a></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><a href="#modal6" data-bs-toggle="modal">9.</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">PT. Digital Uang</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">Exindo</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xxx xxx xxx</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xx@xxx.com</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal"><span class="statusemail mmp">Menjawab dan Mengkonfirmasi Perubahan</span></a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">22-23 Maret 2023</a></td>
+                    <td class="center-table"><a href="#modal6" data-bs-toggle="modal"><label class="c-suspend">Suspend</label></a></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><a href="#modal6" data-bs-toggle="modal">10.</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">PT. Digital Uang</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">Exindo</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xxx xxx xxx</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">xx@xxx.com</a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal"><span class="statusemail btt">Bouncing dan Tidak Terkonfirmasi</span></a></td>
+                    <td><a href="#modal6" data-bs-toggle="modal">22-23 Maret 2023</a></td>
+                    <td class="center-table"><a href="#modal6" data-bs-toggle="modal"><label class="c-suspend">Suspend</label></a></td>
+                    
                   </tr>
                 </tbody>
               </table>
@@ -932,6 +839,9 @@
                 </tbody>
               </table>
           </div>
+        </div>
+        <div>
+          <button class="btn-cetak1"><i class="ri-printer-line"></i>Cetak</button>
         </div>
       </div>
     </div>
