@@ -5593,6 +5593,46 @@ ul#select2-select2F-results {
 .modal-box_log{
   height: 50vh;
 }
+.showse{
+  position: relative;
+  display: none;
+}
+.showse_konten {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 170px;
+    height: 150px;
+    overflow-y: scroll;
+    background: #fff;
+    border-radius: 10px;
+    border-color: rgba(65, 80, 95, 0.16);
+    border-color: rgba(65, 80, 95, 0.16);
+    padding: 5px;
+    border: 1px solid #41505f29;
+}
+.h-se:hover + .showse td{
+  display: block;
+}
+
+span.select2.select2-container.select2-container--default.select2-container--below {
+  width: 100% !important;
+}
+span.select2.select2-container.select2-container--default{
+  width: 100% !important;
+}
+
+.show_konten_item{
+  padding: 6px 10px;
+  border-radius: 3px;
+  color: inherit;
+  color: #878787;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 .pagination-page{
   margin-left: 7px;
@@ -22766,7 +22806,7 @@ i.ri-add-line, i.ri-printer-line {
   background-color: #fff;
   border-color: #ccd2da;
   border-radius: 0.25rem;
-  min-height: 36px;
+  min-height: 36px; 
   outline: none;
   display: flex;
 }
@@ -27375,6 +27415,69 @@ a.disable-link{
   border: none;
   color: #fff;
 }
+.t-u{
+  text-decoration: underline;
+}
+span.select2-selection.select2-selection--multiple {
+  padding-left: 30px;
+}
+
+ul.tabs{
+  background:none!important;
+  border:none!important;
+  display: inline-block;
+  width:100%;
+  padding-left:0;
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0;
+  margin-bottom: 0;
+}
+
+ul.tabs li {
+    list-style: none;
+    cursor: pointer;
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #878787;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+ul.tabs li.active{
+  border-bottom: 2px solid #0093DD;
+}
+
+.tabs_container{
+  padding-top:20px;
+  border-top: 1px solid rgba(0,0,0,0.5);
+  display: inline-block;
+  width:100%;
+  margin-top: -5px;
+}
+
+.tabs_container .tab_content{
+  display: none;
+}
+
+.tabs_container .tab_content.active{
+  display: inline-block;
+  width: 100%;
+}
+.nama-responden{
+  color: #878787;
+text-align: right;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
 .btn-action:hover{
   opacity: 0.9;
   scale: 0.99;

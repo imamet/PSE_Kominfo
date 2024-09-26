@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
   <link rel="stylesheet" href="../lib/jqvmap/jqvmap.min.css">
   <link rel="stylesheet" href="../lib/apexcharts/apexcharts.css">
+  <link rel="stylesheet" href="../lib/bootstrap-tagsinput/bootstrap-tagsinput.css">
   <link rel="stylesheet" href="../lib/prismjs/themes/prism.min.css">
   <link rel="stylesheet" href="../lib/select2/css/select2.min.css">
 
@@ -461,11 +462,23 @@
                   </div>
                 </div>
               </div>
+              
               <div class="form-content">
                 <label for="exampleFormControlInput1" class="form-label">Tanggal Monitoring Virtual </label>
                 <input type="date" class="form-control" id="namakegiatan" placeholder="24 April 2024">
               </div>
               <div class="label-title mt-36">Data Induk Perusahaan</div>
+              <div class="form-content">
+                <label for="exampleFormControlInput1" class="form-label">Salin dari data SE</label>
+                <select class="form-select select2B">
+                  <option label="Choose one"></option>
+                  <option value="tokokami" selected>1. Tokokami</option>
+                  <option value="beritaku">2. Beritaku</option>
+                  <option value="cuan kripto">3. Cuan Kripto</option>
+                  <option value="speedo">4. Speedo</option>
+                  <option value="rekasa">5. Rekasa</option>
+                </select>
+              </div>
               <div class="form-content">
                 <label for="exampleFormControlInput1" class="form-label">Nama Perusahaan</label>
                 <input type="text" class="form-control" id="namakegiatan" placeholder="PT. Berkah Jaya">
@@ -1122,7 +1135,7 @@
             <div class="kegiatan-deskripsi">lorem ipsum</div>
             <!--  -->
             <div class="label-title">Validasi Sistem Elektronik</div>
-            <div class="d-flex mb-29">
+            <div class="d-flex">
               <div class="validasi-awal">
                 <div class="kegiatan-group">
                   <div class="kegiatan-label">Validator Awal</div>
@@ -2823,6 +2836,10 @@
       $(this).parents(".custom-select").removeClass("opened");
       $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
     });
+     // With search
+     $('.select2B').select2({
+        placeholder: 'Choose one'
+      });
   </script>
 </body>
 
