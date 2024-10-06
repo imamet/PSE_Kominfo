@@ -27520,7 +27520,47 @@ line-height: normal;
     box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
 }
 
+.field-icon {
+    float: right;
+    right: 10px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+}
+.sticky-th{
+  /* position: fixed; */
+  position: sticky;
+  top: 73px;
 
+}
+.freeze{
+  position: sticky;
+  width: auto;
+  left: 0;
+  z-index: 10;
+ 
+}
+th.freeze{
+  background: #ffffff; 
+  border-top: 1px solid #DCDCDC;
+}
+th.freeze:nth-child(2),td.freeze:nth-child(2){
+  left: 71px;
+}
+th.freeze:nth-child(3),td.freeze:nth-child(3){
+  left: 126px;
+}
+th.freeze:nth-child(4),td.freeze:nth-child(4){
+  left: 272px;
+}
+/* th.freeze:nth-child(4),td.freeze:nth-child(4){
+  left: 126px;
+} */
+td.freeze{
+  border-color: #f3f5f9;
+  border-bottom: 1px solid #DCDCDC;
+  background: #f8f8f8;
+}
 
 .btn-cetak a{
     color: #0093DD;

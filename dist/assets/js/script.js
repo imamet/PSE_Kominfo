@@ -181,6 +181,15 @@ $('#select2F').select2({
   maximumSelectionLength: 100,
   minimumResultsForSearch: Infinity
 });
+// scroll ticky table
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 200){  
+      $('.h-t').addClass("sticky-th");
+    }
+    else{
+      $('.h-t').removeClass("sticky-th");
+    }
+  }); 
 
 
 // menu filter

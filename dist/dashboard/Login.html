@@ -38,9 +38,12 @@
           </div>
           <div class="mb-4">
             <label class="form-label d-flex justify-content-between">Password</label>
-            <input type="password" class="form-control" placeholder="Masukkan password anda">
+            <div class="po-r">
+              <input id="password-field" type="password" class="form-control" name="password" value="" placeholder="Masukkan password anda">
+              <i toggle="#password-field" class="ri-eye-line field-icon toggle-password"></i>
+            </div>
           </div>
-          <a href="Data_Tata_Kelola.html">
+          <a href="Data_PSE_Terdaftar.html">
             <button class="btn btn-primary btn-sign">Log In</button> 
           </a>
           <div class="card-footer mt-10-f">
@@ -58,6 +61,16 @@
       if(skinMode) {
         $('html').attr('data-skin', 'dark');
       }
+      // 
+      $(".toggle-password").click(function() {
+      $(this).toggleClass("ri-eye-off-line");
+      var input = $($(this).attr("toggle"));
+      if (input.attr("type") == "password") {
+        input.attr("type", "text");
+      } else {
+        input.attr("type", "password");
+      }
+    });
     </script>
   </body>
 </html>
