@@ -6406,6 +6406,7 @@ i.ri-filter-line {
     display: flex;
     justify-content: end;
     margin-top: 35px;
+    margin-bottom: 25px;
 }
 
 .halaman-table {
