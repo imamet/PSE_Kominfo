@@ -6000,6 +6000,41 @@ button.btn-page {
 .breadcrumb-content {
     padding-left: 30px !important;
     padding-top: 9px;
+    position: relative;
+}
+
+.alert-data {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    color: #B2BEC8;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 20px;
+}
+
+.alert-data img {
+    padding-right: 5px;
+}
+
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.blink {
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
 }
 
 .btn-close {
