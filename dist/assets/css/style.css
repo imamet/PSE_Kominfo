@@ -6037,6 +6037,97 @@ button.btn-page {
     -webkit-animation-direction: alternate;
 }
 
+.home-title {
+    color: #304E6B;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    width: 333px;
+    margin: 0px auto;
+    padding-bottom: 25px;
+}
+
+.home-card {
+    margin: 0px 7px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #EAECF0;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.home-card__label {
+    color: #304E6B;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.c-s {
+    color: #BB1046 !important;
+}
+
+.c-ts {
+    color: #027646 !important;
+}
+
+.home-totalpse {
+    color: #304E6B;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    /* 130% */
+}
+
+.home-tglpse {
+    color: #878787;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    /* 216.667% */
+}
+
+.home-card__status {
+    color: #303A4D;
+    font-family: Cairo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.home-card__total {
+    color: #303A4D;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.home-bottom {
+    margin-bottom: 67px;
+    margin-top: 21px;
+}
+
 .btn-close {
     margin-right: -20px;
     margin-top: -8px;

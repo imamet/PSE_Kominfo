@@ -3,429 +3,436 @@
 
 <head>
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Meta -->
-  <meta name="description" content="">
-  <meta name="author" content="Themepixels">
+    <!-- Meta -->
+    <meta name="description" content="">
+    <meta name="author" content="Themepixels">
 
-  <!-- Favicon -->
-  <!-- <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png"> -->
-  <link rel="shortcut icon" href="https://www.kominfo.go.id/favicon/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="https://www.kominfo.go.id/favicon/favicon.ico" />
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png"> -->
+    <link rel="shortcut icon" href="https://www.kominfo.go.id/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://www.kominfo.go.id/favicon/favicon.ico" />
 
-  <title>Management User | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
+    <title>Management User | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
 
-  <!-- Vendor CSS -->
-  <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
-  <link rel="stylesheet" href="../lib/jqvmap/jqvmap.min.css">
-  <link rel="stylesheet" href="../lib/apexcharts/apexcharts.css">
-  <link rel="stylesheet" href="../lib/prismjs/themes/prism.min.css">
-  <link rel="stylesheet" href="../lib/select2/css/select2.min.css">
-  <link rel="stylesheet" href="../lib/bootstrap-tagsinput/bootstrap-tagsinput.css">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="../lib/jqvmap/jqvmap.min.css">
+    <link rel="stylesheet" href="../lib/apexcharts/apexcharts.css">
+    <link rel="stylesheet" href="../lib/prismjs/themes/prism.min.css">
+    <link rel="stylesheet" href="../lib/select2/css/select2.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap-tagsinput/bootstrap-tagsinput.css">
 
-  <!-- Template CSS -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
 
-  <div class="sidebar">
-    <div class="sidebar-header">
-      <a href="./" class="sidebar-logo">
-        <img src="../assets/svg/logo.svg">
-      </a>
-    </div><!-- sidebar-header -->
-    <div id="sidebarMenu" class="sidebar-body">
-      <div class="nav-group show">
-        <ul class="nav nav-sidebar mt-20">
-          <li class="nav-item">
-            <a href="" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="Data_PSE_Terdaftar.html" class="nav-link"><i class="ri-server-line"></i><span>Data PSE Terdaftar</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="Daftar_Kegiatan_Monev.html" class="nav-link"><i class="ri-briefcase-4-line"></i><span>Kegiatan
-                Monev Domestik</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="Data_Hasil_Validasi.html" class="nav-link"><i class="ri-file-shield-2-line"></i><span>Data Hasil
-                Validasi</span></a>
-          </li>
-        </ul>
-      </div>
-    </div><!-- sidebar-body -->
-
-  </div><!-- sidebar -->
-
-  <div class="header-main">
-    <a id="menuSidebar" href="#" class="menu-link me-3 me-lg-4"><i class="ri-menu-2-fill"></i></a>
-    <div class="me-auto">
-    </div>
-
-    <div class="dropdown dropdown-profile ms-3 ms-xl-4">
-      <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-        <div class="avatar online"><img src="../assets/img/user.jpg" alt=""></div>
-      </a>
-      <div class="dropdown-menu dropdown-menu-end mt-10-f">
-        <div class="dropdown-menu-body">
-          <div class="avatar avatar-xl online mb-3"><img src="../assets/img/user.jpg" alt=""></div>
-          <h5 class="mb-1 text-dark fw-semibold">Amal Burga</h5>
-          <p class="fs-sm text-secondary">Pengawas (ASN)</p>
-          <nav class="nav">
-            <a href="Edit_user.html"><i class="ri-edit-2-line"></i> Edit Profile</a>
-            <a href="Management-user.html"><i class="ri-group-line"></i> Management User</a>
-          </nav>
-          <hr>
-          <nav class="nav">
-            <a href=""><i class="ri-logout-box-r-line"></i> Log Out</a>
-          </nav>
-        </div><!-- dropdown-menu-body -->
-      </div><!-- dropdown-menu -->
-    </div><!-- dropdown -->
-  </div><!-- header-main -->
-
-  <div class="main main-app">
-    <!--  -->
-    <div class="main-header">
-      <div class="d-flex align-items-center justify-content-between">
-        <div class="main-left">
-          <div class="main-title">Manajemen User</div>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="./" class="sidebar-logo">
+                <img src="../assets/svg/logo.svg">
+            </a>
         </div>
-        <div class="main-right">
-          <!-- <div>
+        <!-- sidebar-header -->
+        <div id="sidebarMenu" class="sidebar-body">
+            <div class="nav-group show">
+                <ul class="nav nav-sidebar mt-20">
+                    <li class="nav-item">
+                        <a href="Home.html" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Data_PSE_Terdaftar.html" class="nav-link"><i class="ri-server-line"></i><span>Data PSE Terdaftar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Daftar_Kegiatan_Monev.html" class="nav-link"><i class="ri-briefcase-4-line"></i><span>Kegiatan
+                Monev Domestik</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Data_Hasil_Validasi.html" class="nav-link"><i class="ri-file-shield-2-line"></i><span>Data Hasil
+                Validasi</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- sidebar-body -->
+
+    </div>
+    <!-- sidebar -->
+
+    <div class="header-main">
+        <a id="menuSidebar" href="#" class="menu-link me-3 me-lg-4"><i class="ri-menu-2-fill"></i></a>
+        <div class="me-auto">
+        </div>
+
+        <div class="dropdown dropdown-profile ms-3 ms-xl-4">
+            <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                <div class="avatar online"><img src="../assets/img/user.jpg" alt=""></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end mt-10-f">
+                <div class="dropdown-menu-body">
+                    <div class="avatar avatar-xl online mb-3"><img src="../assets/img/user.jpg" alt=""></div>
+                    <h5 class="mb-1 text-dark fw-semibold">Amal Burga</h5>
+                    <p class="fs-sm text-secondary">Pengawas (ASN)</p>
+                    <nav class="nav">
+                        <a href="Edit_user.html"><i class="ri-edit-2-line"></i> Edit Profile</a>
+                        <a href="Management-user.html"><i class="ri-group-line"></i> Management User</a>
+                    </nav>
+                    <hr>
+                    <nav class="nav">
+                        <a href=""><i class="ri-logout-box-r-line"></i> Log Out</a>
+                    </nav>
+                </div>
+                <!-- dropdown-menu-body -->
+            </div>
+            <!-- dropdown-menu -->
+        </div>
+        <!-- dropdown -->
+    </div>
+    <!-- header-main -->
+
+    <div class="main main-app">
+        <!--  -->
+        <div class="main-header">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="main-left">
+                    <div class="main-title">Manajemen User</div>
+                </div>
+                <div class="main-right">
+                    <!-- <div>
             <div class="form-search me-auto">
               <i class="ri-search-line"></i>
               <input type="text" class="form-control" placeholder="Pencarian">
             </div>
           </div> -->
-          <div class="btn-flex">
-            <a href="#modal1" data-bs-toggle="modal">
-              <button><i class="ri-add-line"></i>Undang User</button>
-            </a>
-          </div>
+                    <div class="btn-flex">
+                        <a href="#modal1" data-bs-toggle="modal">
+                            <button><i class="ri-add-line"></i>Undang User</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!--  -->
-    <div class="main-contentuser">
-      <div class="table-responsive mb-4">
-        <table class="table table-two mb-0">
-          <thead>
-            <tr>
-              <th style="width: 300px;" class="center-table">Nama</th>
-              <th style="width: 300px;">Email</th>
-              <th style="width: 400px;" class="center-table">Peran</th>
-              <th class="center-table">Status</th>
-              <th class="center-table">Terakhir Login</th>
-              <th style="width: 40px;"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="photo-user"><img src="../assets/img/user.jpg"></span>Amal Burga</td>
-              <td>amalburga203@gmail.com</td>
-              <td class="center-table">
-                <select class="form-select select2">
+        <!--  -->
+        <div class="main-contentuser">
+            <div class="table-responsive mb-4">
+                <table class="table table-two mb-0">
+                    <thead>
+                        <tr>
+                            <th style="width: 300px;" class="center-table">Nama</th>
+                            <th style="width: 300px;">Email</th>
+                            <th style="width: 400px;" class="center-table">Peran</th>
+                            <th class="center-table">Status</th>
+                            <th class="center-table">Terakhir Login</th>
+                            <th style="width: 40px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="photo-user"><img src="../assets/img/user.jpg"></span>Amal Burga</td>
+                            <td>amalburga203@gmail.com</td>
+                            <td class="center-table">
+                                <select class="form-select select2">
                   <option value="" selected>Admin</option>
                   <option value="">Pengawas (Non ASN)</option>
                   <option value="">Pengawas (ASN)</option>
                 </select>
-              </td>
-              <td class="center-table">Aktif</td>
-              <td class="center-table">04/06/2024 22:59:00</td>
-              <td>
-                <div class="dropdown">
-                  <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                  <div class="dropdown-menu dropdown-menu-end">
-                    <a href="#modal11" data-bs-toggle="modal" class="dropdown-item"> Lihat Profil</a>
-                    <a href="" class="dropdown-item">Nonaktif/Aktifkan</a>
-                    <a href="#modal10" data-bs-toggle="modal" class="dropdown-item">Hapus</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><span class="photo-user"><img src="../assets/img/user1.jpg"></span>John Doe</td>
-              <td>johndoe654@gmail.com</td>
-              <td class="center-table">
-                <select class="form-select select2">
+                            </td>
+                            <td class="center-table">Aktif</td>
+                            <td class="center-table">04/06/2024 22:59:00</td>
+                            <td>
+                                <div class="dropdown">
+                                    <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a href="#modal11" data-bs-toggle="modal" class="dropdown-item"> Lihat Profil</a>
+                                        <a href="" class="dropdown-item">Nonaktif/Aktifkan</a>
+                                        <a href="#modal10" data-bs-toggle="modal" class="dropdown-item">Hapus</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="photo-user"><img src="../assets/img/user1.jpg"></span>John Doe</td>
+                            <td>johndoe654@gmail.com</td>
+                            <td class="center-table">
+                                <select class="form-select select2">
                   <option value="">Admin</option>
                   <option value="" selected>Pengawas (Non ASN)</option>
                   <option value="">Pengawas (ASN)</option>
                 </select>
-              </td>
-              <td class="center-table">Aktif</td>
-              <td class="center-table">04/06/2024 22:59:00</td>
-              <td>
-                <div class="dropdown">
-                  <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                  <div class="dropdown-menu dropdown-menu-end">
-                    <a href="#modal11" data-bs-toggle="modal" class="dropdown-item"> Lihat Profil</a>
-                    <a href="" class="dropdown-item">Nonaktif/Aktifkan</a>
-                    <a href="#modal10" data-bs-toggle="modal" class="dropdown-item">Hapus</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><span class="photo-user"><img src="../assets/img/user2.jpg"></span>Rafael Jarvis</td>
-              <td>rafaeljarvis2658@gmail.com</td>
-              <td class="center-table">
-                <select class="form-select select2">
+                            </td>
+                            <td class="center-table">Aktif</td>
+                            <td class="center-table">04/06/2024 22:59:00</td>
+                            <td>
+                                <div class="dropdown">
+                                    <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a href="#modal11" data-bs-toggle="modal" class="dropdown-item"> Lihat Profil</a>
+                                        <a href="" class="dropdown-item">Nonaktif/Aktifkan</a>
+                                        <a href="#modal10" data-bs-toggle="modal" class="dropdown-item">Hapus</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="photo-user"><img src="../assets/img/user2.jpg"></span>Rafael Jarvis</td>
+                            <td>rafaeljarvis2658@gmail.com</td>
+                            <td class="center-table">
+                                <select class="form-select select2">
                   <option value="">Admin</option>
                   <option value="">Pengawas (Non ASN)</option>
                   <option value="" selected>Pengawas (ASN)</option>
                 </select>
-              </td>
-              <td class="center-table">Nonaktif</td>
-              <td class="center-table">04/06/2024 22:59:00</td>
-              <td>
-                <div class="dropdown">
-                  <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                  <div class="dropdown-menu dropdown-menu-end">
-                    <a href="#modal11" data-bs-toggle="modal" class="dropdown-item"> Lihat Profil</a>
-                    <a href="" class="dropdown-item">Nonaktif/Aktifkan</a>
-                    <a href="#modal10" data-bs-toggle="modal" class="dropdown-item">Hapus</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><span class="photo-user"><img src="../assets/img/user3.jpg"></span>Lili Slater</td>
-              <td>lilislaterrr@gmail.com</td>
-              <td class="center-table">
-                <select class="form-select select2">
+                            </td>
+                            <td class="center-table">Nonaktif</td>
+                            <td class="center-table">04/06/2024 22:59:00</td>
+                            <td>
+                                <div class="dropdown">
+                                    <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a href="#modal11" data-bs-toggle="modal" class="dropdown-item"> Lihat Profil</a>
+                                        <a href="" class="dropdown-item">Nonaktif/Aktifkan</a>
+                                        <a href="#modal10" data-bs-toggle="modal" class="dropdown-item">Hapus</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="photo-user"><img src="../assets/img/user3.jpg"></span>Lili Slater</td>
+                            <td>lilislaterrr@gmail.com</td>
+                            <td class="center-table">
+                                <select class="form-select select2">
                   <option value="">Admin</option>
                   <option value="">Pengawas (Non ASN)</option>
                   <option value="" selected>Pengawas (ASN)</option>
                 </select>
-              </td>
-              <td class="center-table">Aktif</td>
-              <td class="center-table">04/06/2024 22:59:00</td>
-              <td>
-                <div class="dropdown">
-                  <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                  <div class="dropdown-menu dropdown-menu-end">
-                    <a href="#modal11" data-bs-toggle="modal" class="dropdown-item"> Lihat Profil</a>
-                    <a href="" class="dropdown-item">Nonaktif/Aktifkan</a>
-                    <a href="#modal10" data-bs-toggle="modal" class="dropdown-item">Hapus</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><span class="photo-user"><img src="../assets/img/user.jpg"></span>Gilbert Flores</td>
-              <td>gilbertflores@gmail.com</td>
-              <td class="center-table">
-                <select class="form-select select2">
+                            </td>
+                            <td class="center-table">Aktif</td>
+                            <td class="center-table">04/06/2024 22:59:00</td>
+                            <td>
+                                <div class="dropdown">
+                                    <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a href="#modal11" data-bs-toggle="modal" class="dropdown-item"> Lihat Profil</a>
+                                        <a href="" class="dropdown-item">Nonaktif/Aktifkan</a>
+                                        <a href="#modal10" data-bs-toggle="modal" class="dropdown-item">Hapus</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="photo-user"><img src="../assets/img/user.jpg"></span>Gilbert Flores</td>
+                            <td>gilbertflores@gmail.com</td>
+                            <td class="center-table">
+                                <select class="form-select select2">
                   <option value="">Admin</option>
                   <option value="">Pengawas (Non ASN)</option>
                   <option value="" selected>Pengawas (ASN)</option>
                 </select>
-              </td>
-              <td class="center-table">Nonaktif</td>
-              <td class="center-table">04/06/2024 22:59:00</td>
-              <td>
-                <div class="dropdown">
-                  <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
-                  <div class="dropdown-menu dropdown-menu-end">
-                    <a href="#modal11" data-bs-toggle="modal" class="dropdown-item"> Lihat Profil</a>
-                    <a href="" class="dropdown-item">Nonaktif/Aktifkan</a>
-                    <a href="#modal10" data-bs-toggle="modal" class="dropdown-item">Hapus</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-  <!-- main -->
-
-  <!-- modal modifikasi table-->
-  <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-top">
-          <div>
-            <h5 class="modal-title">Undang User</h5>
-            <div class="modal-subtitle">Undang user by email</div>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="form-content mt-13">
-          <input type="text" class="form-control" value="johndoe@gmail.com" data-role="tagsinput">
-        </div>
-        <div class="modal-box">
-          <div class="modal-flex justify-content-between">
-            <div class="d-flex">
-              <span class="photo-user pl-0"><img src="../assets/img/user.jpg"></span>
-              <div>
-                <div class="label-user">Amal Burga</div>
-                <div class="label-email">amalburga203@gmail.com</div>
-              </div>
+                            </td>
+                            <td class="center-table">Nonaktif</td>
+                            <td class="center-table">04/06/2024 22:59:00</td>
+                            <td>
+                                <div class="dropdown">
+                                    <a href="" class="header-link" data-bs-toggle="dropdown"><i class="ri-more-2-fill"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a href="#modal11" data-bs-toggle="modal" class="dropdown-item"> Lihat Profil</a>
+                                        <a href="" class="dropdown-item">Nonaktif/Aktifkan</a>
+                                        <a href="#modal10" data-bs-toggle="modal" class="dropdown-item">Hapus</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div>
-              <select class="form-select select2">
+        </div>
+    </div>
+    <!-- main -->
+
+    <!-- modal modifikasi table-->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <div>
+                        <h5 class="modal-title">Undang User</h5>
+                        <div class="modal-subtitle">Undang user by email</div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="form-content mt-13">
+                    <input type="text" class="form-control" value="johndoe@gmail.com" data-role="tagsinput">
+                </div>
+                <div class="modal-box">
+                    <div class="modal-flex justify-content-between">
+                        <div class="d-flex">
+                            <span class="photo-user pl-0"><img src="../assets/img/user.jpg"></span>
+                            <div>
+                                <div class="label-user">Amal Burga</div>
+                                <div class="label-email">amalburga203@gmail.com</div>
+                            </div>
+                        </div>
+                        <div>
+                            <select class="form-select select2">
                 <option value="" selected>Admin</option>
                 <option value="">Pengawas (Non ASN)</option>
                 <option value="">Pengawas (ASN)</option>
               </select>
-            </div>
-          </div>
-          <div class="modal-flex justify-content-between">
-            <div class="d-flex">
-              <span class="photo-user pl-0"><img src="../assets/img/user1.jpg"></span>
-              <div>
-                <div class="label-user">Rafael O</div>
-                <div class="label-email">rafaelolix@gmail.com</div>
-              </div>
-            </div>
-            <div>
-              <select class="form-select select2">
+                        </div>
+                    </div>
+                    <div class="modal-flex justify-content-between">
+                        <div class="d-flex">
+                            <span class="photo-user pl-0"><img src="../assets/img/user1.jpg"></span>
+                            <div>
+                                <div class="label-user">Rafael O</div>
+                                <div class="label-email">rafaelolix@gmail.com</div>
+                            </div>
+                        </div>
+                        <div>
+                            <select class="form-select select2">
                 <option value="">Admin</option>
                 <option value="">Pengawas (Non ASN)</option>
                 <option value="" selected>Pengawas (ASN)</option>
               </select>
-            </div>
-          </div>
-          <div class="modal-flex justify-content-between">
-            <div class="d-flex">
-              <span class="photo-user pl-0"><img src="../assets/img/user2.jpg"></span>
-              <div>
-                <div class="label-user">Lili Slater</div>
-                <div class="label-email">lilislaterrr@gmail.com</div>
-              </div>
-            </div>
-            <div>
-              <select class="form-select select2">
+                        </div>
+                    </div>
+                    <div class="modal-flex justify-content-between">
+                        <div class="d-flex">
+                            <span class="photo-user pl-0"><img src="../assets/img/user2.jpg"></span>
+                            <div>
+                                <div class="label-user">Lili Slater</div>
+                                <div class="label-email">lilislaterrr@gmail.com</div>
+                            </div>
+                        </div>
+                        <div>
+                            <select class="form-select select2">
                 <option value="">Admin</option>
                 <option value="">Pengawas (Non ASN)</option>
                 <option value="" selected>Pengawas (ASN)</option>
               </select>
-            </div>
-          </div>
-          <div class="modal-flex justify-content-between">
-            <div class="d-flex">
-              <span class="photo-user pl-0"><img src="../assets/img/user3.jpg"></span>
-              <div>
-                <div class="label-user">Gilbert Flores</div>
-                <div class="label-email">gilbertflores@gmail.com</div>
-              </div>
-            </div>
-            <div>
-              <select class="form-select select2">
+                        </div>
+                    </div>
+                    <div class="modal-flex justify-content-between">
+                        <div class="d-flex">
+                            <span class="photo-user pl-0"><img src="../assets/img/user3.jpg"></span>
+                            <div>
+                                <div class="label-user">Gilbert Flores</div>
+                                <div class="label-email">gilbertflores@gmail.com</div>
+                            </div>
+                        </div>
+                        <div>
+                            <select class="form-select select2">
                 <option value="">Admin</option>
                 <option value="">Pengawas (Non ASN)</option>
                 <option value="" selected>Pengawas (ASN)</option>
               </select>
-            </div>
-          </div>
-          <div class="modal-flex justify-content-between">
-            <div class="d-flex">
-              <span class="photo-user pl-0"><img src="../assets/img/user.jpg"></span>
-              <div>
-                <div class="label-user">John Doe</div>
-                <div class="label-email">johndoe654@gmail.com</div>
-              </div>
-            </div>
-            <div>
-              <select class="form-select select2">
+                        </div>
+                    </div>
+                    <div class="modal-flex justify-content-between">
+                        <div class="d-flex">
+                            <span class="photo-user pl-0"><img src="../assets/img/user.jpg"></span>
+                            <div>
+                                <div class="label-user">John Doe</div>
+                                <div class="label-email">johndoe654@gmail.com</div>
+                            </div>
+                        </div>
+                        <div>
+                            <select class="form-select select2">
                 <option value="">Admin</option>
                 <option value="" selected>Pengawas (Non ASN)</option>
                 <option value="">Pengawas (ASN)</option>
               </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-simpan"><button>Simpan</button></div>
             </div>
-          </div>
         </div>
-        <div class="btn-simpan"><button>Simpan</button></div>
-      </div>
     </div>
-  </div>
 
-  <!-- view profile -->
-  <div class="modal fade" id="modal11" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-top">
-          <div></div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-box">
-          <div class="modal-top center">
-            <div>
-              <img class="profil-view" src="../assets/img/profile.jpg">
+    <!-- view profile -->
+    <div class="modal fade" id="modal11" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <div></div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-box">
+                    <div class="modal-top center">
+                        <div>
+                            <img class="profil-view" src="../assets/img/profile.jpg">
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" disabled class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com">
+                    </div>
+                    <div class="form-content">
+                        <label for="exampleFormControlInput1" class="form-label">Nama Lengkap</label>
+                        <input type="text" disabled class="form-control" id="namakegiatan" placeholder="Amal Burga M">
+                    </div>
+                    <div class="form-content">
+                        <label for="exampleFormControlInput1" class="form-label">Nama Panggilan</label>
+                        <input type="text" disabled class="form-control" id="namakegiatan" placeholder="Amal">
+                    </div>
+                    <div class="form-content">
+                        <label for="exampleFormControlInput1" class="form-label">NIK</label>
+                        <input type="text" disabled class="form-control" id="namakegiatan" placeholder="202458312">
+                    </div>
+                    <div class="form-content">
+                        <label for="exampleFormControlInput1" class="form-label">Peran</label>
+                        <input type="text" disabled class="form-control" id="namakegiatan" placeholder="Pengawas">
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="form-content">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" disabled class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com">
-          </div>
-          <div class="form-content">
-            <label for="exampleFormControlInput1" class="form-label">Nama Lengkap</label>
-            <input type="text" disabled class="form-control" id="namakegiatan" placeholder="Amal Burga M">
-          </div>
-          <div class="form-content">
-            <label for="exampleFormControlInput1" class="form-label">Nama Panggilan</label>
-            <input type="text" disabled class="form-control" id="namakegiatan" placeholder="Amal">
-          </div>
-          <div class="form-content">
-            <label for="exampleFormControlInput1" class="form-label">NIK</label>
-            <input type="text" disabled class="form-control" id="namakegiatan" placeholder="202458312">
-          </div>
-          <div class="form-content">
-            <label for="exampleFormControlInput1" class="form-label">Peran</label>
-            <input type="text" disabled class="form-control" id="namakegiatan" placeholder="Pengawas">
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  <!-- alert hapus -->
-  <div class="modal fade" id="modal10" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-box m-0">
-          <div class="modal-top center">
-            <div>
-              <img class="icon-sukses" src="../assets/img/Featured icon.png">
-              <h5 class="perusahaan-nama">Hapus Akun</h5>
-              <div class="text-desc">Apakah Anda yakin mau menghapus akun anda secara permanen?</div>
+    <!-- alert hapus -->
+    <div class="modal fade" id="modal10" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-box m-0">
+                    <div class="modal-top center">
+                        <div>
+                            <img class="icon-sukses" src="../assets/img/Featured icon.png">
+                            <h5 class="perusahaan-nama">Hapus Akun</h5>
+                            <div class="text-desc">Apakah Anda yakin mau menghapus akun anda secara permanen?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="">
+                        <button class="btn-batal mr-31">Batal</button>
+                    </a>
+                    <button class="btn-hapus1">Hapus</button>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <a href="">
-            <button class="btn-batal mr-31">Batal</button>
-          </a>
-          <button class="btn-hapus1">Hapus</button>
-        </div>
-      </div>
     </div>
-  </div>
-  </div>
+    </div>
 
-  <script src="../lib/jquery/jquery.min.js"></script>
-  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-  <script src="../lib/jqvmap/jquery.vmap.min.js"></script>
-  <script src="../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
-  <script src="../lib/prismjs/prism.js"></script>
-  <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-  <script src="../lib/select2/js/select2.full.min.js"></script>
-  <script src="../lib/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="../lib/prismjs/prism.js"></script>
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/select2/js/select2.full.min.js"></script>
+    <script src="../lib/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
 
-  <script src="../assets/js/script.js"></script>
-  <script src="../assets/js/db.data.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/db.data.js"></script>
 </body>
 
 </html>

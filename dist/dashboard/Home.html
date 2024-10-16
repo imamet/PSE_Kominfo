@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="https://www.kominfo.go.id/favicon/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="https://www.kominfo.go.id/favicon/favicon.ico" />
 
-    <title>Edit User | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
+    <title>Home | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
 
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
@@ -42,7 +42,7 @@
             <div class="nav-group show">
                 <ul class="nav nav-sidebar mt-20">
                     <li class="nav-item">
-                        <a href="Home.html" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
+                        <a href="Home.html" class="nav-link active"><i class="ri-home-4-line"></i><span>Home</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="Data_PSE_Terdaftar.html" class="nav-link"><i class="ri-server-line"></i><span>Data PSE Terdaftar</span></a>
@@ -103,65 +103,75 @@
         <div class="main-header">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="main-left">
-                    <div class="main-title">Edit Profil</div>
+                    <div class="main-title">Home</div>
                 </div>
             </div>
         </div>
         <!--  -->
         <div class="main-content">
-            <div class="w-f2">
-                <div class="form-content">
-                    <label for="exampleFormControlInput1" class="form-label">Foto Profil</label>
-                    <div class="d-flex card-profile">
-                        <div class="photo-profil">
-                            <img class="showphoto" src="../assets/img/profile.jpg" alt="">
+            <div class="home-domestik">
+                <div class="home-title">
+                    Status Rekomendasi Sistem Elektronik PSE Domestik
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="home-card">
+                        <div class="home-card__content">
+                            <div class="home-card__label">Sistem Elektronik</div>
+                            <div class="home-card__total">56</div>
+                            <div class="home-card__label">Status: <span class="home-card__status">Tunda</span></div>
                         </div>
-                        <div class="edit-profile">
-                            <div class="label-profile">Unggah Foto Profil</div>
-                            <div class="noted-profile">JPG/PNG (600x600px, max 1mb)</div>
-                            <input class="upload-photo" type="file" accept='image/*' onchange="showImage()" placeholder="pilih">
+                    </div>
+                    <div class="home-card">
+                        <div class="home-card__content">
+                            <div class="home-card__label">Sistem Elektronik</div>
+                            <div class="home-card__total c-s">126</div>
+                            <div class="home-card__label">Status: <span class="home-card__status c-s">Suspend</span></div>
+                        </div>
+                    </div>
+                    <div class="home-card">
+                        <div class="home-card__content">
+                            <div class="home-card__label">Sistem Elektronik</div>
+                            <div class="home-card__total c-ts">1943</div>
+                            <div class="home-card__label">Status: <span class="home-card__status c-ts">Tidak Suspend</span></div>
                         </div>
                     </div>
                 </div>
-                <div class="form-content">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="namakegiatan" placeholder="olivia@untitledui.com">
+                <div class="home-bottom">
+                    <div class="home-totalpse">Total PSE Domestik: <span><b>15.028</b></span></div>
+                    <div class="home-tglpse"> (sumber dari Data Tata Kelola per 10 Desember 2024)</div>
                 </div>
-                <div class="form-content">
-                    <label for="exampleFormControlInput1" class="form-label">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="namakegiatan" placeholder="Amal Burga M">
+            </div>
+            <div class="home-asing">
+                <div class="home-title">
+                    Status Rekomendasi Sistem Elektronik PSE Domestik
                 </div>
-                <div class="form-content">
-                    <label for="exampleFormControlInput1" class="form-label">Nama Panggilan</label>
-                    <input type="text" class="form-control" id="namakegiatan" placeholder="Amal">
+                <div class="d-flex justify-content-center">
+                    <div class="home-card">
+                        <div class="home-card__content">
+                            <div class="home-card__label">Sistem Elektronik</div>
+                            <div class="home-card__total">2</div>
+                            <div class="home-card__label">Status: <span class="home-card__status">Tunda</span></div>
+                        </div>
+                    </div>
+                    <div class="home-card">
+                        <div class="home-card__content">
+                            <div class="home-card__label">Sistem Elektronik</div>
+                            <div class="home-card__total c-s">53</div>
+                            <div class="home-card__label">Status: <span class="home-card__status c-s">Suspend</span></div>
+                        </div>
+                    </div>
+                    <div class="home-card">
+                        <div class="home-card__content">
+                            <div class="home-card__label">Sistem Elektronik</div>
+                            <div class="home-card__total c-ts">671</div>
+                            <div class="home-card__label">Status: <span class="home-card__status c-ts">Tidak Suspend</span></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-content">
-                    <label for="exampleFormControlInput1" class="form-label">NIK</label>
-                    <input type="text" class="form-control" id="namakegiatan" placeholder="202458312">
+                <div class="home-bottom">
+                    <div class="home-totalpse">Total PSE Asing: <span><b>9.028</b></span></div>
+                    <div class="home-tglpse"> (sumber dari Data Tata Kelola per 10 Desember 2024)</div>
                 </div>
-                <div class="form-content">
-                    <label for="exampleFormControlInput1" class="form-label">Peran</label>
-                    <input type="text" disabled class="form-control" id="namakegiatan" placeholder="Pengawas">
-                </div>
-                <div class="form-content">
-                    <label for="exampleFormControlInput1" class="form-label">Password Saat Ini</label>
-                    <input type="password" class="form-control" id="namakegiatan" placeholder="**********">
-                </div>
-                <div class="form-content">
-                    <label for="exampleFormControlInput1" class="form-label">Password Baru</label>
-                    <input type="text" class="form-control" id="namakegiatan" placeholder="Masukkan password baru">
-                </div>
-                <div class="form-content">
-                    <label for="exampleFormControlInput1" class="form-label">Ulangi Password</label>
-                    <input type="text" class="form-control" id="namakegiatan" placeholder="Ulangi password baru">
-                </div>
-                <div class="d-flex mt-36">
-                    <button class="btn-batal mr-31">Batal</button>
-                    <button class="btn-simpan1">Simpan</button>
-                </div>
-                <a href="#modal10" data-bs-toggle="modal">
-                    <button class="btn-hapus">Hapus Akun</button>
-                </a>
             </div>
         </div>
     </div>
