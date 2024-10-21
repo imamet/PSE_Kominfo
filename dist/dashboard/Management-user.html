@@ -261,103 +261,22 @@
     </div>
     <!-- main -->
 
-    <!-- modal modifikasi table-->
+    <!-- modal undang user-->
     <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-top">
                     <div>
-                        <h5 class="modal-title">Undang User</h5>
+                        <div class="modal-title h4">Undang User</div>
                         <div class="modal-subtitle">Undang user by email</div>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="form-content mt-13">
-                    <input type="text" class="form-control" value="johndoe@gmail.com" data-role="tagsinput">
-                </div>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <button type="button" class="btn-close btn btn-primary"></button></div>
                 <div class="modal-box">
-                    <div class="modal-flex justify-content-between">
-                        <div class="d-flex">
-                            <span class="photo-user pl-0"><img src="../assets/img/user.jpg"></span>
-                            <div>
-                                <div class="label-user">Amal Burga</div>
-                                <div class="label-email">amalburga203@gmail.com</div>
-                            </div>
-                        </div>
-                        <div>
-                            <select class="form-select select2">
-                <option value="" selected>Admin</option>
-                <option value="">Pengawas (Non ASN)</option>
-                <option value="">Pengawas (ASN)</option>
-              </select>
-                        </div>
-                    </div>
-                    <div class="modal-flex justify-content-between">
-                        <div class="d-flex">
-                            <span class="photo-user pl-0"><img src="../assets/img/user1.jpg"></span>
-                            <div>
-                                <div class="label-user">Rafael O</div>
-                                <div class="label-email">rafaelolix@gmail.com</div>
-                            </div>
-                        </div>
-                        <div>
-                            <select class="form-select select2">
-                <option value="">Admin</option>
-                <option value="">Pengawas (Non ASN)</option>
-                <option value="" selected>Pengawas (ASN)</option>
-              </select>
-                        </div>
-                    </div>
-                    <div class="modal-flex justify-content-between">
-                        <div class="d-flex">
-                            <span class="photo-user pl-0"><img src="../assets/img/user2.jpg"></span>
-                            <div>
-                                <div class="label-user">Lili Slater</div>
-                                <div class="label-email">lilislaterrr@gmail.com</div>
-                            </div>
-                        </div>
-                        <div>
-                            <select class="form-select select2">
-                <option value="">Admin</option>
-                <option value="">Pengawas (Non ASN)</option>
-                <option value="" selected>Pengawas (ASN)</option>
-              </select>
-                        </div>
-                    </div>
-                    <div class="modal-flex justify-content-between">
-                        <div class="d-flex">
-                            <span class="photo-user pl-0"><img src="../assets/img/user3.jpg"></span>
-                            <div>
-                                <div class="label-user">Gilbert Flores</div>
-                                <div class="label-email">gilbertflores@gmail.com</div>
-                            </div>
-                        </div>
-                        <div>
-                            <select class="form-select select2">
-                <option value="">Admin</option>
-                <option value="">Pengawas (Non ASN)</option>
-                <option value="" selected>Pengawas (ASN)</option>
-              </select>
-                        </div>
-                    </div>
-                    <div class="modal-flex justify-content-between">
-                        <div class="d-flex">
-                            <span class="photo-user pl-0"><img src="../assets/img/user.jpg"></span>
-                            <div>
-                                <div class="label-user">John Doe</div>
-                                <div class="label-email">johndoe654@gmail.com</div>
-                            </div>
-                        </div>
-                        <div>
-                            <select class="form-select select2">
-                <option value="">Admin</option>
-                <option value="" selected>Pengawas (Non ASN)</option>
-                <option value="">Pengawas (ASN)</option>
-              </select>
-                        </div>
-                    </div>
+                    <div class="mb-4"><label class="form-label">Email</label><input placeholder="Masukkan email" name="email" type="text" class="form-control" value=""></div>
+                    <div class="mb-4"><label class="form-label">Peran</label><select class="form-select select2" name="role"><option value="Admin">Admin</option><option value="Pengawas (Non ASN)">Pengawas (Non ASN)</option><option value="Pengawas (ASN)">Pengawas (ASN)</option></select></div>
                 </div>
-                <div class="btn-simpan"><button>Simpan</button></div>
+                <div class="btn-simpan"><button type="button" class="btn btn-primary">Simpan</button></div>
             </div>
         </div>
     </div>

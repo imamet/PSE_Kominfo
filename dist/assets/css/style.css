@@ -6599,6 +6599,10 @@ i.ri-filter-line {
     width: 330px;
 }
 
+.home-flex {
+    justify-content: center;
+}
+
 .pt-0 {
     padding-bottom: 0px !important;
 }
@@ -6737,7 +6741,7 @@ table tr td {
 }
 
 .fz-14 {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .left-flex {
