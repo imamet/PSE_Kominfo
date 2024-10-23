@@ -6259,7 +6259,7 @@ button.btn-page {
 }
 
 .surat-yth {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .surat-isi {
@@ -6276,12 +6276,24 @@ button.btn-page {
     padding-top: 50px;
 }
 
+.lapiran-surat {
+    padding-top: 80px;
+}
+
+.lapiran-surat table {
+    width: 100% !important;
+}
+
+.lapiran-surat h1 {
+    text-align: center;
+}
+
 .mt-100 {
     margin-top: 100px;
 }
 
 .nama-ttd {
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .table-bukti table tr td img {
@@ -6291,6 +6303,10 @@ button.btn-page {
 
 .table-bukti table tr td {
     border: none;
+}
+
+.lapiran-surat table tr td {
+    border: 1px solid #000;
 }
 
 .toast {
@@ -6738,6 +6754,10 @@ table tr td {
     align-items: center;
     padding-left: 30px;
     padding-top: 21px;
+}
+
+.c-r {
+    color: red;
 }
 
 .fz-14 {
@@ -7796,7 +7816,7 @@ i.ri-restart-line {
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 34px;
 }
 
 .nama-perusahaan {
@@ -16443,7 +16463,7 @@ label.card-radio-btn {
     font-style: normal;
     font-family: var(--bs-title2-font-family);
     font-weight: 600;
-    line-height: normal;
+    line-height: 29px;
     padding-left: 30px;
 }
 
@@ -29868,6 +29888,7 @@ textarea.parsley-success:focus {
     }
     .sistem-elektronik {
         font-size: 16px;
+        line-height: 18px;
     }
     .main-right {
         padding-right: 0;
