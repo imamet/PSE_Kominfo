@@ -89,6 +89,7 @@
 
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
     background-color: #F5F5F5;
 }
 
@@ -105,6 +106,7 @@
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     font-family: var(--bs-body-font-family);
     font-size: var(--bs-body-font-size);
@@ -2022,6 +2024,14 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 25px;
+}
+
+.unset-responsive {
+    overflow-x: unset;
+}
+
+.alamat-table {
+    width: 200px;
 }
 
 .table-responsive::-webkit-scrollbar-track {
@@ -5882,6 +5892,11 @@ ul#select2-select2F-results {
     display: none;
 }
 
+.session-login-modal {
+    display: block !important;
+    opacity: 1 !important;
+}
+
 .modal-box {
     overflow-y: auto;
     height: 200px;
@@ -6037,6 +6052,43 @@ button.btn-page {
     -webkit-animation-direction: alternate;
 }
 
+.alert-session {
+    background: rgb(0 0 0 / 60%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100vw;
+    height: 100vh;
+}
+
+.alert-session__content {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    margin: 0px auto;
+    background: #fff;
+    z-index: 1051;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+}
+
+.center-modal {
+    height: 100%;
+    align-items: center;
+}
+
+.modal-session {
+    width: 300px;
+    background-color: #fff;
+}
+
 .home-title {
     color: #304E6B;
     text-align: center;
@@ -6048,6 +6100,14 @@ button.btn-page {
     width: 333px;
     margin: 0px auto;
     padding-bottom: 25px;
+}
+
+.d-block {
+    display: block;
+}
+
+.h-a {
+    height: auto !important;
 }
 
 .home-card {
@@ -30494,12 +30554,33 @@ td.freeze {
     color: #C7C7C7;
 }
 
+.se-title {
+    color: #304E6B;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.totalse {
+    color: #878787;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 28px;
+    padding-top: 7px;
+}
+
 @media (max-width: 1390px) {
     .form-search {
         width: 265px;
     }
     .main-right {
         margin-right: 0px;
+        width: 270px;
     }
 }
 
