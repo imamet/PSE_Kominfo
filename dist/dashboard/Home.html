@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="">
+    <meta name="author" content="Themepixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://www.kominfo.go.id/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://www.kominfo.go.id/favicon/favicon.ico" />
+
+    <title>Home | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="../lib/jqvmap/jqvmap.min.css">
+    <link rel="stylesheet" href="../lib/apexcharts/apexcharts.css">
+    <link rel="stylesheet" href="../lib/prismjs/themes/prism.min.css">
+    <link rel="stylesheet" href="../lib/select2/css/select2.min.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- allert session login -->
+    <!-- <div class="alert-session">
+        <div class="modal d-block" id="modal12" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-box h-a">
+                        <div class="modal-top center">
+                            <div>
+                                <img class="icon-sukses" src="../assets/img/alert.png">
+                                <h5 class="perusahaan-nama">Sesi Anda telah berakhir. Silakan <br>login kembali</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn-hapus1 c-hapus2">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- loading proses-->
+    <div class="alert-session">
+        <div class="modal d-block" id="modal12" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-box h-a">
+                        <div class="modal-top center">
+                            <div>
+                                <img class="icon-processing" src="../assets/img/processing.gif">
+                                <h5 class="perusahaan-nama">Mohon Tunggu...!</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="./" class="sidebar-logo">
+                <img src="../assets/svg/logo.svg">
+            </a>
+        </div>
+        <!-- sidebar-header -->
+        <div id="sidebarMenu" class="sidebar-body">
+            <div class="nav-group show">
+                <ul class="nav nav-sidebar mt-20">
+                    <li class="nav-item">
+                        <a href="Home.html" class="nav-link active"><i class="ri-home-4-line"></i><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Data_PSE_Terdaftar.html" class="nav-link"><i class="ri-server-line"></i><span>Data PSE
+                                Terdaftar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Daftar_Kegiatan_Monev_Domestik.html" class="nav-link"><i
+                                class="ri-briefcase-4-line"></i><span>Kegiatan
+                                Monev Domestik</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Daftar_Kegiatan_Monev_Asing.html" class="nav-link"><i
+                                class="ri-briefcase-4-line"></i><span>Kegiatan
+                                Monev Asing</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Data_Hasil_Validasi.html" class="nav-link"><i
+                                class="ri-file-shield-2-line"></i><span>Data Hasil
+                                Validasi</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- sidebar-body -->
+
+    </div>
+    <!-- sidebar -->
+
+    <div class="header-main">
+        <a id="menuSidebar" href="#" class="menu-link me-3 me-lg-4"><i class="ri-menu-2-fill"></i></a>
+        <div class="me-auto">
+        </div>
+
+        <div class="dropdown dropdown-profile ms-3 ms-xl-4">
+            <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                <div class="avatar online"><img src="../assets/img/user.jpg" alt=""></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end mt-10-f">
+                <div class="dropdown-menu-body">
+                    <div class="avatar avatar-xl online mb-3"><img src="../assets/img/user.jpg" alt=""></div>
+                    <h5 class="mb-1 text-dark fw-semibold">Amal Burga</h5>
+                    <p class="fs-sm text-secondary">Pengawas (ASN)</p>
+                    <nav class="nav">
+                        <a href="Edit_user.html"><i class="ri-edit-2-line"></i> Edit Profile</a>
+                        <a href="Management-user.html"><i class="ri-group-line"></i> Management User</a>
+                    </nav>
+                    <hr>
+                    <nav class="nav">
+                        <a href=""><i class="ri-logout-box-r-line"></i> Log Out</a>
+                    </nav>
+                </div>
+                <!-- dropdown-menu-body -->
+            </div>
+            <!-- dropdown-menu -->
+        </div>
+        <!-- dropdown -->
+    </div>
+    <!-- header-main -->
+
+    <div class="main main-app">
+        <!--  -->
+        <div class="main-header">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="main-left">
+                    <div class="main-title">Home: Statistik Data </div>
+                    <div class="btn-group">
+                        <button class="btn-left btn-active">PSE Domestik</button>
+                        <button class="btn-right">PSE Asing</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--  -->
+        <div class="progress-flex">
+            <div class="progress-left">
+            </div>
+            <div class="progress-right menu">
+                <div class="btn-group">
+                    <a class="showSingle" target="1"><button class="btn-left btn-active">Online</button></a>
+                    <a class="showSingle" target="2"><button class="btn-right">Offline</button></a>
+                    <button class="btn-periode modal-toggle">Periode <span class="arrow-periode"><i
+                                class="ri-arrow-down-s-line"></i></span></button>
+                    <!--  -->
+                    <div class="modal-menu">
+                        <div class="modal-wrapper modal-transition">
+                            <div class="modal-header">
+                                <h2 class="modal-heading">Periode Kustom</h2>
+                                <div class="modal-close modal-toggle"><i class="ri-close-line"></i></div>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="modal-content">
+                                    <div class="form-content">
+                                        <label for="exampleFormControlInput1" class="form-label">Tanggal Mulai</label>
+                                        <input type="date" class="form-control" id="namakegiatan"
+                                            placeholder="Monev Region Jawa Timur I">
+                                    </div>
+                                    <div class="form-content">
+                                        <label for="exampleFormControlInput1" class="form-label">Tanggal Selesai</label>
+                                        <input type="date" class="form-control" id="namakegiatan"
+                                            placeholder="Monev Region Jawa Timur I">
+                                    </div>
+                                    <div class="btn-simpan c-button"><button>Terapkan Periode</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+        <div class="periode-flex">
+            <div class="periode-left">
+            </div>
+            <div class="periode-right">
+                <div class="label-periode">Periode: <span class="c-b">28/09/2024 - 28/10/2024</span> </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="home-domestik">
+                <div class="home-title">
+                    Sistem Elektronik Tervalidasi
+                </div>
+                <div class="d-flex home-flex">
+                    <div class="home-card">
+                        <div class="home-card__content">
+                            <div class="home-card__label">Sistem Elektronik</div>
+                            <div class="home-card__total">372</div>
+                            <div class="home-card__label">Sistem Elektronik</div>
+                        </div>
+                    </div>
+                    <div class="home-card">
+                        <div class="home-card__content">
+                            <div class="home-card__label">Sistem Elektronik</div>
+                            <div class="home-card__total">58</div>
+                            <div class="home-card__label">Perusahaan</div>
+                        </div>
+                    </div>
+                    <div class="home-card">
+                        <div class="home-card__content">
+                            <div class="home-card__label">Sistem Elektronik</div>
+                            <div class="home-card__total">14</div>
+                            <div class="home-card__label">Kabupaten/Kota</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-bottom">
+                    <div class="home-tglpse">Dari total <b class="home-bold">17.635 PSE Domestik</b>, terdapat <b
+                            class="home-bold">372 Sistem Elektronik</b> dari <b class="home-bold">58 Perusahaan</b> yang
+                        telah divalidasi secara <b class="home-bold">Online</b> pada periode <b
+                            class="home-bold">28/09/2024 - 28/10/2024</b> di <b class="home-bold">14 Wilayah
+                            Kabupaten/Kota</b></div>
+                </div>
+            </div>
+            <!-- chart -->
+            <div class="chart-flex">
+                <div class="chart-item">
+                    <div class="chart-item__title">
+                        Rekomendasi
+                    </div>
+                    <div id="chart">
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-item__title">
+                        Fungsi TDPSE
+                    </div>
+                    <div id="chart2">
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-item__title">
+                        Kewajiban Pemutakhiran Data
+                    </div>
+                    <div id="chart3">
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-item__title">
+                        Email
+                    </div>
+                    <div id="chart4">
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-item__title">
+                        Alamat
+                    </div>
+                    <div id="chart5">
+                    </div>
+                </div>
+            </div>
+            <!-- kegiatan terakhir -->
+            <div class="kegiatan-terakhir__title">
+                Kegiatan Terakhir
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card card-one">
+                        <div class="card-body pt-0">
+                            <div class="table-responsive unset-responsive">
+                                <table class="table table-two mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2"><strong>No</strong></th>
+                                            <th rowspan="2"><strong>Tanggal</strong></th>
+                                            <th rowspan="2"><strong>Tipe</strong></th>
+                                            <th rowspan="2"><strong>Nama Kegiatan</strong></th>
+                                            <th rowspan="2" class="line-r"><strong>Jumlah Sistem Elektronik</strong></th>
+                                            <th colspan="2" class="center"><strong>Rekomendasi</strong></th>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <th>Suspend</th>
+                                            <th>Tidak Suspend</th>
+                                       
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="table_statistik.html">1.</a></td>
+                                            <td><a href="table_statistik.html">09/10/2024</a></td>
+                                            <td><a href="table_statistik.html">Offline</a></td>
+                                            <td><a href="table_statistik.html">Kegiatan Monev Sleman</a></td>
+                                            <td><a href="table_statistik.html">10</a></td>
+                                            <td><a href="table_statistik.html">ya</a></td>
+                                            <td><a href="table_statistik.html">-</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="table_statistik.html">2.</a></td>
+                                            <td><a href="table_statistik.html">09/10/2024</a></td>
+                                            <td><a href="table_statistik.html">Offline</a></td>
+                                            <td><a href="table_statistik.html">Kegiatan Monev Sleman</a></td>
+                                            <td><a href="table_statistik.html">10</a></td>
+                                            <td><a href="table_statistik.html">ya</a></td>
+                                            <td><a href="table_statistik.html">-</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- table-responsive -->
+                        <!-- <div class="table-pagination">
+                            <div class="halaman-table mr-48">
+                                <span class="label-pagination">halaman :</span>
+                                <div class="pagination-number">20</div><span class="label-pagination">dari
+                                    1586</span>
+                            </div>
+                            <div class="halaman-table mr-48">
+                                <span class="label-pagination">data per halaman :</span>
+                                <div class="pagination-page">
+                                    <select class="form-select select2">
+                                        <option value="10">10</option>
+                                        <option value="50">50</option>
+                                        <option value="200">200</option>
+                                        <option value="250">250</option>
+                                        <option value="500">500</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <button class="btn-page"><i class="ri-skip-back-fill"></i></button>
+                                    <button class="btn-page"><i class="ri-arrow-left-s-line"></i></button>
+                                    <button class="btn-page"><i class="ri-arrow-right-s-line"></i></button>
+                                    <button class="btn-page"><i class="ri-skip-forward-fill"></i></button>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- card-body -->
+                </div>
+                <!-- card -->
+            </div>
+            <!-- col -->
+        </div>
+    </div>
+    </div>
+    <!-- main -->
+
+    <!-- modal modifikasi table-->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <h5 class="modal-title">Tambah Kegiatan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-box">
+                    <form>
+                        <div class="form-content">
+                            <label for="exampleFormControlInput1" class="form-label">Nama Kegiatan</label>
+                            <input type="text" class="form-control" id="namakegiatan"
+                                placeholder="Monev Region Jawa Timur I">
+                        </div>
+                        <div class="form-content">
+                            <label for="exampleFormControlInput1" class="form-label">Type</label>
+                            <select class="form-select select2">
+                                <option value="Offline">Offline</option>
+                                <option value="Online">Online</option>
+                            </select>
+                        </div>
+                        <div class="form-content">
+                            <label for="exampleFormControlInput1" class="form-label">Lokasi Kegiatan</label>
+                            <div class="form-search f-w">
+                                <i class="ri-search-line"></i>
+                                <input type="text" class="form-control"
+                                    placeholder="Palmerah, Gelora, Kota Jakarta Pusat">
+                            </div>
+                        </div>
+                        <div class="form-content">
+                            <label for="exampleFormControlInput1" class="form-label">Tanggal Kegiatan</label>
+                            <input type="date" class="form-control" id="namakegiatan"
+                                placeholder="Monev Region Jawa Timur I">
+                        </div>
+                    </form>
+                </div>
+                <div class="btn-simpan"><button>Simpan</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal cetak -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <div>
+                        <h5 class="cetak-title">Tokokami</h5>
+                        <span class="cetak-desc">PT. Berkah Jaya</span>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-line"></div>
+                <div class="modal-box">
+                    <div class="form-group1">
+                        <div class="modal-label">No TDPSE</div>
+                        <div class="modal-isi">009622.01/DJAI.PSE/02/2023</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">IP Server</div>
+                        <div class="modal-isi">11.253.11.556</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Nama Sistem Elektronik</div>
+                        <div class="modal-isi">Tokokami</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Nama Perusahaan</div>
+                        <div class="modal-isi">PT. Berkah Jaya </div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Badan Hukum</div>
+                        <div class="modal-isi">Perseroan Terbatas</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Website</div>
+                        <div class="modal-isi">www.tokokami.co.id</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Sektor</div>
+                        <div class="modal-isi">Sektor Kesehatan</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Alamat Fisik</div>
+                        <div class="modal-isi">Jl. Ruko Niaga, Tanjung Sawah Besar No 12</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Penanggung Jawab</div>
+                        <div class="modal-isi">Olivia Meriska</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Email Penanggung Jawab</div>
+                        <div class="modal-isi">olivia@tokokami.co.id</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">No Telepon Penanggung Jawab</div>
+                        <div class="modal-isi">084562158638</div>
+                    </div>
+                </div>
+                <div class="btn-simpan"><button>Simpan</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- alert session -->
+    <div class="modal fade" id="modal12" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-box m-0">
+                    <div class="modal-top center">
+                        <div>
+                            <img class="icon-sukses" src="../assets/img/alert.png">
+                            <h5 class="perusahaan-nama">Konfirmasi Penghapusan Item</h5>
+                            <div class="text-desc">Sesi Anda telah berakhir. Silakan login kembali</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn-batal mr-31">Batal</button>
+                    <button class="btn-hapus1 c-hapus2">hapus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="../lib/prismjs/prism.js"></script>
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/select2/js/select2.full.min.js"></script>
+    <script src="../lib/apexcharts/apexcharts.min.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+    <!-- <script src="../assets/js/db.data.js"></script> -->
+
+    <script>
+        // var optionPie = {
+        //     series: [50, 25, 25],
+        //     chart: {
+        //         width: 440,
+        //         type: 'pie',
+        //     },
+        //     legend: {
+        //         position: 'bottom'
+        //     },
+        //     labels: ['Tidak Suspend(100)', 'Suspend(50)', 'Tunda(50)'],
+        //     colors: ['#06D6A0', '#FF004E', '#DCDCDC'],
+        //     responsive: [{
+        //         breakpoint: 480,
+        //         options: {
+        //             chart: {
+        //                 width: 280
+        //             },
+        //             legend: {
+        //                 position: 'center'
+        //             }
+        //         }
+        //     }]
+        // };
+        // var chartPie = new ApexCharts(document.querySelector("#chartPie"), optionPie);
+        // chartPie.render();
+        const options1 = {
+            chart: {
+                height: 350,
+                type: "pie"
+            },
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: "50%"
+                    }
+                }
+            },
+            series: [50, 25, 25],
+            labels: ['Tidak Suspend(100)', 'Suspend(50)', 'Tunda(50)'],
+            colors: ['#06D6A0', '#FF004E', '#DCDCDC'],
+            legend: {
+                horizontalAlign: "center",
+                position: "bottom",
+                height: 100
+            }
+        };
+        var chart = new ApexCharts(document.querySelector("#chart"), options1);
+        chart.render();
+        const options2 = {
+            chart: {
+                height: 350,
+                type: "pie"
+            },
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: "50%"
+                    }
+                }
+            },
+            series: [50, 35, 15],
+            labels: ['Tidak Suspend(100)', 'Suspend(50)', 'Tunda(50)'],
+            colors: ['#06D6A0', '#FF004E', '#DCDCDC'],
+            legend: {
+                horizontalAlign: "center",
+                position: "bottom",
+                height: 100,
+            }
+        };
+        var chart = new ApexCharts(document.querySelector("#chart2"), options2);
+        chart.render();
+        const options3 = {
+            chart: {
+                height: 350,
+                type: "pie"
+            },
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: "50%"
+                    }
+                }
+            },
+            series: [25, 50, 25],
+            labels: ['Tidak Suspend(100)', 'Suspend(50)', 'Tunda(50)'],
+            colors: ['#06D6A0', '#FF004E', '#DCDCDC'],
+            legend: {
+                horizontalAlign: "center",
+                position: "bottom",
+                height: 100
+            }
+        };
+        var chart = new ApexCharts(document.querySelector("#chart3"), options3);
+        chart.render();
+        const options4 = {
+            chart: {
+                height: 350,
+                type: "pie"
+            },
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: "50%"
+                    }
+                }
+            },
+            series: [35, 50, 15],
+            labels: ['Tidak Suspend(100)', 'Suspend(50)', 'Tunda(50)'],
+            colors: ['#06D6A0', '#FF004E', '#DCDCDC'],
+            legend: {
+                horizontalAlign: "center",
+                position: "bottom",
+                height: 100
+            }
+        };
+        var chart = new ApexCharts(document.querySelector("#chart4"), options4);
+        chart.render();
+        const options5 = {
+            chart: {
+                height: 350,
+                type: "pie"
+            },
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: "50%"
+                    }
+                }
+            },
+            series: [30, 15, 45],
+            labels: ['Tidak Suspend(100)', 'Suspend(50)', 'Tunda(50)'],
+            colors: ['#06D6A0', '#FF004E', '#DCDCDC'],
+            legend: {
+                horizontalAlign: "center",
+                position: "bottom",
+                height: 100
+            }
+        };
+        var chart = new ApexCharts(document.querySelector("#chart5"), options5);
+        chart.render();
+    </script>
+</body>
+
+</html>

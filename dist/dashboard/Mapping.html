@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="">
+    <meta name="author" content="Themepixels">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png"> -->
+    <link rel="shortcut icon" href="https://www.kominfo.go.id/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://www.kominfo.go.id/favicon/favicon.ico" />
+
+    <title>Mapping | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="../lib/jqvmap/jqvmap.min.css">
+    <link rel="stylesheet" href="../lib/apexcharts/apexcharts.css">
+    <link rel="stylesheet" href="../lib/prismjs/themes/prism.min.css">
+    <link rel="stylesheet" href="../lib/select2/css/select2.min.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="./" class="sidebar-logo">
+                <img src="../assets/svg/logo.svg">
+            </a>
+        </div>
+        <!-- sidebar-header -->
+        <div id="sidebarMenu" class="sidebar-body">
+            <div class="nav-group show">
+                <ul class="nav nav-sidebar mt-20">
+                    <li class="nav-item">
+                        <a href="Home.html" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Data_PSE_Terdaftar.html" class="nav-link"><i class="ri-server-line"></i><span>Data PSE Terdaftar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Daftar_Kegiatan_Monev_Domestik.html" class="nav-link"><i class="ri-briefcase-4-line"></i><span>Kegiatan
+            Monev Domestik</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Daftar_Kegiatan_Monev_Asing.html" class="nav-link"><i class="ri-briefcase-4-line"></i><span>Kegiatan
+            Monev Asing</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mapping.html" class="nav-link active"><i class="ri-road-map-line"></i><span>Mapping</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Data_Hasil_Validasi.html" class="nav-link"><i class="ri-file-shield-2-line"></i><span>Data Hasil
+            Validasi</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- sidebar-body -->
+
+    </div>
+    <!-- sidebar -->
+
+    <div class="header-main">
+        <a id="menuSidebar" href="#" class="menu-link me-3 me-lg-4"><i class="ri-menu-2-fill"></i></a>
+        <div class="me-auto">
+        </div>
+
+        <div class="dropdown dropdown-profile ms-3 ms-xl-4">
+            <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                <div class="avatar online"><img src="../assets/img/user.jpg" alt=""></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end mt-10-f">
+                <div class="dropdown-menu-body">
+                    <div class="avatar avatar-xl online mb-3"><img src="../assets/img/user.jpg" alt=""></div>
+                    <h5 class="mb-1 text-dark fw-semibold">Amal Burga</h5>
+                    <p class="fs-sm text-secondary">Pengawas (ASN)</p>
+                    <nav class="nav">
+                        <a href="Edit_user.html"><i class="ri-edit-2-line"></i> Edit Profile</a>
+                        <a href="Management-user.html"><i class="ri-group-line"></i> Management User</a>
+                    </nav>
+                    <hr>
+                    <nav class="nav">
+                        <a href=""><i class="ri-logout-box-r-line"></i> Log Out</a>
+                    </nav>
+                </div>
+                <!-- dropdown-menu-body -->
+            </div>
+            <!-- dropdown-menu -->
+        </div>
+        <!-- dropdown -->
+    </div>
+    <!-- header-main -->
+
+    <div class="main main-app">
+        <div>
+            <div class="main-header">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="main-left">
+                        <div class="main-title"><i class="ri-map-pin-line"></i>Kabupaten Malang, Jawa Timur</div>
+                    </div>
+                    <div class="main-right">
+                        <div class="btn-flex">
+                            <a href="Mapping_dashboard.html">
+                                <button><i class="ri-add-line"></i>Cari  Nama Wilayah/Kota</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex map-flex">
+                <div class="mapping-side">
+                    <div class="mapping-side__top">
+                        <div class="d-flex mt-10-f justify-content-between">
+                            <div class="form-group align-content mb-0">
+                                <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2" data-parsley-multiple="browser" id="cc2"><label class="font-map">Hanya menampilkan PSE yg belum di monev</label>
+                            </div>
+                            <div class="total-info berlangsung">152 SE</div>
+                        </div>
+                    </div>
+                    <div class="mapping-responsive">
+                        <div class="mapping-card">
+                            <div class="d-flex">
+                                <div class="mapping-card__left">
+                                    <div class="nama-SE">Tokokami</div>
+                                    <div class="nama-pt">PT. Berkah Jaya</div>
+                                    <div class="no-TDPSE">TDPSE 009622.01/DJAI.PSE/02/2023</div>
+                                    <div class="alamat-TDPSE">Jl. Ahmad Yani, RT.002/RW.011, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</div>
+                                </div>
+                                <div class="add-daftarmonev">
+                                    <div class="modif-table header-link" data-bs-toggle="tooltip" title="Tambahkan Ke Daftar Monev">
+                                        <a href="#modal2" data-bs-toggle="modal"><i class="ri-add-circle-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mapping-card">
+                            <div class="d-flex">
+                                <div class="mapping-card__left">
+                                    <div class="nama-SE">Tokokami</div>
+                                    <div class="nama-pt">PT. Berkah Jaya</div>
+                                    <div class="no-TDPSE">TDPSE 009622.01/DJAI.PSE/02/2023</div>
+                                    <div class="alamat-TDPSE">Jl. Ahmad Yani, RT.002/RW.011, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</div>
+                                </div>
+                                <div class="add-daftarmonev">
+                                    <div class="modif-table header-link" data-bs-toggle="tooltip" title="Tambahkan Ke Daftar Monev">
+                                        <a href="#modal2" data-bs-toggle="modal"><i class="ri-add-circle-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mapping-card">
+                            <div class="d-flex">
+                                <div class="mapping-card__left">
+                                    <div class="nama-SE monev-terakhir">Tokokami</div>
+                                    <div class="nama-pt monev-terakhir">PT. Berkah Jaya</div>
+                                    <div class="no-TDPSE">TDPSE 009622.01/DJAI.PSE/02/2023</div>
+                                    <div class="alamat-TDPSE">Jl. Ahmad Yani, RT.002/RW.011, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</div>
+                                </div>
+                                <div class="add-daftarmonev">
+                                    <div class="modif-table header-link" data-bs-toggle="tooltip" title="Tambahkan Ke Daftar Monev">
+                                        <a href="#modal2" data-bs-toggle="modal"><i class="ri-add-circle-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mapping-card">
+                            <div class="d-flex">
+                                <div class="mapping-card__left">
+                                    <div class="nama-SE monev-terakhir">Tokokami</div>
+                                    <div class="nama-pt monev-terakhir">PT. Berkah Jaya</div>
+                                    <div class="no-TDPSE">TDPSE 009622.01/DJAI.PSE/02/2023</div>
+                                    <div class="alamat-TDPSE">Jl. Ahmad Yani, RT.002/RW.011, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</div>
+                                </div>
+                                <div class="add-daftarmonev">
+                                    <div class="modif-table header-link" data-bs-toggle="tooltip" title="Tambahkan Ke Daftar Monev">
+                                        <a href="#modal2" data-bs-toggle="modal"><i class="ri-add-circle-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mapping-card">
+                            <div class="d-flex">
+                                <div class="mapping-card__left">
+                                    <div class="nama-SE">Tokokami</div>
+                                    <div class="nama-pt">PT. Berkah Jaya</div>
+                                    <div class="no-TDPSE">TDPSE 009622.01/DJAI.PSE/02/2023</div>
+                                    <div class="alamat-TDPSE">Jl. Ahmad Yani, RT.002/RW.011, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</div>
+                                </div>
+                                <div class="add-daftarmonev">
+                                    <div class="modif-table header-link" data-bs-toggle="tooltip" title="Tambahkan Ke Daftar Monev">
+                                        <a href="#modal2" data-bs-toggle="modal"><i class="ri-add-circle-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mapping-card">
+                            <div class="d-flex">
+                                <div class="mapping-card__left">
+                                    <div class="nama-SE">Tokokami</div>
+                                    <div class="nama-pt">PT. Berkah Jaya</div>
+                                    <div class="no-TDPSE">TDPSE 009622.01/DJAI.PSE/02/2023</div>
+                                    <div class="alamat-TDPSE">Jl. Ahmad Yani, RT.002/RW.011, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</div>
+                                </div>
+                                <div class="add-daftarmonev">
+                                    <div class="modif-table header-link" data-bs-toggle="tooltip" title="Tambahkan Ke Daftar Monev">
+                                        <a href="#modal2" data-bs-toggle="modal"><i class="ri-add-circle-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mapping-card">
+                            <div class="d-flex">
+                                <div class="mapping-card__left">
+                                    <div class="nama-SE">Tokokami</div>
+                                    <div class="nama-pt">PT. Berkah Jaya</div>
+                                    <div class="no-TDPSE">TDPSE 009622.01/DJAI.PSE/02/2023</div>
+                                    <div class="alamat-TDPSE">Jl. Ahmad Yani, RT.002/RW.011, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</div>
+                                </div>
+                                <div class="add-daftarmonev">
+                                    <div class="modif-table header-link" data-bs-toggle="tooltip" title="Tambahkan Ke Daftar Monev">
+                                        <a href="#modal2" data-bs-toggle="modal"><i class="ri-add-circle-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mapping-card">
+                            <div class="d-flex">
+                                <div class="mapping-card__left">
+                                    <div class="nama-SE">Tokokami</div>
+                                    <div class="nama-pt">PT. Berkah Jaya</div>
+                                    <div class="no-TDPSE">TDPSE 009622.01/DJAI.PSE/02/2023</div>
+                                    <div class="alamat-TDPSE">Jl. Ahmad Yani, RT.002/RW.011, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</div>
+                                </div>
+                                <div class="add-daftarmonev">
+                                    <div class="modif-table header-link" data-bs-toggle="tooltip" title="Tambahkan Ke Daftar Monev">
+                                        <a href="#modal2" data-bs-toggle="modal"><i class="ri-add-circle-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mapping-card">
+                            <div class="d-flex">
+                                <div class="mapping-card__left">
+                                    <div class="nama-SE">Tokokami</div>
+                                    <div class="nama-pt">PT. Berkah Jaya</div>
+                                    <div class="no-TDPSE">TDPSE 009622.01/DJAI.PSE/02/2023</div>
+                                    <div class="alamat-TDPSE">Jl. Ahmad Yani, RT.002/RW.011, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</div>
+                                </div>
+                                <div class="add-daftarmonev">
+                                    <div class="modif-table header-link" data-bs-toggle="tooltip" title="Tambahkan Ke Daftar Monev">
+                                        <a href="#modal2" data-bs-toggle="modal"><i class="ri-add-circle-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mapping-card">
+                            <div class="d-flex">
+                                <div class="mapping-card__left">
+                                    <div class="nama-SE">Tokokami</div>
+                                    <div class="nama-pt">PT. Berkah Jaya</div>
+                                    <div class="no-TDPSE">TDPSE 009622.01/DJAI.PSE/02/2023</div>
+                                    <div class="alamat-TDPSE">Jl. Ahmad Yani, RT.002/RW.011, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</div>
+                                </div>
+                                <div class="add-daftarmonev">
+                                    <div class="modif-table header-link" data-bs-toggle="tooltip" title="Tambahkan Ke Daftar Monev">
+                                        <a href="#modal2" data-bs-toggle="modal"><i class="ri-add-circle-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mapping-card">
+                            <div class="d-flex">
+                                <div class="mapping-card__left">
+                                    <div class="nama-SE">Tokokami</div>
+                                    <div class="nama-pt">PT. Berkah Jaya</div>
+                                    <div class="no-TDPSE">TDPSE 009622.01/DJAI.PSE/02/2023</div>
+                                    <div class="alamat-TDPSE">Jl. Ahmad Yani, RT.002/RW.011, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</div>
+                                </div>
+                                <div class="add-daftarmonev">
+                                    <div class="modif-table header-link" data-bs-toggle="tooltip" title="Tambahkan Ke Daftar Monev">
+                                        <a href="#modal2" data-bs-toggle="modal"><i class="ri-add-circle-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapping-content">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.365076993963!2d106.8017727!3d-6.2186488!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14d30079f01%3A0x2e74f2341fff266d!2sStadion%20Utama%20Gelora%20Bung%20Karno!5e0!3m2!1sid!2sid!4v1718112395384!5m2!1sid!2sid"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+
+    <!-- modal cetak -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <div>
+                        <h5 class="perusahaan-nama">PT. Berkah Jaya (10)</h5>
+                        <span class="perusahaan-desc">Terdapat <span class="c-b">10</span> Sistem Elektronik yang dikelola oleh
+                        <span class="c-b">PT. Berkah Jaya</span>. Pilih Sistem Elektronik untuk melanjutkan proses Monev:</span>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-box">
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2" data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2" data-parsley-multiple="browser" id="cc2"><label>Beritaku</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2" data-parsley-multiple="browser" id="cc2"><label>Cuan Kripto</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2" data-parsley-multiple="browser" id="cc2"><label>Speedo</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2" data-parsley-multiple="browser" id="cc2"><label>Rekasa</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2" data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2" data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2" data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2" data-parsley-multiple="browser" id="cc2"><label>Tokokami</label>
+                    </div>
+                </div>
+                <div class="btn-simpan mb-11"><a href="#modal1" data-bs-toggle="modal"><button>Pilih (4)</button></a></div>
+                <div class="d-flex justify-content-between">
+                    <div class="pilih-semua">Pilih Semua</div>
+                    <div class="hapus-semua">Hapus Semua</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal modifikasi table-->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <h5 class="modal-title">Tambahkan Ke Daftar Monev</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-info">Daftar Kegiatan Monev yang akan datang</div>
+                <div class="modal-box">
+                    <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" id="demo1" checked="">
+            <div class="card1 card-body">
+              <div class="content_head">Monev Region Jawa Barat II<span class="sub-label">(Online)<span>(6 November 2024)</span> <span>(Yang Akan Datang)</span></span></div>
+            </div>
+          </label>
+                    <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Monev Region Jawa Timur II<span class="sub-label">(Online)<span>(6 November 2024)</span> <span>(Yang Akan Datang)</span></span></div>
+            </div>
+          </label>
+                    <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Monev Region DKI Jakarta III<span class="sub-label">(Offline)<span>(6 November 2024)</span> <span>(Yang Akan Datang)</span></span></div>
+            </div>
+          </label>
+                    <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Monev Region Jawa Barat II<span class="sub-label">(Online)<span>(6 November 2024)</span> <span>(Yang Akan Datang)</span></span></div>
+            </div>
+          </label>
+                    <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Monev Region Jawa Timur IV<span class="sub-label">(Offline)<span>(6 November 2024)</span> <span>(Yang Akan Datang)</span></span></div>
+            </div>
+          </label>
+                    <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Monev Region DKI Jakarta I<span class="sub-label">(Offline)<span>(6 November 2024)</span> <span>(Yang Akan Datang)</span></span></div>
+            </div>
+          </label>
+                    <label class="card-radio-btn">
+            <input type="radio" name="demo" class="card-input-element d-none" value="demo2">
+            <div class="card1 card-body">
+              <div class="content_head">Monev Region DKI Jakarta V<span class="sub-label">(Online)<span>(6 November 2024)</span> <span>(Yang Akan Datang)</span></span></div>
+            </div>
+          </label>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#modal2" data-bs-toggle="modal">
+                        <button class="btn-batal mr-31">Kembali</button>
+                    </a>
+                    <button class="btn-simpan1">Simpan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="../lib/prismjs/prism.js"></script>
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/select2/js/select2.full.min.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/db.data.js"></script>
+
+</body>
+
+</html>

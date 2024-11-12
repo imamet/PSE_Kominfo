@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en"><head>
+        <meta charset="UTF-8">
+        
+      
+          <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+      
+          <meta name="apple-mobile-web-app-title" content="CodePen">
+      
+          <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+      
+          <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+      
+      
+      
+        
+        
+      
+        <title>CSS object-fit and object-position</title>
+      
+          <link rel="canonical" href="https://codepen.io/potch/pen/YPZEPp">
+        
+        
+        
+        
+      <style>
+    
+      .cover {
+        height: 160px;
+        width: 160px;
+        border: 1px solid black;
+        display: inline-block;
+        vertical-align: middle;
+        object-fit: cover;
+      }
+    
+      </style>
+      
+        
+        
+      </head>
+      
+      <body>
+        <h1>
+        <code>object-fit</code> and
+        <code>object-position</code>
+      </h1>
+      <p>
+        All the flexibility of <code>background-position</code> and <code>background-size</code>, now  available to <code>&lt;img&gt;</code>!
+      </p>
+      <p>
+        Available for testing in Chrome (since v31) and Firefox Beta (v36).
+      </p>
+      <div>
+        <img src="../assets/img/dokumentasi.jpg">
+        <pre>    // shared styles
+          // src image is 800x400
+          height: 160px;
+          width: 160px;
+        </pre>
+      </div>
+      <!--  -->
+      <div>
+        <img class="cover" src="../assets/img/dokumentasi.jpg">
+      </div>
+      <!--  -->
+      
+        
+        
+        
+      
+      
+      
+      </body>
+      </html>

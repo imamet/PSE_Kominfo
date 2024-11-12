@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="">
+    <meta name="author" content="Themepixels">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png"> -->
+    <link rel="shortcut icon" href="https://www.kominfo.go.id/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://www.kominfo.go.id/favicon/favicon.ico" />
+
+    <title>Data PSE | Sistem Pengawasan Penyelenggara Sistem Elektronik</title>
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="../lib/jqvmap/jqvmap.min.css">
+    <link rel="stylesheet" href="../lib/apexcharts/apexcharts.css">
+    <link rel="stylesheet" href="../lib/prismjs/themes/prism.min.css">
+    <link rel="stylesheet" href="../lib/select2/css/select2.min.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="./" class="sidebar-logo">
+                <img src="../assets/svg/logo.svg">
+            </a>
+        </div>
+        <!-- sidebar-header -->
+        <div id="sidebarMenu" class="sidebar-body">
+            <div class="nav-group show">
+                <ul class="nav nav-sidebar mt-20">
+                    <li class="nav-item">
+                        <a href="Home.html" class="nav-link"><i class="ri-home-4-line"></i><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Data_PSE_Terdaftar.html" class="nav-link active"><i
+                                class="ri-server-line"></i><span>Data PSE Terdaftar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Daftar_Kegiatan_Monev_Domestik.html" class="nav-link"><i
+                                class="ri-briefcase-4-line"></i><span>Kegiatan
+                                Monev Domestik</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Daftar_Kegiatan_Monev_Asing.html" class="nav-link"><i
+                                class="ri-briefcase-4-line"></i><span>Kegiatan
+                                Monev Asing</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mapping.html" class="nav-link"><i class="ri-road-map-line"></i><span>Mapping</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Data_Hasil_Validasi.html" class="nav-link"><i
+                                class="ri-file-shield-2-line"></i><span>Data Hasil
+                                Validasi</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- sidebar-body -->
+    </div>
+    <!-- sidebar -->    
+
+    <div class="header-main">
+        <a id="menuSidebar" href="#" class="menu-link me-3 me-lg-4"><i class="ri-menu-2-fill"></i></a>
+        <div class="me-auto">
+        </div>
+        <div class="dropdown dropdown-profile ms-3 ms-xl-4">
+            <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                <div class="avatar online"><img src="../assets/img/user.jpg" alt=""></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end mt-10-f">
+                <div class="dropdown-menu-body">
+                    <div class="avatar avatar-xl online mb-3"><img src="../assets/img/user.jpg" alt=""></div>
+                    <h5 class="mb-1 text-dark fw-semibold">Amal Burga</h5>
+                    <p class="fs-sm text-secondary">Pengawas (ASN)</p>
+                    <nav class="nav">
+                        <a href="Edit_user.html"><i class="ri-edit-2-line"></i> Edit Profile</a>
+                        <a href="Management-user.html"><i class="ri-group-line"></i> Management User</a>
+                    </nav>
+                    <hr>
+                    <nav class="nav">
+                        <a href=""><i class="ri-logout-box-r-line"></i> Log Out</a>
+                    </nav>
+                </div>
+                <!-- dropdown-menu-body -->
+            </div>
+            <!-- dropdown-menu -->
+        </div>
+        <!-- dropdown -->
+    </div>
+    <!-- header-main -->
+
+    <div class="main main-app">
+        <div class="main-header">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="main-left">
+                    <div class="main-title">Data PSE Terdaftar</div>
+                    <div class="btn-group">
+                        <button class="btn-left btn-active">PSE Domestik</button>
+                        <button class="btn-right">PSE Asing</button>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div>
+                        <div class="form-search me-auto">
+                            <i class="ri-search-line"></i>
+                            <input type="text" class="form-control" placeholder="Pencarian">
+                        </div>
+                    </div>
+                    <div class="btn-flex">
+                        <button><i class="ri-login-box-line"></i> Impor Data</button>
+                        <div class="modif-table header-link" data-bs-toggle="tooltip" title="Modifikasi Tabel">
+                            <a href="#modal1" data-bs-toggle="modal"><img src="../assets/svg/modif-table.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu action ceklis-->
+        <div class="menu-action">
+            <div class="menu-actionitem">
+                <div>
+                    <a href="">
+                        <button class="btn-action t-u">Tambahkan Ke Daftar Monev</button>
+                    </a>
+                </div>
+                <div>
+                    <button class="btn-action close-menuaction"><i class="ri-close-line"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main-filter">
+            <div class="line-right">
+                <div class="dropdown-file">
+                    <!--  -->
+                    <a href="" class="dropdown-link header-link" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="ri-filter-line" data-bs-toggle="tooltip" title="Filter Data"></i></a>
+                    <div class="dropdown-menu filter-padding">
+                        <div class="menu-filter-box">
+                            <label class="select-filter">Nama Perusahaan</label>
+                            <label class="select-filter">Sistem Elektronik</label>
+                            <label class="select-filter">No. TDPSE</label>
+                            <label class="select-filter">Sektor</label>
+                            <label class="select-filter">Ip Server</label>
+                            <label class="select-filter">Rekomendasi</label>
+                        </div>
+                    </div>
+                    <!-- filter -->
+                    <div class="dropdown-menufilter">
+                        <div class="filter-close">
+                            <button type="button" class="btn-close filterclose" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="card ">
+                            <div class="card-body">
+                                <select id="select2F" class="form-select" multiple>
+                                    <option value="Tunda">Tunda</option>
+                                    <option value="Suspend">Suspend</option>
+                                    <option value="Tidak Suspend">Tidak Suspend</option>
+                                </select>
+                                <div class="filter-footer">
+                                    <button>Simpan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+            <div class="filter-flex line-right">
+                <div class="filter-box"><span class="filter-label">Sektor:</span> <span class="filter-isi">Sektor
+                        Keuangan</span><span class="delete-filter"><a href=""><i class="ri-close-line"></i></span></a>
+                </div>
+                <div class="filter-box"><span class="filter-label">Sektor:</span> <span class="filter-isi">Sektor
+                        Keuangan</span><span class="delete-filter"><a href=""><i class="ri-close-line"></i></span></a>
+                </div>
+            </div>
+            <div>
+                <div class="hapus-filter">Hapus semua filter</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card card-one">
+                    <div class="card-body">
+                        <div class="table-responsive mb-4 limit-text">
+                            <table class="table table-two mb-0">
+                                <thead class="h-t">
+                                    <tr>
+                                        <th style="width: 70px;" class="bs-checkbox freeze"><input class="c-c"
+                                                data-index="7" name="btSelectItem" type="checkbox"></th>
+                                        <th class="freeze">No</th>
+                                        <th class="freeze">Sistem Elektronik</th>
+                                        <th class="center-table freeze">Rekomendasi</th>
+                                        <th>Nama Perusahaan</th>
+                                        <th>Badan Hukum</th>
+                                        <th>No. TDPSE</th>
+                                        <th>Website</th>
+                                        <th>Sektor</th>
+                                        <th>IP Server</th>
+                                        <th>Alamat</th>
+                                        <th>Provinsi</th>
+                                        <th>Kabupaten/Kota</th>
+                                        <th>Kecamatan</th>
+                                        <th>Kelurahan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="bs-checkbox freeze"><input class="checkmenu c-c" data-index="7"
+                                                name="btSelectItem" type="checkbox"></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">1.</a></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">Tokokami scss dist scss dist scss dist scss dist scss dist</a></td>
+                                        <td class="center-table freeze"><a href="#modal13" data-bs-toggle="modal"><label
+                                                    class="c-tidaksuspend">Tidak Suspend</label></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PT. Berkah Jaya</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Perusahaan Terbatas (PT)</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">009622.01/DJAI.PSE/02/2023</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">shanchu.51qbiz.id</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Sektor Keuangan</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">22.354.77.11</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="top">PODOMORO CITY
+                                                4DH JALAN LETJEN S PARMAN PODOMORO CITY 4DH JALAN LETJEN S PARMA
+                                                PODOMORO CITY 4DH JALAN LETJEN S PARMA PODOMORO CITY 4DH JALAN LETJEN S
+                                                PARMA PODOMORO CITY 4DH JALAN LETJEN S PARMA</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">DKI JAKARTA</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KOTA ADM. JAKARTA BARAT</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">GROGOL PETAMBURAN</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">TANJUNG DUREN SELATAN</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bs-checkbox freeze"><input class="checkmenu c-c" data-index="7"
+                                                name="btSelectItem" type="checkbox"></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">2.</a></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">Beritaku</a></td>
+                                        <td class="center-table freeze"><a href="#modal13" data-bs-toggle="modal"><label
+                                                    class="c-tunda">Tunda</label></a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PT. Tech Info Media</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Perusahaan Terbatas (PT)</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">009622.01/DJAI.PSE/02/2023</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">m-ccni.com</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Sektor Keuangan</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">172.225.123.1</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">CNI CREATIVE CENTER (C2) BUILDING
+                                                JL.PURI INDAH BLOK.X2 NO.2-6</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">DKI JAKARTA</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KOTA ADM. JAKARTA BARAT</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KEMBANGAN</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KEMBANGAN SELATAN</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="bs-checkbox freeze"><input class="checkmenu c-c" data-index="7"
+                                                name="btSelectItem" type="checkbox"></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">3.</a></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">Cuan Kripto</a>
+                                        </td>
+                                        <td class="center-table freeze"><a href="#modal13" data-bs-toggle="modal"><label
+                                                    class="c-suspend">Suspend</label></a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PT. Keuangan Mandiri</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Perusahaan Terbatas (PT)</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">009622.01/DJAI.PSE/02/2023</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">reservancyz.com</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Sektor Keuangan</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">101.523.55.11</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Jalan Pilar Bro Raya, Kavling
+                                                C-W</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">DKI JAKARTA</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KOTA ADM. JAKARTA BARAT</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KEBON JERUK</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KEDOYA SELATAN</a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="bs-checkbox freeze"><input class="checkmenu c-c" data-index="7"
+                                                name="btSelectItem" type="checkbox"></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">4.</a></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">Speedo</a></td>
+                                        <td class="center-table freeze"><a href="#modal13" data-bs-toggle="modal"><label
+                                                    class="c-tidaksuspend">Tidak Suspend</label></a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PT. Trans Antar Ruang</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Perusahaan Terbatas (PT)</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">009622.01/DJAI.PSE/02/2023</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">cleveradsss.co.id/id/home.html</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Sektor Keuangan</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">192.861.88.10</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">NEO SOHO RESIDENCE LANTAI 21 UNIT
+                                                2156, JL. LETJEN S. PARMAN NO. KAV. 22</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">DKI JAKARTA</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KOTA ADM. JAKARTA BARAT</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">GROGOL PETAMBURAN</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">TANJUNG DUREN SELATAN</a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="bs-checkbox freeze"><input class="checkmenu c-c" data-index="7"
+                                                name="btSelectItem" type="checkbox"></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">5.</a></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">Rekasa</a></td>
+                                        <td class="center-table freeze"><a href="#modal13" data-bs-toggle="modal"><label
+                                                    class="c-tidaksuspend">Tidak Suspend</a></label>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PT. Rapih Studio</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Perusahaan Terbatas (PT)</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">009622.01/DJAI.PSE/02/2023</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">medicazstore.com</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Sektor Pendidikan</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">172.225.123.1</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">JL. POS PENGUMBEN LAMA NO. 64, RT.
+                                                019, RW. 005, KEMBANGAN,</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">DKI JAKARTA</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KOTA ADM. JAKARTA BARAT</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KEMBANGAN</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">SRENGSENG</a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="bs-checkbox freeze"><input class="checkmenu c-c" data-index="7"
+                                                name="btSelectItem" type="checkbox"></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">6.</a></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">Rekasa</a></td>
+                                        <td class="center-table freeze"><a href="#modal13" data-bs-toggle="modal"><label
+                                                    class="c-tidaksuspend">Tidak Suspend</label></a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PT. Berlian Digital</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Perusahaan Terbatas (PT)</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">009622.01/DJAI.PSE/02/2023</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">services.clipon.co.id</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Sektor Keuangan</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">22.354.77.11</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Wisma Slipi Lantai 2, JL.Letjen S
+                                                Parman Kav.11</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">DKI JAKARTA</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KOTA ADM. JAKARTA BARAT</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PAL MERAH</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KEMANGGISAN</a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="bs-checkbox freeze"><input class="checkmenu c-c" data-index="7"
+                                                name="btSelectItem" type="checkbox"></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">7.</a></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">Rekuno</a></td>
+                                        <td class="center-table freeze"><a href="#modal13" data-bs-toggle="modal">-</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PT. Indo Tekino</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Perusahaan Terbatas (PT)</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">009622.01/DJAI.PSE/02/2023</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">hoosockster.com</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Sektor Keuangan</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">101.523.55.11</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">GOWORK, CENTRAL PARK MALL LEVEL LG
+                                                UNIT 312, JL. LETJEN. S. PARMAN NO. 21</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">DKI JAKARTA</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KOTA ADM. JAKARTA BARAT</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">GROGOL PETAMBURAN</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">TANJUNG DUREN SELATAN</a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="bs-checkbox freeze"><input class="checkmenu c-c" data-index="7"
+                                                name="btSelectItem" type="checkbox"></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">8.</a></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">Exindo</a></td>
+                                        <td class="center-table freeze"><a href="#modal13" data-bs-toggle="modal">-</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PT. Digital Uang</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Perusahaan Terbatas (PT)</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">009622.01/DJAI.PSE/02/2023</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">kreatif-kinetics.com</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Sektor Keuangan</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">192.198.1.1</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">APL Tower lantai 21 unit 14
+                                                Central Park, Jalan Letjen S Parman Kaveling 22</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">DKI JAKARTA</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KOTA ADM. JAKARTA BARAT</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">GROGOL PETAMBURAN</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">TANJUNG DUREN SELATAN</a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="bs-checkbox freeze"><input class="checkmenu c-c" data-index="7"
+                                                name="btSelectItem" type="checkbox"></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">9.</a></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">Exindo</a></td>
+                                        <td class="center-table freeze"><a href="#modal13" data-bs-toggle="modal">-</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PT. Digital Uang</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Perusahaan Terbatas (PT)</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">009622.01/DJAI.PSE/02/2023</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Cobassstore.co.id</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Sektor Keuangan</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">192.198.1.1</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Komplek Ketapang Indah Blok D
+                                                Nomor 11, Jl. KH Zainul Arifin</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">DKI JAKARTA</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KOTA ADM. JAKARTA BARAT</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">TAMAN SARI</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Krukut</a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="bs-checkbox freeze"><input class="checkmenu c-c" data-index="7"
+                                                name="btSelectItem" type="checkbox"></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">10.</a></td>
+                                        <td class="freeze"><a href="#modal13" data-bs-toggle="modal">Exindo</a></td>
+                                        <td class="center-table freeze"><a href="#modal13" data-bs-toggle="modal">-</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PT. Digital Uang</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Perusahaan Terbatas (PT)</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">009622.01/DJAI.PSE/02/2023</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">https://www.kotagkoin.com/</a>
+                                        </td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Sektor Keuangan</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">192.198.1.1</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Grand Slipi Tower Lantai 32 Unit
+                                                F, Jl. S. Parman Kav. 42-62.</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">DKI JAKARTA</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">KOTA ADM. JAKARTA BARAT</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">PALMERAH</a></td>
+                                        <td><a href="#modal13" data-bs-toggle="modal">Palmerah</a></td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- table-responsive -->
+                        <div class="table-pagination">
+                            <div class="halaman-table mr-48">
+                                <span class="label-pagination">halaman :</span>
+                                <div class="pagination-number">20</div><span class="label-pagination">dari 1586</span>
+                            </div>
+                            <div class="halaman-table mr-48">
+                                <span class="label-pagination">data per halaman :</span>
+                                <div class="pagination-page">
+                                    <select class="form-select select2">
+                                        <option value="10">10</option>
+                                        <option value="50">50</option>
+                                        <option value="200">200</option>
+                                        <option value="250">250</option>
+                                        <option value="500">500</option>
+
+                                    </select>
+                                </div>
+                                <div>
+                                    <button class="btn-page"><i class="ri-skip-back-fill"></i></i></button>
+                                    <button class="btn-page"><i class="ri-arrow-left-s-line"></i></button>
+                                    <button class="btn-page"><i class="ri-arrow-right-s-line"></i></button>
+                                    <button class="btn-page"><i class="ri-skip-forward-fill"></i></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- card-body -->
+                </div>
+                <!-- card -->
+            </div>
+            <!-- col -->
+        </div>
+        <!-- row -->
+    </div>
+    <!-- main -->
+
+    <!-- modal modifikasi table-->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <h5 class="modal-title">Modifikasi Tabel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-box">
+                    <div class="form-group">
+                        <div>
+                            <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+                                data-parsley-multiple="browser" id="cc2"><label>Nama Perusahaan</label>
+                        </div>
+                        <div><i class="ri-equal-fill"></i></div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+                            data-parsley-multiple="browser" id="cc2"><label>Sistem Elektronik</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+                            data-parsley-multiple="browser" id="cc2"><label>No. TDPSE</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+                            data-parsley-multiple="browser" id="cc2"><label>Sektor</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+                            data-parsley-multiple="browser" id="cc2"><label>IP Server</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input c-c" type="checkbox" name="browser[]" value="2"
+                            data-parsley-multiple="browser" id="cc2"><label>Rekomendasi</label>
+                    </div>
+                </div>
+                <div class="btn-simpan"><button>Simpan</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal cetak -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <div>
+                        <h5 class="cetak-title">Tokokami</h5>
+                        <span class="cetak-desc">PT. Berkah Jaya</span>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-line"></div>
+                <div class="modal-box">
+                    <div class="form-group1">
+                        <div class="modal-label">No TDPSE</div>
+                        <div class="modal-isi">009622.01/DJAI.PSE/02/2023</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">IP Server</div>
+                        <div class="modal-isi">11.253.11.556</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Nama Sistem Elektronik</div>
+                        <div class="modal-isi">Tokokami</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Nama Perusahaan</div>
+                        <div class="modal-isi">PT. Berkah Jaya </div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Badan Hukum</div>
+                        <div class="modal-isi">Perseroan Terbatas</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Website</div>
+                        <div class="modal-isi">www.tokokami.co.id</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Sektor</div>
+                        <div class="modal-isi">Sektor Kesehatan</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Alamat Fisik</div>
+                        <div class="modal-isi">Jl. Ruko Niaga, Tanjung Sawah Besar No 12</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Penanggung Jawab</div>
+                        <div class="modal-isi">Olivia Meriska</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">Email Penanggung Jawab</div>
+                        <div class="modal-isi">olivia@tokokami.co.id</div>
+                    </div>
+                    <div class="form-group1">
+                        <div class="modal-label">No Telepon Penanggung Jawab</div>
+                        <div class="modal-isi">084562158638</div>
+                    </div>
+                </div>
+                <div class="btn-simpan"><button>Cetak</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal preview -->
+    <div class="modal fade" id="modal13" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <div>
+                        <h5 class="cetak-title">Preview</h5>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-line"></div>
+                <div class="modal-box">
+                    <div class="mb-29">
+                        <table class="table p-t">
+                            <tbody>
+                                <tr>
+                                    <td class="w-30">
+                                        <div class="kegiatan-label">Nama Perusahaan</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">PT. Berkah Jaya</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="kegiatan-label">Badan Hukum</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">Perusahaan Terbatas (PT)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="kegiatan-label">Sistem Elektronik</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">Tokokami</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="kegiatan-label">No. TDPSE</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">009622.01/DJAI.PSE/02/2023</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="kegiatan-label">Website</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">shanchu.51qbiz.id</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="kegiatan-label">Sektor</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">Sektor Keuangan</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="kegiatan-label">IP Server</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">22.354.77.11</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="kegiatan-label">Alamat</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">PODOMORO CITY 4DH JALAN LETJEN S PARMAN</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="kegiatan-label">Provinsi</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">DKI JAKARTA</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="kegiatan-label">Kabupaten/Kota</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">KOTA ADM. JAKARTA BARAT</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="kegiatan-label">Kecamatan</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">GROGOL PETAMBURAN</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="kegiatan-label">Kelurahan</div>
+                                    </td>
+                                    <td>
+                                        <p class="font-akhir">TANJUNG DUREN SELATAN</p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn-cetak1"><i class="ri-printer-line"></i>Cetak</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="../lib/prismjs/prism.js"></script>
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/select2/js/select2.full.min.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/db.data.js"></script>
+</body>
+
+</html>
