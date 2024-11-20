@@ -30934,6 +30934,27 @@ td.freeze {
     .progress-right {
         margin-left: 0px;
     }
+    .chart-item {
+        margin: 0px 0px;
+    }
+}
+
+@media (max-width: 820px) {
+    .main-right {
+        margin-right: 20px;
+        width: unset;
+    }
+    .btn-group button {
+        font-size: 14px;
+        line-height: 16px;
+        height: 40px;
+    }
+    .m-l {
+        margin-left: 20px;
+    }
+    .f-c {
+        font-size: 23px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -31100,4 +31121,35 @@ img.ttd-file {
     font-weight: 400;
     font-family: 'Inter';
     line-height: normal;
+}
+
+
+/* ry */
+
+.try table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.try table tr {
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+.try table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.try table th,
+.try table td {
+    padding: .625em;
+    text-align: left;
+}
+
+.try table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
